@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## Welcome
 
-You can use the [editor on GitHub](https://github.com/rubiconred/rubiconred.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[Rubicon Red](http://www.rubiconred.com) offers organizations a set of innovative and market leading software for achieving DevOps and Cloud Computing with Oracle Middleware.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Rubicon Red MyST
 
-### Markdown
+MyST is the most advanced and intuitive DevOps solution for Oracle Middleware. It enables users to quickly establish a standardized, repeatable and automated process across their organization for provisioning and managing Oracle Middleware platforms as well as automating the build and deployment of Oracle Middleware applications. No scripting knowledge is required.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This transforms what is typically a resource intensive and highly error prone process into one that is automated, predictable and low risk.
 
-```markdown
-Syntax highlighted code block
+[Learn More](https://rubiconred.github.io/myst-studio)
 
-# Header 1
-## Header 2
-### Header 3
+### Open Source Software
 
-- Bulleted
-- List
+#### MyST Module for Puppet
 
-1. Numbered
-2. List
+The `myst` module for [Puppet](https://www.puppet.com) provides a solution for automated installiation, configuration and execution of MyST. [Learn More](https://forge.puppet.com/rubiconred/myst)
 
-**Bold** and _Italic_ and `Code` text
+#### MyST Plugin for Jenkins
 
-[Link](url) and ![Image](src)
-```
+Jenkins is a leading Continuous Integration Server. The [MyST plugin](https://wiki.jenkins-ci.org/display/JENKINS/MyST+Plugin) for Jenkins:
+ * Provides Integration with MyST Agents
+ * Provides Integration with MyST Web Console
+ * Enables seamless Agent installation and upgrades in your Jenkins environment
+ * Provides Actions and Environment discovery at the Job Level
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Support
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rubiconred/rubiconred.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with MyST? Check out our [documentation](https://rubiconred.github.io/myst-studio) or [contact support](http://support.rubiconred.com) and we’ll help you sort it out.
