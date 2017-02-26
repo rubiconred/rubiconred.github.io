@@ -1,0 +1,102 @@
+.no-top-padding: {
+	padding-top: 0;
+}
+#main .doc-link a{
+	color: #245590;
+}
+#main .doc-link a:hover{
+	text-decoration: underline;
+}
+
+#main .release-notes .highlight{
+	background: #fffdf6;
+	border-radius: 5px;
+	border: 1px solid #ffeaae;
+	padding: 0 0 20px 20px;
+}
+#main .release-notes h4{
+	margin-bottom: 5px;
+}
+
+#main .release-notes .bullet-points{
+	padding-left: 20px;
+}
+
+#main .release-notes .bullet-points .title{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#main .release-notes ul{
+	display: block;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#main .release-notes ul li{
+	display: list-item;
+	margin-left: 30px;
+}
+
+#main .release-notes ul.dash li:before {
+	display: inline-block;
+	content: "\2014";
+	width: 1.5em;
+	margin-left: -1em;
+}
+
+#main .release-notes ul.tick li:before {
+	display: inline-block;
+	content: "\2713";
+	width: 1.5em;
+	margin-left: -1em;
+}
+
+#main #download-links{
+	padding: 10px 30px 40px 20px;
+}
+
+#older-releases{
+	margin-top: 30px;
+}
+#older-releases .title{
+	font-size: 1.2em;
+	color: #245590;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#older-releases table{
+	margin-top: 20px;
+	margin-left: 20px;
+	border: 1px #848484 solid;
+	border-collapse: collapse;
+	width: 80%;
+}
+
+#older-releases table td{
+	padding: 10px;
+	border: 1px #848484 solid;
+}
+
+#older-releases table th{
+	padding: 10px;
+	border: 1px #FFFFFF solid;
+	background-color: #ED1F24;
+	color: #FFFFFF;
+}
+
+#older-releases table tbody > tr:nth-child(even){
+	background-color: #E9E9E9;
+}
+
+h1.underlined_title{
+	padding-bottom: 15px;
+	border-bottom: 2px solid #ED1F24;
+}
+
+h2.underlined_title{
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ED1F24;
+}

@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Release Notes | Rubicon Red - MyST Studio</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- All styles -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" id="contact-form-7-css" href="styles/contact-form-7.css" type="text/css" media="all">
+    <link rel="stylesheet" id="prefix-style-custom-css" href="styles/custom.css" type="text/css" media="all">
+    <link rel="stylesheet" id="all-fonts-css" href="styles/fonts.css" type="text/css" media="all">
+    <link rel="stylesheet" id="genericons-css" href="styles/genericons.css" type="text/css" media="all">
+    <link rel="stylesheet" id="prefix-style-css" href="styles/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" id="prefix-style-layout-css" href="styles/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" id="prefix-style-ui-css" href="styles/ui.css" type="text/css" media="all">
+    <link rel="stylesheet" id="prefix-style-style-css" href="styles/base.css" type="text/css" media="all">
+    <link rel="stylesheet" id="prefix-custom-style-css" href="styles/style.css" type="text/css" media="all">
+  </head>
+  <body class="no-top-padding">
+    <header class="header" role="header">
+      <div class="navbar secondary">
+        <div class="container">
+          <div class="row">
+            <div class="full-grid">
+              <nav class="nav nav-left">
+                <ul>
+                  <li>
+                    <a href="http://www.rubiconred.com">
+                      <img
+                        src="images/rubicon-red-logo.png"
+                        alt="MyST RubiconRed">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.linkedin.com/company/rubicon-red"
+                      target="_blank">
+                      <span class="fa fa-linkedin"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/rubicon_red" target="_blank">
+                      <span class="fa fa-twitter"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/user/rubiconxred"
+                      target="_blank">
+                      <span class="fa fa-youtube"></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End of Header -->
+    <main class="main-content" role="main" id="main">
+      <section class="content-section">
+        <div class="container">
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.3.2.0">MyST Studio 5.3.2.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST installer is available for download from the MyST web site to enable quick and easy installations to be done.</li>
+                  <li>The majority of Release Pipeline updates can now be performed without needing to deactivate the Release Pipeline first.</li>
+                  <li>MyST performs reachability checks for a given�platform instance before�triggering any update or deploy actions from a Release Pipeline.</li>
+                  <li>Stages can be added to a new Release Pipeline without the need to�first create�a Release Pipeline Template.</li>
+                  <li>Advanced SOA and BPM composite deploy-time customisation can now be supported through a MyST Configuration Plan.</li>
+                  <li>MyST Studio generates a diagnostic artifact when a failure occurs which can be provided to support to assist with problem resolution. It is available for the last 5 failures for a platform instance.</li>
+                  <li>MyST now prevents a user from saving a Blueprint or Model with validation errors and provides more meaningful error messages with a stack trace to facilitate easier analysis.</li>
+                  <li>Application Roles can now be assigned to other Application Roles.</li>
+                  <li>Improved hover text for platform status in the Release Pipeline Dashboard when no action has been taken such as a dry-run.</li>
+                  <li>Improvements to the MFT introspection capability</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed an issue with MyST Jenkins plugin persisting MyST host and port values.</li>
+                  <li>Fixed an issue related to JCA adapter�ID being�able to be defined incorrectly from the Blueprint editor.</li>
+                  <li>Fixed an issue relating to Work Manager Max Threads not being correctly discovered during introspection.</li>
+                  <li>Fixed an�issue with updating Release Pipelines�where�earlier removed Application Blueprints were resurfacing in some edge cases.</li>
+                  <li>Fixes an issue with MFT and SOA having conflicting port values when present in the same domain, from 12.2.1.2.0 the default MFT port is different to SOA.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.3.1.0">MyST Studio 5.3.1.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now allows additional compute nodes to be added to a model after creation so that clusters can be expanded without needing to create a new model. This will take effect through re-provision of the model.</li>
+                  <li>Users can disable values that are auto-computed by MyST. Most of the time a user would not want to do this but it can be useful for introspecting an existing environment without applying MyST's recommended changes. To support this the option to delete / reset a property to its original value is now explicitly provided through a delete button while hovering over each property</li>
+                  <li>The Action History for an instance can now be filtered based on 'Default' (all actions), 'This Release pipeline' (actions related to the current pipeline) and 'Other Release pipeline(s)' (actions related to pipelines other than the current one.)</li>
+                  <li>Additional deploy-time properties were added for the ADF artifact type so that it now supports all of the properties that are supported by the Java EAR artifact type.</li>
+                  <li>MyST supports applying atypical patches that mandate ORACLE_HOME to be set at Patch time.</li>
+                  <li>Embedded deployment plans are supported for J2EE applications</li>
+                  <li>MyST Configuration Plan is supported for SOA and BPM composites</li>
+                  <li>Bamboo v5.x is supported as a Continuous Integration server in the MyST Studio Continuous Delivery Profile.</li>
+                  <li>Nexus 2.x is supported as a Binary Repository Manager in the MyST Studio Continuous Delivery Profile.</li>
+                  <li>MyST now restricts post-deployment job configuration/invocation for Jenkins only.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The user can no longer create a custom action having a whitespace in the name as it eventually causes the action to error out during execution.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.3.0.3">MyST Studio 5.3.0.3 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The release pipeline stopped working when the platform behaviour was set to None</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.3.0.2">MyST Studio 5.3.0.2 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The Agent to Studio integration was broken in 5.3.0.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.3.0.1">MyST Studio 5.3.0.1 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Update with dry run was broken since 5.2.0.0. It was doing an actual update instead of a dry run.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.3.0.0">MyST Studio 5.3.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>It is now possible to retrigger post deployment job for a deployment which got "verification failed"</li>
+                  <li>It has been ensured that if sequence of Application Blueprints belonging to Streams are altered, new stream revision is generated</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>A much improved version of the user guide is now available and the inline help from MyST Studio also refers to content from it.</li>
+                  <li>ISO-8601 date format is now supported, for build.start.time parameter (which is required during reverse registration)</li>
+                  <li>MyST now fails fast and does not retry for a long time if the on-demand compute nodes are not reachable even though they have been provisioned</li>
+                  <li>MyST now supports optionally specifying an IP address or hostname to bind to for HTTP and HTTPS communication. This allows multiple OHS instances to be configured on the same machine using identical port configuration without resource clashes.</li>
+                  <li>REST API changes to the Platform resources which allows the consumer to tailor-make the data that they want using smart filters </li>
+                  <li>Performance improvements while rendering the Platform Blueprint, Model and Instance screens</li>
+                  <li>When the user clicks on any other component in the platform blueprint / model while he is in the process of editing an existing one, he is prompted to either save or cancel his changes so that he does not accidentally lose them</li>
+                  <li>Improved the way the user selects versions and revisions for platform provisioning and updates</li>
+                  <li>Application Blueprint Version UI has been refactored to efficiently interact with backend, thereby improving response time</li>
+                  <li>Tuned information set, what Release Pipeline logs at INFO level</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Fixed the issue of Release Pipeline UI hanging</li>
+                  <li>Bug fix: Fixed the issue, that caused failure in discovering sql properties</li>
+                  <li>Bug fix: For on-demand AWS infrastructure providers, MyST does not use the right credentials to connect to AWS if the first provided credentials were wrong. A restart is required for MyST to pick up the right set</li>
+                  <li>Miscellaneous improvement around Deploy / Redeploy feature in Release Pipeline</li>
+                  <li>Ensured that user is redirected to specific version of Application / Platform Blueprint when s/he clicks the hyperlinks corresponding to Application / Platform Blueprint (corresponding to stream) from Release Pipeline dashboard</li>
+                  <li>Bug fix: Fixed the issue, which was causing discovery of wrong SCA revision</li>
+                  <li>Bug fix: Fixed the issue, which was causing j2ee properties not getting discovered appropriately</li>
+                  <li>Bug fix: Fixed the issue, which was causing artifacts not getting corrected marked as deployed / not deployed, as part of the payload that is passed to post deployment job</li>
+                  <li>Bug fix: Fixed the issue that caused, failed deployment to change everything to successful but not do an actual deployment, when redeployment is attempted</li>
+                  <li>Bug fix: Since 5.1.1.0, MyST was showing all resources to a non-admin user irrespective of the workspaces he belongs to</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.2.1.0">MyST Studio 5.2.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now has sudo-rule support for OHS provisioning as well as OSB, SCA, MDS and BAM deployments</li>
+                  <li>MyST now raises validation error prior to deployment if it identifies that the stream (whose deployment is in question) consists of Application Blueprints referring to same version & build number of artifact(s)</li>
+                  <li>One can now add products and compute groups to existing blueprints using simple UI dialogs </li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Explicit redeployment (undeploy followed by deploy) is now supported for SOA Composites, MDS and J2EE artifacts</li>
+                  <li>MyST reverse registration utility now accepts command line arguments</li>
+                  <li>MyST now provides options for user to select if they want platform instance properties & / or application model properties to be sent as part of the json payload which is passed to the post deployment job</li>
+                  <li>MyST now checks "Enabled" checkbox for post deployment job by default</li>
+                  <li>Improved the way the user selects versions and revisions for platform provisioning and updates</li>
+                  <li>MyST now aborts any incomplete post deployment execution, when server reboots</li>
+                  <li>MyST now shows selected ABPs at the top while editing stream definition</li>
+                  <li>Improved logs when artifact download from maven repository fails.</li>
+                  <li>When a platform instance action is aborted or when it goes to state indeterminate due to a system restart, the platform instance now also goes into a state of 'Indeterminate' if the action is a Provision, Update or Terminate. The user has to then override the state of the instance to something concrete before he can perform further actions.</li>
+                  <li>One can now change the one-to-many associations for components in the platform blueprint / model. e.g. change the products for a compute node, etc.</li>
+                  <li>SQL artifacts now get executed as part of standard deployment</li>
+                  <li>The hosts of an infrastructure provider are now sorted in alphabetical order and can be filtered as well.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The complete agent execution log was being lost when a platform instance action was aborted.</li>
+                  <li>Fixed the issue of wrong build of an artifact getting deployed in case the artifact was deleted and re - registered</li>
+                  <li>Bug fix: One can clear the value of the location field without the text box disappearing while defining custom actions</li>
+                  <li>Bug fix: When a user is assigned the same role twice, an error was being thrown while doing subsequent role assignment.</li>
+                  <li>MyST now ensures that no actions can be taken on the release pipeline when its execution is in progress</li>
+                  <li>Fixed the issue such that post deployment job definition can be persisted separately, than the stream definition to which it belongs</li>
+                  <li>Fixed an issue due to which, Release Pipeline was throwing exception, if one deactivates it first, edit the stream definition to remove one or more ABPs, and try to reactivate it again</li>
+                  <li>Fixed issue where MyST hangs if there is no java on the target host in the PATH</li>
+                  <li>Fixed an issue due to which "SR" would appear on build column of Release Pipeline when there is no stream revision available</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.2.0.2">MyST Studio 5.2.0.2 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now prohibits deployment of ABPs that incorporate different versions of the same artifact that are in the same stream</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.2.0.1">MyST Studio 5.2.0.1 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Post deployment job wasn't propagating the deployed flag correctly to Jenkins</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.2.0.0">MyST Studio 5.2.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>One can now ear-mark certain environments to allow provisioning of draft configuration. (These environments cannot be made a part of a release pipeline though)�</li>
+                  <li>MyST is now certified against OFMW 12.2.1.2.0 for the following components: SOA,OSB,BAM,BPM,B2B,WSM,MFT,ESS,ADF,BI,OBIEE,OTD,WLS,OHS</li>
+                  <li>MyST supports sudo-rule for platform provisioning where one can specify a run-as-user assuming whose identity MyST will perform all actions after connecting as the agent user.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>One can now delete the current draft of a blueprint / model in case it has not been provisioned to any instance</li>
+                  <li>The deployment is now marked as 'Verification failed' if the post-deployment job fails</li>
+                  <li>It has been ensured that Platform Instance properties (with sensitive information masked) are passed as part of the payload that post deployment job receives</li>
+                  <li>It has been ensured that post deployment job only triggers on a successful completion of a deployment</li>
+                  <li>Application model data is now passed to post deployment job</li>
+                  <li>It has been ensured that post deployment job executes only when at least one artifact gets deployed</li>
+                  <li>One can now independently choose the blueprint and model revisions to provision / update to rather than having to choose the latest configuration for each�</li>
+                  <li>One can now choose any revision of the blueprint / model to provision starting from where the instance is at to the latest</li>
+                  <li>We now show the latest stream revision  in the Build column as well</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: RCU prefix was generating rogue global variables if it has property references</li>
+                  <li>Bug fix: Values for the timestamp fields were not being formatted properly in the CSV output</li>
+                  <li>Bug fix: The Audit fields were not being shown for the Compute definition</li>
+                  <li>Bug fix: The Yes / No options to restart nodes on a patch action no longer render in the drop-down</li>
+                  <li>It has been ensured that list of values appearing in "Deployed Artifact" modal windows are paginated in right order</li>
+                  <li>The action history now shows the revision numbers with the correct prefix for deployments</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.1.1.3">MyST Studio 5.1.1.3 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed: The correct version numbers are now being shown in the deployed artifacts report.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.1.1.2">MyST Studio 5.1.1.2 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>A stream in the release pipeline now supports Different versions of Platform Blueprints per stage.</li>
+                  <li>Improvement on the deployment artifacts list rendering when names are too long.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed: View Actions log sometimes doesn't show the log contents.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.1.1.1">MyST Studio 5.1.1.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Application model bulk edit is now supported</li>
+                  <li>Application model data is now passed to post deployment job</li>
+                  <li>One can now see the streaming of logs from the Action history dialog as well</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Issue with MyST Studio getting frozen when user access Deployed Artifact Report has been resolved</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.1.1.0">MyST Studio 5.1.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>The user can now view the revision history of platform blueprints and models and start editing from an older revision if required</li>
+                  <li>When an action is infinitely stuck, MyST now allows to abort the action as well as the remote process on a best-effort basis</li>
+                  <li>The release pipeline now allows one to configure post-deployment CI jobs and executes them</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now alerts the customer after log in in case the license is about to expire within 15 days so that he can take necessary measures for renewal if required.</li>
+                  <li>MyST now supports provisioning SOA Suite and OSB into Solaris SPARC and x86_64 infrastructure</li>
+                  <li>MyST now supports introspection OFMW environments running on Solaris SPARC and x86_64 infrastructure</li>
+                  <li>For newly discovered hosts (which are not part of the infrastructure provider), the user can now change the host name after the introspection is complete before saving his configuration</li>
+                  <li>The option to re-provision as part of update is deprecated and instead the option is available from the Actions menu itself</li>
+                  <li>The actions available to be performed on an instance are now restricted based on the state of the instance</li>
+                  <li>An instance update action no longer gets executed if the provisioning fails</li>
+                  <li>General improvements and bug fixes for Release pipeline editing</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix - In the Action history and control dialogs, the state of the model was being shown as Draft even when it was committed. This is fixed now.</li>
+                  <li>Bug fix - When a blueprint / model has invalid references, MyST does a validation before saving the configuration to prevent it from getting corrupted.</li>
+                  <li>All screens of MyST are now functional and render properly on Internet Explorer 11</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.1.0.2">MyST Studio 5.1.0.2 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Sequence of application blueprints (within a stream) is now captured and it governs the order in which application blueprints are deployed to target environment</li>
+                  <li>It is now possible to distinguish between platform and application blueprints inside release pipeline view</li>
+                  <li>It is now possible to navigate to platform and application blueprints from release pipeline view, by clicking on corresponding hyperlinks that opens up detail page (of platform & application blueprints) into a new window</li>
+                  <li>You can now define in your Release Pipeline if platform updates should be skipped. This is useful if you want to use MyST for deployments only</li>
+                  <li>SVN URL has been made to wrap in case it exceeds horizontal width of the artifact detail pane</li>
+                  <li>Most of the tables and drop-downs are now sorted by the name of the entity in question</li>
+                  <li>When performing the action Patch, we now show an explicit message so that the user is better informed on how to properly run it.</li>
+                  <li>It is possible now to view the details of deployed artifacts in a given stage of a release pipeline / stream.</li>
+                  <li>When configuring the MyST Studio Jenkins plugin, you can now save the settings even if MyST Studio is unreachable</li>
+                  <li>MyST can now stream the execution log for actions that run against an instance, thereby giving the user a richer user experience.</li>
+                  <li>MyST now allows one to explicitly indicate that he wants to update passwords while performing an Update action and if so, updates all passwords for the Platform Instance</li>
+                  <li>Performance improvements while rendering Platform Models and running actions against Platform Instances</li>
+                  <li>You can explicitly define a listen address for OHS</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now deploys MDS prior to Composites</li>
+                  <li>Issue around having save button for third party artifacts has been fixed now</li>
+                  <li>Fixed: Node Manager identity key store passphrases fail if there is a special character</li>
+                  <li>Fixed: Dependent patches not rolled back in reverse order</li>
+                  <li>Fixed: Issues related to some Workmanager mappings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.0.1.1">MyST Studio 5.0.1.1 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio now supports Oracle BI Publisher 12.2.1</li>
+                  <li>MyST Studio now supports managing Custom Actions (WLST and Jython Interpreters)</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Release Pipeline, Continuous Delivery Profile and Artifact usability improvements and fixes</li>
+                  <li>You can now redeploy all artifacts against a Platform Instance. That's useful in cases where you re-provision your platform.</li>
+                  <li>You can now define in your Release Pipeline if platform updates should be skipped. This is useful if you want to use MyST for deployments only</li>
+                  <li>Usability improvement: Properties under platform blueprint related to patching, which are not commonly used, are now shown only in the advanced view.</li>
+                  <li>You can now define which order the Application Blueprints within a Stream will be deployed</li>
+                  <li>AWS On-Demand provisioning now supports Mumbai, Ohio and Seoul Regions</li>
+                  <li>MYST Studio installer provides clearer instructions on the post-install actions</li>
+                  <li>SOA Extensions deployment are now supported for SOA 12.2.1</li>
+                  <li>The MyST License details are now visible in MyST Studio</li>
+                  <li>When configuring the MyST Studio Jenkins plugin, you can now save the settings even if MyST Studio is unreachable</li>
+                  <li>MyST Studio Jenkins plugin now also supports building artifacts from a Jenkins slave</li>
+                  <li>The MyST Jenkins plugin now resolves the Maven properties before reporting them to MyST Studio. You can now have property references such as ${project.artifactId}</li>
+                  <li>Improvements on Weblogic Workmanager support</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed: Updating wsm-pm target used to cause a NullPointerException</li>
+                  <li>Fixed: The NGINX routing rules was not redirecting HTTPS traffic for specific URL patterns</li>
+                  <li>Fixed: In some circumstances MyST execution was hanging when the target nodes had Kerberos enabled</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.0.0.3">MyST Studio 5.0.0.3 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed: Issue when provisioning/updating an environment with Weblogic Mail Session</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.0.0.2">MyST Studio 5.0.0.2 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now has a continuous delivery release pipeline which allows you to apply and promote code and configuration changes from lower to higher environments</li>
+                  <li>MyST now has the ability to introspect an existing WebLogic domain and generate a platform blueprint and optionally a platform model from it</li>
+                  <li>MyST can now be used to  generate  a platform blueprint for a higher middleware version based on an existing blueprint which is at a lower middleware version</li>
+                  <li>MyST now supports provisioning of OBIEE 12c</li>
+                  <li>MyST now supports deployment of BAM 12.2.x artifacts</li>
+                  <li>MyST now supports deployment of MFT and B2B artifacts</li>
+                  <li>MyST now supports configuration of WebLogic Store-and-forward resources (agents, remote contexts, imported destinations and error handling)</li>
+                  <li>MyST now supports Archiva 2.2.x as a binary repository manager for artifacts</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now allows the user to explicitly commit platform blueprints and models and allows them to work on draft revisions until they are ready to be committed.</li>
+                  <li>MyST now allows only committed revisions to be used in platform provisioning, updates and also as part of a release pipeline</li>
+                  <li>One can no longer have multiple platform model versions for the same blueprint version. There can only be one model configuration per blueprint version</li>
+                  <li>MyST now shows more meaningful revision prefixes for platform blueprints / models, application blueprints / models as well as release pipeline stream and stage revisions</li>
+                  <li>MyST now shows revisions everywhere irrespective of the state of the platform blueprint / model so that it is less ambiguous to  the user</li>
+                  <li>For on-demand AWS instance provisioning, one now has the option to retain the instances in case of provisioning failures. Previously we were auto-terminating instances but now this choice lies with the user</li>
+                  <li>For artifact configuration plans, the user now needs to specify less metadata and MyST discovers the plan automatically if configured with proper naming conventions</li>
+                  <li>For AWS RDS, MyST now handles dropping of connections more gracefully when the instance is terminated and does not report back errors in event of already closed connections</li>
+                  <li>MyST now allows users to define a custom Maven settings in MyST Studio, which will be used to retrieve artifacts at deployment time. Previously, the Maven settings had to be defined on the target host and was not controlled by MyST.</li>
+                  <li>WebLogic Authenticator for OpenLDAP can now be configured with MyST</li>
+                  <li>Migratable targets are now supported for Weblogic resources update</li>
+                  <li>Per-host Node Manager can now be enabled using MyST</li>
+                  <li>Custom nodemanager.properties can now be set using MyST</li>
+                  <li>SOA Mbeans can now be configured on 12.2.1.1.0</li>
+                  <li>MyST now allows one to configure SSL for OHS</li>
+                  <li>MyST now allows one to define a custom log format for OHS</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed: RCU fails on 12.2.1 when the temp and default tablespaces are customised</li>
+                  <li>Fixed: Node Manager listen address does not get set for per host node manager</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.1.5">MyST Studio 4.0.1.5 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Added support for Weblogic custom system policy</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: patch-domain action has fixes and improvements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.1.4">MyST Studio 4.0.1.4 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: When JSSE is enabled MyST sets weblogic.security.SSL.minimumProtocolVersion property to TLSv1.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.1.3">MyST Studio 4.0.1.3 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Fixed issue in the patch-domain action, which was introduced in 4.0.1.2</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.1.2">MyST Studio 4.0.1.2 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>CD feature improvements related to third-party artifact registration</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: MyST  now successfully configures multiple custom environment variables for a FMW domain in setUserOverrides.sh/cmd</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.1.1">MyST Studio 4.0.1.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Auditing feature improvements</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Fixed issue where the dialog for creating a blueprint from a template was not opening due to a JavaScript issue</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.1.0">MyST Studio 4.0.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now audits changes and actions, providing reports available on the UI, as well as CSV export capability.</li>
+                  <li>The Installation and associated RCU actions for OBIEE 12.2.1.1 are now supported.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>The end user can now see the post deployment job execution log along with the main execution log after deployment of an application blueprint revision.</li>
+                  <li>If a password is a property reference, the reference gets shown in clear text rather than as ‘*****’</li>
+                  <li>The end user can now skip the SCA 11g compilation phase during the build process.</li>
+                  <li>The OTD listener is now part of the MyST platform lifecycle, supporting start/stop/terminate actions.</li>
+                  <li>The Out of the box Derby database is not enabled as part of OSB 12c provisioning anymore.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Irrespective of the region chosen, when using Instance Profile as the authentication type, the US East region was being used for discovering resources.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.0.1">MyST Studio 4.0.0.1 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Third-party artifact registration stopped working after 4.0.0.0 was released</li>
+                  <li>Bug fix: Promotion of application blueprint revisions stopped working after 4.0.0.0 was released</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="4.0.0.0">MyST Studio 4.0.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Administrators can now override the status of a Platform Instance so they can manually reconcile and mark them according to the correct state</li>
+                  <li>BPMN Mbeans can now be configured using MyST</li>
+                  <li>For on-demand AWS infrastructure, one can now use the IAM role for authentication</li>
+                  <li>RecurringScheduleConfig can now be configured through a MyST platform blueprint</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Additional JMS and Authentication Provider configuration parameters are available in the core model</li>
+                  <li>Improvements in the way actions against an instance get executed concurrently</li>
+                  <li>The properties popover now shows a textual description in addition to the reference expression</li>
+                  <li>MyST Studio now supports retry of execution of successful latest deployment</li>
+                  <li>For on-demand AWS infrastructure, MyST now allows one to specify whether or not the compute nodes need to be terminated in event of a failure during provisioning</li>
+                  <li>MyST no longer shows stale platform instances which were associated with the workspaces</li>
+                  <li>Actions pending for a platform instance can now be skipped from the UI</li>
+                  <li>MySt now shows both the action history for an instance as well as all the pending (future) actions that have been lined up for it</li>
+                  <li>Irrespective of however many actions are pending for an instance, a provision or a terminate action always takes precedence and skips the others which are pending</li>
+                  <li>When MyST Studio crashes, the actions which are currently marked as in progress automatically move to the state of INDETERMINATE and the user can manually override the status of the instance to do the necessary reconcilliation</li>
+                  <li>Validation errors inside the AMI section are now also indicated at the header level for the user to easily spot</li>
+                  <li>For the on-demand AWS infrastructure provider, the Owner field is not relevant anymore and hence removed.</li>
+                  <li>BAM and BPM routing rules for Oracle HTTP Server are now automatically computed by MyST Studio</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: If a property reference is made to the Host ID field of the Compute Node, the model view fails to render and renders in it becoming unusable</li>
+                  <li>Bug fix: Made sure that browsers (IE 11 in particular) do not cache any data provided by the server</li>
+                  <li>Bug fix: There was a bug which was throwing an error when creating a Blueprint with OTD 12.2.1.1.</li>
+                  <li>Bug fix: Improved the performance while rendering the platform model list screen</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.9.2.0">MyST Studio 3.9.2.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Improvements to shutdown time for the WebLogic admin server for 12c products</li>
+                  <li>The transaction recovery privilege can now be enabled for the SOAINFRA database as part of the RCU execution</li>
+                  <li>MyST Studio can now successfully provision an OAG instance containing OAG Analytics</li>
+                  <li>MyST Studio now supports execution of post deployment jobs, for ALL Application Blueprints which are affected by the build of an Artifact</li>
+                  <li>MyST Studio can successfully provision a collocated OTD domain using WebLogic 12.2.1 with managed servers.</li>
+                  <li>MyST Studio supports a new feature to view Application Blueprints in list / card layout. List layout provides search capability for each columns.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: In Artifact UI even when number of builds are more than 15, it gets properly displayed now. A vertical scroll appears to accommodate rolling up / down the list</li>
+                  <li>Bug fix: Fixed issue where the dialog for creating a blueprint from a template was not opening due to a JavaScript issue</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.9.1.0">MyST Studio 3.9.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Ability to configure the WSM keystore</li>
+                  <li>FMW version 12.2.1.1.0 is now supported by MyST Studio</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>patch-domain now updates all servers in a platform and allows to customise the domain.home directory</li>
+                  <li>Artifact build numbers are now numerically sorted in descending order</li>
+                  <li>A user-friendly error message is displayed when deletion of application blueprints / application blueprint versions fail due to existence of cross-references to other entities</li>
+                  <li>WLST security objects can now be automatically converted to myst-extension</li>
+                  <li>Removed unnecessary targeting from mds-owsm for ESS</li>
+                  <li>UI editor assistance is now available while constructing the post deployment job name using the pre-defined variables</li>
+                  <li>The platform instance report view now shows JCA adapters, JMS configuration, Authentication providers and Startup / Shutdown classes</li>
+                  <li>For Safari, the users are no longer presented with the Download option (as it does not work) and instead they can view the log and copy to clipboard using the icon provided</li>
+                  <li>MyST now supports updating configuration via the 'update' action for OTD</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: When Exalogic was enabled in an MFT domain it was auto-computing SOA and OSB as products</li>
+                  <li>Bug fix: The target URL for Java projects can now be stripped of the version when deployed through MyST Studio</li>
+                  <li>Bug fix: Passwords are now hidden in dry run execution logs.</li>
+                  <li>Bug fix: MyST now correctly provisions configurations using OHS 12.2.1.1.0</li>
+                  <li>Bug fix: Start/Stop of OAG instances was not working in an Exalogic environment</li>
+                  <li>Bug fix: Password fields were being shown in clear-text (even if encrypted) and the labels for the fields too were not being displayed properly</li>
+                  <li>Bug fix: Deletion of an artifact having more than one version was failing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.9.0.3">MyST Studio 3.9.0.3 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed an issue with passwords not hidden in dry run execution logs.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.9.0.2">MyST Studio 3.9.0.2 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Oracle Fusion Middleware (Integration) 12.2.1.1 is now supported (Preview).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.9.0.1">MyST Studio 3.9.0.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>OAG patches are now specified the same way as for OFMW products.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.9.0.0">MyST Studio 3.9.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>B2B 12.1.3 and 12.2.1 are now supported in MyST Studio</li>
+                  <li>OTD 12.2.1 installation is now supported</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>The user can now change their own password in MyST Studio</li>
+                  <li>If the admin server has JSSE Enabled specified as true, MyST now sets the correct JVM parameters</li>
+                  <li>Exalogic Shared Deployment directory is aligned with EDG</li>
+                  <li>We now prevent the user from clicking on the promote button multiple times</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: NGINX mappings to MyST Studio are correct now.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.2.3">MyST Studio 3.8.2.3 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: RCU Post Create custom SQL couldnt be executed with the Sys password</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.2.2">MyST Studio 3.8.2.2 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Remote installation now performs a homogeneous installation of all products for 11g </li>
+                  <li>Configuring Keystore Providers and Trusted SAML Issuers in a domain with SSL enabled is now supported</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.2.1">MyST Studio 3.8.2.1 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: In a Docker environment, the MyST license was not being picked up correctly though it was present in the right location</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.2.0">MyST Studio 3.8.2.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Patches can be applied in a rolling manner to selective nodes with the option to restart the servers running on the nodes as well once they are patched</li>
+                  <li>One can now execute different post deployment jobs per environment even while using the same Application Blueprint.</li>
+                  <li>MyST Studio computation simplifies Exalogic EDG compliance</li>
+                  <li>MyST Studio now reports exceptions in a consistent manner with proper error codes and debug information, allowing end users to contact support with much more concrete information about an issue.</li>
+                  <li>MyST now supports selection of RDS as the data source type in the platform model wizard along with Gridlink and Generic. It auto-computes the SYS user name based on the data source type</li>
+                  <li>MyST now supports an additional flag argument, 'limit-nodes' which can be set to limit the action to specific nodes. All actions which manage start / stop lifecycle of servers / machines honor this (patch, stop, stop-all, start-all, restart-all, start-nm, stop-nm, etc.)</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Platform Blueprint and model improvements. We display now only the fields related to the selected components. So if no WebLogic domain or RCU exists, those componets do not appear in all screens, nor in the tree view</li>
+                  <li>MyST Studio now supports start, stop and terminate operations for OAG configurations.</li>
+                  <li>MyST Studio now ensures that OAG instances are assigned with an ordering consistent with the ordering of nodes in a configuration.</li>
+                  <li>DNS lookup to create fully qualified domain names for hosts must now be enabled via the -Ddns.domain-name.generation=on parameter, and does not happen by default.</li>
+                  <li>MyST Studio allows deletion of a specific version of an artifact (as long as the version is not already part of any application blueprint)</li>
+                  <li>Note - The update action no longer applies patches. To apply it, one would have to first update the instance to the version of blueprint / model which has patches and then explicitly apply them using the patch command from the control menu</li>
+                  <li>The memory settings in the Advanced configuration step of the platform model wizard now show MFT, BAM and ESS</li>
+                  <li>For pre-existing infrastructure, MyST now only establishes connectivity with the Admin node. For on-demand, it establishes connectivity with all the nodes as before.</li>
+                  <li>Security improvement: RCU system password can be used only by RCU actions</li>
+                  <li>MyST Studio UI was performing slower than desired as it was making a lot of redundant API calls to the backend</li>
+                  <li>You can now add additional parameters to be taken by the OFMW installation. e.g: -Doui.additional.args=-ignoreSysPrereqs</li>
+                  <li>You can now specify the RCU property for OFMW 12.2.1: soa-profile-type=LARGE, which will use partitioning on the SOA schemas</li>
+                  <li>MyST now allows one to have composite actions as part of pre / post of other actions</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug Fixed: Patches under fmw-common can now be applied. e.g: For OWSM</li>
+                  <li>Bug fix: MyST Studio was not looking for the license under conf/fusioncloud/license when the user logs in</li>
+                  <li>Bug fix: MyST Studio now reports errors for an invalid / missing license correctly rather than saying that the user id / password are invalid</li>
+                  <li>Bug fix: If a blueprint version is finalized without making any changes, the instance prompts one to update to the latest version though it is already up to date</li>
+                  <li>Bug fix: When a blueprint version is finalized, the instances start showing out-of-date even though they are at the latest version / revision</li>
+                  <li>Bug fix: The start-nm command honours the -Dmachines override now</li>
+                  <li>Bug fix: Provisioning was failing when one has OSB, SOA, BAM, BPM, ESS and ADF 12.2.1</li>
+                  <li>Bug fix: On session expiry, the user is now automatically redirected to the login screen with the error message shown in-place</li>
+                  <li>Bug fix: Deleted users were causing exceptions when trying to configure users within a workspace.</li>
+                  <li>Bug fix: MyST Studio does not allow deletion of platform blueprint version if it is associated with any application blueprint versions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.1.1">MyST Studio 3.8.1.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Prerequisite patch IDs are now honoured by the update implementation</li>
+                  <li>Patching during provisioning and re-provisioning happens in parallel.</li>
+                  <li>Re-provisioning is significantly faster as it does not try to re-apply patches that already exist</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.1.0">MyST Studio 3.8.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now supports overriding the targeting of admin components in the platform model by either splitting to have a separate admin group & node or merging a standalone node into one of the other compute groups</li>
+                  <li>OAG Patch 11g is now supported</li>
+                  <li>You can now define multiple versions for Third Party artifacts</li>
+                  <li> Source control details for SVN and GIT are now shown in the Artifact list view</li>
+                  <li>MyST now allows DBAs to define pre and post SQL to be executed at schema creation-time during platform provisioning</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now does default targeting for components in the platform blueprint wizard</li>
+                  <li>MyST now allows to change the name and description of platform blueprints and models after they are created</li>
+                  <li>MyST now allows to change the value of the auto-deploy flag for platform models after they are created</li>
+                  <li>MyST now supports distribution of the JCA deployment plans to all nodes if the filesystem is not shared across hosts</li>
+                  <li>MyST now generates IDs for all resources after sorting them in alphabetical order, thereby ensuring that relationship between resources don�t appear to be incorrect. e.g. Node 1 would now point to  WebLogic machine 1 rather than 2 as was happening earlier</li>
+                  <li>The popover for properties now auto-hides when one moves away. Also, there is now an option to copy the reference expression to clipboard by just clicking an icon besides the expression</li>
+                  <li>MyST now supports the destroy action with a non-standard inventory location pointer file (identified via the oui.inventory.loc property) </li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix:  Unable to view CDP with View permissions assigned to Role</li>
+                  <li>Bug fix:  Application Blueprint post job invocation wasn't working in some circumstances.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.0.1">MyST Studio 3.8.0.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>BSU is supported now as part of platform update</li>
+                  <li>While doing "Save As New" for Application Blueprint Version, MyST Studio now validates that the user has not provided existing version number as input</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The platform update was always updating password, hence requiring a server restart even if the password was not changed</li>
+                  <li>Bug fix: configure-jca was setting the password parameters in encrypted form rather than clear text</li>
+                  <li>Bug fix: Even when the configuration plan was not getting applied, the deployment was marked as successful</li>
+                  <li>Bug fix: The security action in 12c was failing if credentials maps are defined as part of the model</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.8.0.0">MyST Studio 3.8.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>ADF 12.2.1 is now supported in MyST Studio</li>
+                  <li>Webcenter Portal 12.2.1 is now supported in MyST Studio</li>
+                  <li>Application blueprint versioning is now supported</li>
+                  <li>The MyST Studio Jenkins plugin is now available for download in the MyST website</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio Jenkins plugin does not depend on Artifactory plugin anymore</li>
+                  <li>The Jenkins versions in the Continuous Delivery Profile are now being expressed as major version, rather than minor versions</li>
+                  <li>Improved the support for SOA tuning parameters</li>
+                  <li>The MyST agent and MyST workspace directories on the target hosts can now be customised in MyST Studio. The temporary files are now being saved under the MyST temporary workspace, and are deleted when MyST agent completes its execution.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Fixed URL parsing when invoking SQL action using Oracle native SQLPlus client</li>
+                  <li>Bug fix: Custom XPath deployment failed after deploying OWSM Policies</li>
+                  <li>Bug fix: The RCU prefix is now converted to upper case. That fixes issues when MyST rcu drop action wasn't dropping the database schemas for JMS database persistence</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.7.2.0">MyST Studio 3.7.2.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now supports Solaris 11 as a supported operating system for provisioning</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>The global connection pool parameters are now part of the JCA model and need not be specified as custom properties</li>
+                  <li>The version and feature toggles for the product are now packaged inside the binary itself</li>
+                  <li>ADF is now supported as part of WLS vanilla cluster</li>
+                  <li>UMS Configuration is now supported in 12c</li>
+                  <li>Application Blueprint and artifacts can now be deleted, as long as they are not associated with other resources or grants</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The global connection pool parameters were not supported in the new JCA implementation</li>
+                  <li>Bug fix: Some of the properties were lost during actual provisioning when multiple instances of a JCA adapter was being configured</li>
+                  <li>Bug fix: SOA partitions could not be created when SSL was enabled. The issue still exists but now partitions can be created when the plain listen port is enabled in addition to SSL</li>
+                  <li>Bug fix: Running a dry run for JCA updates was sometimes leaving the plan files in an inconsistent state</li>
+                  <li>Bug fix: All 11g environments started failing whiling starting the managed servers as part of the provisioning</li>
+                  <li>Bug fix: Fixed an issue with the api key not being able to be copied in Firefox</li>
+                  <li>Bug fix: Configuration plan for composites were not being set as part of the reverse registration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.7.1.0">MyST Studio 3.7.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio now supports deployment of either third party libraries, or artifacts not built by the CI Server</li>
+                  <li>MyST Studio supports now the deployment of Jar libraries, ADF, Application Configuration and third party libraries</li>
+                  <li>MyST now supports provisioning WCP 12.2.1 domains</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Artifacts list now shows all the versions for the artifacts</li>
+                  <li>RCU JMS/TLOG persistent component WLSDSTORE now supports honor-OMF</li>
+                  <li>Label changes to improve usability of the MyST Studio Jenkins plugin</li>
+                  <li>SCM URL improvements as part of the artifact registration. The details provided by the CI server represent the source of truth now</li>
+                  <li>Environment type can now be deleted. Enabling an disabling environment types is no longer supported</li>
+                  <li>JCA adapter configuration is now supported as part of platform update</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Fixed issue that prevented to specify the J2EE deployment order</li>
+                  <li>Bug fix: Fixed issue that was causing intermittent network communication issues between MyST Studio and MyST Agent</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.7.0.0">MyST Studio 3.7.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>CD Reverse Registration Preview for OSB, SOA, MDS 12.2.1, J2EE, Application configuration, OWSM Policy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.6.2.1">MyST Studio 3.6.2.1 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio now supports OWSM Policies in 12c</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.6.2.0">MyST Studio 3.6.2.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio now supports the definition of WebLogic vanilla clusters and servers</li>
+                  <li>EM Credential Maps in 12c are now supported</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Improvements to the data validation for update and provision change messages</li>
+                  <li>MyST now is able to co-ordinate deployment of multiple application blueprints sequentially when an  artifact is part of more than one blueprints</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The topology diagram was not rendering if there were clusters without products on them</li>
+                  <li>Bug fix: The topology diagram was not re-rendering when components were added / removed or renamed</li>
+                  <li>Bug fix: The topology diagram was not scrollable when both the horizontal and vertical scroll bars were simultaneously visible</li>
+                  <li>Bug fix: MyST Studio jenkins plugins was losing the API key in the Jenkins config, whenever there was an update in the config other than the API key itself.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.6.1.0">MyST Studio 3.6.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio now supports authentication through API keys which can be selectively generated, enabled and disabled for particular users</li>
+                  <li>The application blueprint can now be configured to have an optional post deployment job on the CI server which is kicked off in a fire-and-forget manner by MyST Studio</li>
+                  <li>A new option is provided in the platform model whereby a platform update is automatically performed before a deployment happens against an instance</li>
+                  <li>It is now possible to specify most of the common logging configuration for the WebLogic servers</li>
+                  <li>It is now possible to configure mail sessions as part of blueprints / models</li>
+                  <li>It is now possible to specify JTA timeout as part of blueprints / models</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Key-value style platform properties can now be edited in bulk through the UI</li>
+                  <li>The LDAP provider configuration has been extended to support additional configuration parameters</li>
+                  <li>The startup and shutdown class configuration has been extended to support additional configuration parameters</li>
+                  <li>The platform model now shows all actions taken against it irrespective of provisioning / termination to provide better traceability</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Node manager computation was incomplete when there is a customisation on the Admin Server properties</li>
+                  <li>Bug fix: The console URLs were not being computed correctly when SSL was enabled</li>
+                  <li>Bug fix: oui.inventory.loc default value /etc/oraInst.loc was not computed for MyST Studio, and was resulting in the instance configuration getting messed up</li>
+                  <li>Bug fix: Translation of key-value style params to the properties form does not work if it contains reserved characters ('[' or ']')</li>
+                  <li>Bug fix: Reordering of LDAP providers was not working</li>
+                  <li>Bug fix: Persistence strategy for one data sources was affecting the setting for other data sources</li>
+                  <li>Bug fix: The node manager settings dont seem to get applied if previous changes are introduced in online mode which require a server restart</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.6.0.0">MyST Studio 3.6.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Continuous Delivery: OSB artifact reverse registration initiated by the CI Server</li>
+                  <li>Continuous Delivery: Plugin to integrate Jenkins with MyST Studio reverse artifact registration</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Changing the Oracle inventory loc file is now supported in MyST Studio</li>
+                  <li>Oracle inventory now defaults to the standard /etc/oraInst.loc if not specified</li>
+                  <li>All sensitive platform properties (passwords, passphrases, etc.) now use password fields to accept input</li>
+                  <li>A workspace cannot be deleted if it has resources and all resources have to be associated with at least one workspace</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: All wizards used to hang when the user did not have permissions to create the underlying resource. The fix allows the user to cancel the wizard if there are access errors</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.5.1.0">MyST Studio 3.5.1.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Patches can be applied now as part of the platform update.</li>
+                  <li>You can now specify Identity store details and additional Java arguments to the node manager</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>The platform instance record was getting upgraded to a higher version after an update even if the update fails</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.5.0.1">MyST Studio 3.5.0.1 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Added mystsystemuser as an out of the box user which is used for API calls from MyST CLI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.5.0.0">MyST Studio 3.5.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST now supports SSL configuration for WebLogic, including custom identity and trust stores</li>
+                  <li>MyST now supports JMS resources as part of the blueprint and model configuration</li>
+                  <li>MyST now supports LDAP, OID and Active Directory authentication providers as part of the blueprint and model configuration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.4.2.2">MyST Studio 3.4.2.2 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: Form validation issues were preventing editing infrastructure provider data</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.4.2.1">MyST Studio 3.4.2.1 Release</h1>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The user login was not working and was getting into an infinite loop</li>
+                  <li>Bug fix: Whenever the memory arguments were overriden in the platform model wizard, the model creation was failing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.4.2.0">MyST Studio 3.4.2.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio now shows the installers under each product definition</li>
+                  <li>MyST supports auto-installing Maven on the target host, which will assist on build/deploy tasks</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>The MyST license was not being loaded from the right location in 3.4.1.0, causing the access to get blocked when one tries to login</li>
+                  <li>Bug fix: Whenever the memory arguments were overriden in the platform model wizard, the model creation was failing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.4.1.0">MyST Studio 3.4.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Oracle SOA Suite 12.2.1 is now supported</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: The provisioning used to hang when a large amount of log was generated by the background process</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.3.1.0">MyST Studio 3.3.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Platform Instance Reporting is now available</li>
+                  <li>Added contextual help links to the user guide and included the user guide as part of the MyST Studio distribution</li>
+                  <li>Introduced the ability to start, stop and restart the domain as well as execute any custom MyST actions with arguments against an active platform instance</li>
+                  <li>Introduced the ability to reset manual configuration drift that has happened for a platform instance</li>
+                  <li>Oracle JCS is now supported (Preview)</li>
+                  <li>Continuous Delivery support for Oracle Fusion Middleware (Preview)</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Check for drift and dry run views now show the original and changed values in addition to the property names</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Fixed issue related to cloning nodes in the blueprint, such as datasources</li>
+                  <li>Fixed the browser caching issue to ensure a hassle-free user experience while receiving version upgrades</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.3.0.0">MyST Studio 3.3.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Ability to version platform blueprints and models to support the entire platform cycle</li>
+                  <li>Ability to associate pre-provisioned platform instances with platform models</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Ability to switch between view and edit modes of platform blueprints and models without losing the context</li>
+                  <li>The toggle buttons appearing in the platform blueprint, model and instance views have been removed and the user experience is now improved with the introduction of adjustable split panes</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Bug fix: When pre-existing infrastructure is selected in the platform model wizard, the user names and key pairs were not appearing in the host summary view</li>
+                  <li>Bug fix: Filtering by platform blueprint was not working and the model list view was rendering all the models irrespective of the chosen blueprint</li>
+                  <li>Bug fix: User Guide in MyST Studio now links to the MyST website documentation.</li>
+                  <li>Bug fix: MyST extension was not being saved in some situations where additional white spaces were set between two tags</li>
+                  <li>Bug fix for: JCA Adapter is now set correctly during provisioning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.2.2.0">MyST Studio 3.2.2.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Infrastructure Provider deletion is now supported</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>MyST Studio  now takes care of the race condition when instance launch and tagging occur close to each other in time</li>
+                  <li>AWS Ids are shown when managing the infrastructure provider, for: AMI, VPC, Subnet, Security Group</li>
+                  <li>Can search by the AWS Ids when managing the AWS infrastructure provider</li>
+                  <li>CIDR blocks are shown for VPC and subnets when managing AWS Infrastructure provider</li>
+                  <li> AWS resources which are part of the infrastructure but removed from AWS are now shown as strikethrough on re-discovery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.2.1.0">MyST Studio 3.2.1.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Allows for the WebLogic machines to be named based on the user-defined Compute Node Name in MyST Studio</li>
+                  <li>MyST Studio now shows the required product installers</li>
+                  <li>Improves the way that 12c webtier components are displayed in the blueprint and model view</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.2.0.0">MyST Studio 3.2.0.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Support for pagination, search and sorting for: AWS AMIs, Instance Types, Credentials</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>AWS SSH keys are not shown in the UI when doing the first infrastructure discovery</li>
+                  <li>Browser keeps refreshing in all screens after accessing the Platform Instances</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.1.5.0">MyST Studio 3.1.5.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Provides automated MyST agent setup on target nodes</li>
+                  <li>Provides ability to update platform models from MyST Studio</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Provides ability for setting privileged and agent users from within MyST Studio</li>
+                  <li>Provides MyST Studio with support for AWS EC2 instance type family m4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.1.4.0">MyST Studio 3.1.4.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Provides ability to seed data to MyST Studio on boot</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Improved validation in Platform Blueprint wizard</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.1.3.0">MyST Studio 3.1.3.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>AWS credentials can be updated directly in MyST Studio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.1.2.0">MyST Studio 3.1.2.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Full support for AWS provisioning in MyST Studio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.1.1.0">MyST Studio 3.1.1.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>Ability to manage pre-existing infrastructure providers through the user interface</li>
+                  <li>Ability to manage compute definitions through the user interface</li>
+                  <li>Ability to manage environment types through the user interface</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="3.1.0.0">MyST Studio 3.1.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>First major release, providing users the ability to design platform blueprints and models and provision them to pre-existing infrastructure</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Main Content -->
+
+    <footer class="footer text-left" role="footer">
+      <section class="footer-3 bg-black">
+        <div class="container">
+          <div class="row">
+            <div class="full-grid">
+              <p class="text-center">Copyright &copy; Rubicon Red 2015</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--End of Footer -->
+        <!-- All JavaScript files -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waterfall.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/comment-reply.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/myst.js"></script>
+  </body>
+</html>

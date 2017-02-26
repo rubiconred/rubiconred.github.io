@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Layout of website
+   ========================================================================== */
+
+/*Container*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-size-adjust: 100%;
+    font-size-adjust: 100%;
+    outline: 0;
+}
+.container,
+.container-fluid {
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.container {
+    width: 1170px\9;
+}
+
+/*row*/
+.row{
+    display: block;
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.container:before,
+.container-fluid:before,
+.container:after,
+.container-fluid:after,
+.row:before,
+.row:after{
+    display: table;
+    clear: both;
+    content: "";
+}
+/*Girds*/
+
+.full-grid,
+.half-grid,
+.one-third-grid,
+.one-fourth-grid,
+.two-third-grid,
+.three-fourth-grid,
+.padding-grid{
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.full-grid,
+.padding-grid{
+    width: 100%;
+}
+.half-grid {
+    width: 50%;
+}
+.one-third-grid {
+    width: 33.3%;
+}
+.one-fourth-grid {
+    width: 25%;
+}
+.two-third-grid {
+    width: 66.67%;
+}
+.three-fourth-grid {
+    width: 75%;
+}
+/*Navigation Section*/
+
+.navbar {
+    display: block;
+    position: relative;
+}
+.navbar-header {
+    position: relative;
+    z-index: 100;
+    display: inline;
+    float: left;
+}
+.navbar-toggle {
+    display: none;
+}
+
+.nav {
+    position: relative;
+    display: block;
+}
+.nav:after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.nav ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    display: inline-block;
+}
+.nav-left {
+    float: left;
+}
+.nav-right {
+    float: right;
+}
+
+/*Responsive CSS layout*/
+
+@media (min-width: 768px) {
+    .container{
+        width: 750px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+    .header .nav {display: block!important;}
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media(max-width:992px){
+    .navbar-header {
+        display: block;
+        float: none;
+    }
+}
+@media(max-width:767px){
+    
+    .container,
+    .container-fluid {
+        width: auto;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .full-grid,
+    .half-grid,
+    .one-third-grid,
+    .one-fourth-grid,
+    .two-third-grid,
+    .three-fourth-grid {
+        width: 100%!important;
+    }
+}
+@media(max-width:480px){
+    .nav {
+        display: inline-block;
+        float: none;
+    }
+    .container,
+    .container-fluid {
+        width: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
