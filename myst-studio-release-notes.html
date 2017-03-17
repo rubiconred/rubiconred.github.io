@@ -61,6 +61,37 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.4.0.0">MyST Studio 5.4.0.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4017 - WebLogic introspection now supports earlier 11g versions and vanilla WebLogic clusters.</li>
+                  <li>FC-2817 - MyST TestDrive now has self service automation for start, stop and terminate.</li>
+                  <li>FC-4024 - Coherence clusters are now configurable through the user interface.</li>
+                  <li>FC-3990 - The MyST Configuration Plan can now be configured to have different behaviour for unresolved variables encountered during substitution. We can now choose to ignore the replacement, fail it (default) or replace anyway with the variable itself.</li>
+                  <li>FC-3988 - Update against an OAG model is now supported for OAG custom actions.</li>
+                  <li>FC-4025 - If there is an issue with the dry run it shows a more specific error message.</li>
+                  <li>FC-4023 - Relaxed the RCU database password validation for 12c and above.</li>
+                  <li>FC-3801 - Added validation around post-deployment jobs and changed deployment options to exclude post-deployment job options if no post-deployment job is set.</li>
+                  <li>FC-3873 - For SOA Composites, the MyST Jenkins plugin now reports back the 'composite.revision' metadata whenever the Maven property, 'composite.revision' is set.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-3565 - Platform Blueprints can now be created for use with SOA Cloud Service.</li>
+                  <li>FC-3994 - A new utility is now available for migrating existing MyST CLI customers to MyST Studio based on their workspace configuration.</li>
+                  <li>FC-3571 - The release pipeline pre-refresh display now shows the correct revisions after a deployment has completed without the need to refresh.</li>
+                  <li>FC-4029 - Fixed an issue to allow the Platform Model Name and Description to be modifiable in all cases.</li>
+                  <li>FC-3979 - Fixed an issue where the upgrade blueprint wizard was hanging indefinitely.</li>
+                  <li>FC-3714 - The SCA revision is now correctly applied to SOA composite deployments instead of defaulting to '1.0'.</li>
+                  <li>FC-4048 - Fixed issue with Artifact property updates not being published to MyST Studio in some cases</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.3.2.0">MyST Studio 5.3.2.0 Release</h1>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">

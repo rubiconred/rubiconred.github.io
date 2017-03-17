@@ -164,30 +164,31 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.3.2.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.4.0.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.3.2.0</strong></p>
+              <p><strong>What's new in v5.4.0.0</strong></p>
               <ul class="tick">
-                <li>MyST installer is available for download from the MyST web site to enable quick and easy installations to be done.</li>
-                <li>The majority of Release Pipeline updates can now be performed without needing to deactivate the Release Pipeline first.</li>
-                <li>MyST performs reachability checks for a given�platform instance before�triggering any update or deploy actions from a Release Pipeline.</li>
-                <li>Stages can be added to a new Release Pipeline without the need to�first create�a Release Pipeline Template.</li>
-                <li>Advanced SOA and BPM composite deploy-time customisation can now be supported through a MyST Configuration Plan.</li>
-                <li>MyST Studio generates a diagnostic artifact when a failure occurs which can be provided to support to assist with problem resolution. It is available for the last 5 failures for a platform instance.</li>
-                <li>MyST now prevents a user from saving a Blueprint or Model with validation errors and provides more meaningful error messages with a stack trace to facilitate easier analysis.</li>
-                <li>Application Roles can now be assigned to other Application Roles.</li>
-                <li>Improved hover text for platform status in the Release Pipeline Dashboard when no action has been taken such as a dry-run.</li>
-                <li>Improvements to the MFT introspection capability</li>
-                <li>Fixed an issue with MyST Jenkins plugin persisting MyST host and port values.</li>
-                <li>Fixed an issue related to JCA adapter�ID being�able to be defined incorrectly from the Blueprint editor.</li>
-                <li>Fixed an issue relating to Work Manager Max Threads not being correctly discovered during introspection.</li>
-                <li>Fixed an�issue with updating Release Pipelines�where�earlier removed Application Blueprints were resurfacing in some edge cases.</li>
-                <li>Fixes an issue with MFT and SOA having conflicting port values when present in the same domain, from 12.2.1.2.0 the default MFT port is different to SOA.</li>
+                <li>Platform Blueprints can now be created for use with SOA Cloud Service.</li>
+                <li>A new utility is now available for migrating existing MyST CLI customers to MyST Studio based on their workspace configuration.</li>
+                <li>WebLogic introspection now supports earlier 11g versions and vanilla WebLogic clusters.</li>
+                <li>MyST TestDrive now has self service automation for start, stop and terminate.</li>
+                <li>Coherence clusters are now configurable through the user interface.</li>
+                <li>The MyST Configuration Plan can now be configured to have different behaviour for unresolved variables encountered during substitution. We can now choose to ignore the replacement, fail it (default) or replace anyway with the variable itself.</li>
+                <li>Update against an OAG model is now supported for OAG custom actions.</li>
+                <li>If there is an issue with the dry run it shows a more specific error message.</li>
+                <li>Relaxed the RCU database password validation for 12c and above.</li>
+                <li>Added validation around post-deployment jobs and changed deployment options to exclude post-deployment job options if no post-deployment job is set.</li>
+                <li>For SOA Composites, the MyST Jenkins plugin now reports back the 'composite.revision' metadata whenever the Maven property, 'composite.revision' is set.</li>
+                <li>The release pipeline pre-refresh display now shows the correct revisions after a deployment has completed without the need to refresh.</li>
+                <li>Fixed an issue to allow the Platform Model Name and Description to be modifiable in all cases.</li>
+                <li>Fixed an issue where the upgrade blueprint wizard was hanging indefinitely.</li>
+                <li>The SCA revision is now correctly applied to SOA composite deployments instead of defaulting to '1.0'.</li>
+                <li>Fixed issue with Artifact property updates not being published to MyST Studio in some cases</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.3.2.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.4.0.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -203,8 +204,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.3.2.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.3.2.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.4.0.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.4.0.0.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -212,7 +213,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.3.2.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.4.0.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -230,6 +231,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.3.2.0</td>
+                  <td>23 Feb 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.3.2.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.3.2.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.3.2.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.3.2.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.3.2.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.3.1.0</td>
                   <td>08 Feb 2017</td>
