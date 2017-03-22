@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Documentation | Rubicon Red - MyST</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- All styles -->
@@ -165,23 +164,22 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://myst.rubiconred.com/webhelp/myst-cli-user-guide-5.4.0.0/index.html" target="_blank">MyST CLI User Guide v5.4.0.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://myst.rubiconred.com/webhelp/myst-cli-user-guide-5.4.1.0/index.html" target="_blank">MyST CLI User Guide v5.4.1.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <h2 class="doc-link">
-              <span><a href="https://myst.rubiconred.com/webhelp/myst-cli-learning-guide-5.4.0.0/index.html" target="_blank">MyST CLI Learning Guide v5.4.0.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://myst.rubiconred.com/webhelp/myst-cli-learning-guide-5.4.1.0/index.html" target="_blank">MyST CLI Learning Guide v5.4.1.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.4.0.0</strong></p>
+              <p><strong>What's new in v5.4.1.0</strong></p>
               <ul class="tick">
-                <li>A new utility is now available for migrating existing MyST CLI customers to MyST Studio based on their workspace configuration.</li>
-                <li>The MyST Configuration Plan can now be configured to have different behaviour for unresolved variables encountered during substitution. We can now choose to ignore the replacement, fail it (default) or replace anyway with the variable itself.</li>
-                <li>Relaxed the RCU database password validation for 12c and above.</li>
-                <li>If there is an issue with the dry run it shows a more specific error message.</li>
-                <li>The SCA revision is now correctly applied to SOA composite deployments instead of defaulting to '1.0'.</li>
+                <li>For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
+                <li>MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                <li>Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
+                <li>Node Manager Passphrase is masked on the file-system for added security.</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-cli-release-notes.html#5.4.0.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-cli-release-notes.html#5.4.1.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -197,7 +195,7 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <span><strong>MyST generic installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-installer-5.4.0.0.jar"><i class="fa fa-download"></i></a></span>
+                  <span><strong>MyST generic installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-installer-5.4.1.0.jar"><i class="fa fa-download"></i></a></span>
                 </h4>
                 <div class="bullet-points">
                   <p class="title">This is a generic installer for Windows, Linux & Mac. The MyST installer comprises the following components:</p>
@@ -208,7 +206,7 @@
                   </ul>
                 </div>
                 <h4 class="doc-link">
-                  <span><strong>MyST RPM</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-impl-5.4.0.0-rpm.rpm"><i class="fa fa-download"></i></a></span>
+                  <span><strong>MyST RPM</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-impl-5.4.1.0-rpm.rpm"><i class="fa fa-download"></i></a></span>
                 </h4>
                 <div class="bullet-points">
                   <p class="title">This is an RPM for installing MyST and comprises the following components:</p>
@@ -243,6 +241,28 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.4.0.0</td>
+                  <td>16 Mar 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-cli-release-notes.html#5.4.0.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-cli-user-guide-5.4.0.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-installer-5.4.0.0.jar">Generic installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-impl-5.4.0.0-rpm.rpm">RPM installer<i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.3.2.0</td>
                   <td>23 Feb 2017</td>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Documentation | Rubicon Red - MyST</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- All styles -->
@@ -164,31 +163,22 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.4.0.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.4.1.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.4.0.0</strong></p>
+              <p><strong>What's new in v5.4.1.0</strong></p>
               <ul class="tick">
-                <li>Platform Blueprints can now be created for use with SOA Cloud Service.</li>
-                <li>A new utility is now available for migrating existing MyST CLI customers to MyST Studio based on their workspace configuration.</li>
-                <li>WebLogic introspection now supports earlier 11g versions and vanilla WebLogic clusters.</li>
-                <li>MyST TestDrive now has self service automation for start, stop and terminate.</li>
-                <li>Coherence clusters are now configurable through the user interface.</li>
-                <li>The MyST Configuration Plan can now be configured to have different behaviour for unresolved variables encountered during substitution. We can now choose to ignore the replacement, fail it (default) or replace anyway with the variable itself.</li>
-                <li>Update against an OAG model is now supported for OAG custom actions.</li>
-                <li>If there is an issue with the dry run it shows a more specific error message.</li>
-                <li>Relaxed the RCU database password validation for 12c and above.</li>
-                <li>Added validation around post-deployment jobs and changed deployment options to exclude post-deployment job options if no post-deployment job is set.</li>
-                <li>For SOA Composites, the MyST Jenkins plugin now reports back the 'composite.revision' metadata whenever the Maven property, 'composite.revision' is set.</li>
-                <li>The release pipeline pre-refresh display now shows the correct revisions after a deployment has completed without the need to refresh.</li>
-                <li>Fixed an issue to allow the Platform Model Name and Description to be modifiable in all cases.</li>
-                <li>Fixed an issue where the upgrade blueprint wizard was hanging indefinitely.</li>
-                <li>The SCA revision is now correctly applied to SOA composite deployments instead of defaulting to '1.0'.</li>
-                <li>Fixed issue with Artifact property updates not being published to MyST Studio in some cases</li>
+                <li>For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
+                <li>MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                <li>The�WebLogic�machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter�these names in the subsequent editor�to be the original hostname.</li>
+                <li>The WebLogic and SOA Catalogues�within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
+                <li>Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
+                <li>Node Manager Passphrase is masked on the file-system for added security.</li>
+                <li>Improved robustness during WebLogic Introspection when JMS configuration settings have been tinkered with outside of the Admin Console - i.e. if a user removes a reference from JMS in config.xml but keeps the JMS module xml hanging around on the file system. Previously this behaviour caused an introspection failure, now, it just ignores the orphaned JMS module.</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.4.0.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.4.1.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -204,8 +194,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.4.0.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.4.0.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.4.1.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.4.1.0.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -213,7 +203,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.4.0.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.4.1.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -231,6 +221,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.4.0.0</td>
+                  <td>16 Mar 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.4.0.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.4.0.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.4.0.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.4.0.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.4.0.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.3.2.0</td>
                   <td>23 Feb 2017</td>

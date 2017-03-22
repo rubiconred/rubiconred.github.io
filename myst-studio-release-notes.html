@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Release Notes | Rubicon Red - MyST Studio</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- All styles -->
@@ -59,6 +58,28 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
+          <div class="row">
+            <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.4.1.0">MyST Studio 5.4.1.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-3264 - For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
+                  <li>FC-4046 - The�WebLogic�machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter�these names in the subsequent editor�to be the original hostname.</li>
+                  <li>FC-4001 - The WebLogic and SOA Catalogues�within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
+                  <li>FC-4032 - Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
+                  <li>FC-3322 - Node Manager Passphrase is masked on the file-system for added security.</li>
+                  <li>FC-4113 - Improved robustness during WebLogic Introspection when JMS configuration settings have been tinkered with outside of the Admin Console - i.e. if a user removes a reference from JMS in config.xml but keeps the JMS module xml hanging around on the file system. Previously this behaviour caused an introspection failure, now, it just ignores the orphaned JMS module.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.4.0.0">MyST Studio 5.4.0.0 Release</h1>
