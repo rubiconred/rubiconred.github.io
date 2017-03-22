@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Documentation | Rubicon Red - MyST</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- All styles -->
@@ -169,9 +170,9 @@
               <p><strong>What's new in v5.4.1.0</strong></p>
               <ul class="tick">
                 <li>For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
-                <li>MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
-                <li>The�WebLogic�machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter�these names in the subsequent editor�to be the original hostname.</li>
-                <li>The WebLogic and SOA Catalogues�within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
+                <li>MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users can easily push them to MyST Studio and start performing automated operations against the Platform Instances such as Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                <li>The WebLogic machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter these names in the subsequent editor to be the original hostname.</li>
+                <li>The WebLogic and SOA Catalogues within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
                 <li>Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
                 <li>Node Manager Passphrase is masked on the file-system for added security.</li>
                 <li>Improved robustness during WebLogic Introspection when JMS configuration settings have been tinkered with outside of the Admin Console - i.e. if a user removes a reference from JMS in config.xml but keeps the JMS module xml hanging around on the file system. Previously this behaviour caused an introspection failure, now, it just ignores the orphaned JMS module.</li>
