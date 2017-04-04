@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Release Notes | Rubicon Red - MyST Studio</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- All styles -->
@@ -64,17 +65,17 @@
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">
                 <ul class="tick">
-                  <li>FC-4172 - Multiple role expressions can now �be assigned against a JMS module</li>
-                  <li>FC-3537 - The default transaction support option can now be configured for JCA adapters�within the Model and Blueprint editor</li>
-                  <li>FC-4124 - Improved�robustness of artifact conflict checks by incorporating the group:artifactId:version combination</li>
-                  <li>FC-4047 - After an Application Blueprint (ABP)�is deleted, you can now�use the same ABP name again for a new ABP</li>
+                  <li>FC-4172 - Multiple role expressions can now  be assigned against a JMS module</li>
+                  <li>FC-3537 - The default transaction support option can now be configured for JCA adapters within the Model and Blueprint editor</li>
+                  <li>FC-4124 - Improved robustness of artifact conflict checks by incorporating the group:artifactId:version combination</li>
+                  <li>FC-4047 - After an Application Blueprint (ABP) is deleted, you can now use the same ABP name again for a new ABP</li>
                   <li>FC-3719 - Validation errors are now raised if different builds of the same artifact are found in a release pipeline but targeted to the same platform instance even across multiple streams</li>
                 </ul>
               </div>
               <h2 class="underlined_title">Bug Fixes</h2>
               <div class="bullet-points">
                 <ul class="tick">
-                  <li>FC-4156 - Fixed an issue when setting�Gridlink datasource�via the Platform Model wizard</li>
+                  <li>FC-4156 - Fixed an issue when setting Gridlink datasource via the Platform Model wizard</li>
                   <li>FC-4176 - Fixed an issue introduced in 5.4.1.0 which caused the legacy deploy-offline and deploy-online actions to failed</li>
                   <li>FC-4166 - Fixed an issue where Jar library redeployment fails when there is no managed server (single admin server)</li>
                 </ul>
@@ -87,22 +88,22 @@
               <h2 class="underlined_title">New Features</h2>
               <div class="bullet-points">
                 <ul class="tick">
-                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
-                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users can easily push them to MyST Studio and start performing automated operations against the Platform Instances such as Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users can easily push them to MyST Studio and start performing automated operations against the Platform Instances such as Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
                 </ul>
               </div>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">
                 <ul class="tick">
                   <li>FC-3264 - For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
-                  <li>FC-4046 - The�WebLogic�machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter�these names in the subsequent editor�to be the original hostname.</li>
-                  <li>FC-4001 - The WebLogic and SOA Catalogues�within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
+                  <li>FC-4046 - The WebLogic machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter these names in the subsequent editor to be the original hostname.</li>
+                  <li>FC-4001 - The WebLogic and SOA Catalogues within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
                   <li>FC-4032 - Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
                   <li>FC-3322 - Node Manager Passphrase is masked on the file-system for added security.</li>
                   <li>FC-4113 - Improved robustness during WebLogic Introspection when JMS configuration settings have been tinkered with outside of the Admin Console - i.e. if a user removes a reference from JMS in config.xml but keeps the JMS module xml hanging around on the file system. Previously this behaviour caused an introspection failure, now, it just ignores the orphaned JMS module.</li>
                   <li>FC-3264 - For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
-                  <li>FC-4046 - The�WebLogic�machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter�these names in the subsequent editor�to be the original hostname.</li>
-                  <li>FC-4001 - The WebLogic and SOA Catalogues�within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
+                  <li>FC-4046 - The WebLogic machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter these names in the subsequent editor to be the original hostname.</li>
+                  <li>FC-4001 - The WebLogic and SOA Catalogues within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
                   <li>FC-4032 - Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
                   <li>FC-3322 - Node Manager Passphrase is masked on the file-system for added security.</li>
                   <li>FC-4113 - Improved robustness during WebLogic Introspection when JMS configuration settings have been tinkered with outside of the Admin Console - i.e. if a user removes a reference from JMS in config.xml but keeps the JMS module xml hanging around on the file system. Previously this behaviour caused an introspection failure, now, it just ignores the orphaned JMS module.</li>
@@ -154,8 +155,8 @@
                 <ul class="tick">
                   <li>MyST installer is available for download from the MyST web site to enable quick and easy installations to be done.</li>
                   <li>The majority of Release Pipeline updates can now be performed without needing to deactivate the Release Pipeline first.</li>
-                  <li>MyST performs reachability checks for a given�platform instance before�triggering any update or deploy actions from a Release Pipeline.</li>
-                  <li>Stages can be added to a new Release Pipeline without the need to�first create�a Release Pipeline Template.</li>
+                  <li>MyST performs reachability checks for a given platform instance before triggering any update or deploy actions from a Release Pipeline.</li>
+                  <li>Stages can be added to a new Release Pipeline without the need to first create a Release Pipeline Template.</li>
                   <li>Advanced SOA and BPM composite deploy-time customisation can now be supported through a MyST Configuration Plan.</li>
                   <li>MyST Studio generates a diagnostic artifact when a failure occurs which can be provided to support to assist with problem resolution. It is available for the last 5 failures for a platform instance.</li>
                   <li>MyST now prevents a user from saving a Blueprint or Model with validation errors and provides more meaningful error messages with a stack trace to facilitate easier analysis.</li>
@@ -168,9 +169,9 @@
               <div class="bullet-points">
                 <ul class="tick">
                   <li>Fixed an issue with MyST Jenkins plugin persisting MyST host and port values.</li>
-                  <li>Fixed an issue related to JCA adapter�ID being�able to be defined incorrectly from the Blueprint editor.</li>
+                  <li>Fixed an issue related to JCA adapter ID being able to be defined incorrectly from the Blueprint editor.</li>
                   <li>Fixed an issue relating to Work Manager Max Threads not being correctly discovered during introspection.</li>
-                  <li>Fixed an�issue with updating Release Pipelines�where�earlier removed Application Blueprints were resurfacing in some edge cases.</li>
+                  <li>Fixed an issue with updating Release Pipelines where earlier removed Application Blueprints were resurfacing in some edge cases.</li>
                   <li>Fixes an issue with MFT and SOA having conflicting port values when present in the same domain, from 12.2.1.2.0 the default MFT port is different to SOA.</li>
                 </ul>
               </div>
