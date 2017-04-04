@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Release Notes | Rubicon Red - MyST CLI</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- All styles -->
@@ -61,16 +60,39 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.4.2.0">MyST CLI 5.4.2.0 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4172 - Multiple role expressions can now �be assigned against a JMS module</li>
+                  <li>FC-3537 - The default transaction support option can now be configured for JCA adapters�within the Model and Blueprint editor</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4176 - Fixed an issue introduced in 5.4.1.0 which caused the legacy deploy-offline and deploy-online actions to failed</li>
+                  <li>FC-4166 - Fixed an issue where Jar library redeployment fails when there is no managed server (single admin server)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.4.1.0">MyST CLI 5.4.1.0 Release</h1>
               <h2 class="underlined_title">New Features</h2>
               <div class="bullet-points">
                 <ul class="tick">
-                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users can easily push them to MyST Studio and start performing automated operations against the Platform Instances such as Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
+                  <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
                 </ul>
               </div>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">
                 <ul class="tick">
+                  <li>FC-3264 - For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
+                  <li>FC-4032 - Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
+                  <li>FC-3322 - Node Manager Passphrase is masked on the file-system for added security.</li>
                   <li>FC-3264 - For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
                   <li>FC-4032 - Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
                   <li>FC-3322 - Node Manager Passphrase is masked on the file-system for added security.</li>
@@ -81,6 +103,12 @@
           <div class="row">
             <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.4.0.0">MyST CLI 5.4.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-3994 - A new utility is now available for migrating existing MyST CLI customers to MyST Studio based on their workspace configuration.</li>
+                </ul>
+              </div>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">
                 <ul class="tick">
@@ -92,7 +120,6 @@
               <h2 class="underlined_title">Bug Fixes</h2>
               <div class="bullet-points">
                 <ul class="tick">
-                  <li>FC-3994 - A new utility is now available for migrating existing MyST CLI customers to MyST Studio based on their workspace configuration.</li>
                   <li>FC-3714 - The SCA revision is now correctly applied to SOA composite deployments instead of defaulting to '1.0'.</li>
                 </ul>
               </div>

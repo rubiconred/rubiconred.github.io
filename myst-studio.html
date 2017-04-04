@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Documentation | Rubicon Red - MyST</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- All styles -->
@@ -164,22 +163,23 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.4.1.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.4.2.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.4.1.0</strong></p>
+              <p><strong>What's new in v5.4.2.0</strong></p>
               <ul class="tick">
-                <li>For JAR deployments, the existing version is now removed and overwritten with the new one rather than two versions co-existing, as was the case before</li>
-                <li>MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users can easily push them to MyST Studio and start performing automated operations against the Platform Instances such as Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
-                <li>The WebLogic machine special character rules in MyST Studio have changed to only convert space characters to "_" and leave "." and "-" in tact. This allows for hostnames to be specified for WebLogic machines in the wizard without a need to later alter these names in the subsequent editor to be the original hostname.</li>
-                <li>The WebLogic and SOA Catalogues within MyST Studio now have options to choose 11.1.1.4.0 and 11.1.1.5.0.</li>
-                <li>Deploy operation no longer has a mandatory dependency on a WebLogic server instance to allow for deployment of non-WebLogic artifacts.</li>
-                <li>Node Manager Passphrase is masked on the file-system for added security.</li>
-                <li>Improved robustness during WebLogic Introspection when JMS configuration settings have been tinkered with outside of the Admin Console - i.e. if a user removes a reference from JMS in config.xml but keeps the JMS module xml hanging around on the file system. Previously this behaviour caused an introspection failure, now, it just ignores the orphaned JMS module.</li>
+                <li>Multiple role expressions can now �be assigned against a JMS module</li>
+                <li>The default transaction support option can now be configured for JCA adapters�within the Model and Blueprint editor</li>
+                <li>Improved�robustness of artifact conflict checks by incorporating the group:artifactId:version combination</li>
+                <li>After an Application Blueprint (ABP)�is deleted, you can now�use the same ABP name again for a new ABP</li>
+                <li>Validation errors are now raised if different builds of the same artifact are found in a release pipeline but targeted to the same platform instance even across multiple streams</li>
+                <li>Fixed an issue when setting�Gridlink datasource�via the Platform Model wizard</li>
+                <li>Fixed an issue introduced in 5.4.1.0 which caused the legacy deploy-offline and deploy-online actions to failed</li>
+                <li>Fixed an issue where Jar library redeployment fails when there is no managed server (single admin server)</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.4.1.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.4.2.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -195,8 +195,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.4.1.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.4.1.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.4.2.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.4.2.0.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -204,7 +204,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.4.1.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.4.2.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -222,6 +222,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.4.1.0</td>
+                  <td>22 Mar 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.4.1.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.4.1.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.4.1.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.4.1.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.4.1.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.4.0.0</td>
                   <td>16 Mar 2017</td>
