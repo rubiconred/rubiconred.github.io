@@ -61,6 +61,49 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.5.0.0">MyST Studio 5.5.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4277 - The MyST Plugin for Jenkins has added support for introspecting property references within the source code to simplify deploy-time customisation.</li>
+                  <li>FC-4279 - There is now an Artifact Property Registry which shows introspected properties and the Artifacts which reference them as well as allowing the definition of meaningful descriptions and defaults values</li>
+                  <li>FC-4292 - Properties can be referenced by multiple artifacts so that if the property changes it will apply to all Artifacts which reference that property.</li>
+                  <li>FC-4291 - MyST will automatically determine which properties need to be defined based on the artifacts in a given deployment. This will generate a Stage Model which can be updated with the environment-specific values for deploy-time</li>
+                  <li>FC-4282 - The Stage Model is persisted at the platform instance-level so you only need to enter the values for the first deployment and when they need to change</li>
+                  <li>FC-4290 - MyST will show the exact Artifact version and build number in the deploy-time prompt for the Approver and Deployer</li>
+                  <li>FC-4281 - A CSV file of Application Models grouped by Application Blueprint Versions can be exported through the API</li>
+                  <li>FC-4276 - There is now a read-only view of all properties associated with a Platform Instance</li>
+                  <li>FC-4294 - It is now possible to easily change the version of a single artifact once even when it is listed within multiple application blueprints</li>
+                  <li>FC-4286 - Users can be granted�Approver�and�Deployer�role permissions per Stage in a Release Pipelines</li>
+                  <li>FC-4269 - The Approver and Deployer�roles�integrate seamlessly�with the existing Role Based Access Control framework</li>
+                  <li>FC-4260 - Role Based Access Control for�Application Release Automation�including Release Pipelines, Pipeline Templates, Artifacts and Application Blueprints�</li>
+                  <li>FC-4261 - Finer-grained�Role Based Access Control for resources such as the Platform Instance to allow for the design of roles at a much more granular level with restricted permissions</li>
+                  <li>FC-4262 - Clearer and more consistent User Experience�so that only controls which are operational for the given users role are displayed. Previously, users who were prevented from executing certain controls based on their role could still see the controls even though they would disallowed from choosing them.</li>
+                  <li>FC-4272 - Comprehensive troubleshooting information�by capturing the complete error details in the audit log for all failed requests</li>
+                  <li>FC-4273 - Drill down on each event�to see low-level HTTP interactions for complete traceability</li>
+                  <li>FC-4273 - The MyST installer now comes with options to install a pre-configured MyST Build Server and MyST Artifact Repository to significantly reduce the installation effort especially when an existing CI server or Artifact Repository is not already available within an organisation</li>
+                  <li>FC-4273 - MyST now comes with an installation option to automatically setup a CI server to support automated Oracle Middleware builds using Maven</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4284 - MyST verifies that two identical versions of the same Artifact do not exist across Release Pipelines that have stages pointing to the same platform instance</li>
+                  <li>FC-4259 - New�Intuitive User Experience�for managing role permissions</li>
+                  <li>FC-4263 - Simpler to�requesting the necessary grants�due to improvements to the authorization failure message in the case of insufficient permissions</li>
+                  <li>FC-4264 - Focus on value-added capabilities�through the removal of unused capabilities such as Bulk Activation and Deactivation of Roles where the old approach is no longer needed due to the new user experience.</li>
+                  <li>FC-4265 - Removed Obsolete Role Permissions�such as the ability to create and delete Continuous Delivery Profiles</li>
+                  <li>FC-4266 - Workspaces �Application Release Automation resource types that can be associated to a workspace are now shown in thee workspace list and detail views</li>
+                  <li>FC-4271 - Complete audit of all events�including failed events irrespective of whether it was due to a data retrieval or a manipulation.�</li>
+                  <li>FC-4270 - Authorised users can�see which user performed which action�including each login and logout operation</li>
+                  <li>FC-4274 - Search filters for tracking specific audit types�such as event status, resources type and action type to assist with log analysis</li>
+                  <li>FC-4274 - MyST Studio and associated components are now configured to automatically restart on system boot</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.4.2.1">MyST Studio 5.4.2.1 Release</h1>
               <h2 class="underlined_title">Bug Fixes</h2>
               <div class="bullet-points">
