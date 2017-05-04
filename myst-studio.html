@@ -164,43 +164,19 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.5.0.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.5.1.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.5.0.0</strong></p>
+              <p><strong>What's new in v5.5.1.0</strong></p>
               <ul class="tick">
-                <li>The MyST Plugin for Jenkins has added support for introspecting property references within the source code to simplify deploy-time customisation.</li>
-                <li>There is now an Artifact Property Registry which shows introspected properties and the Artifacts which reference them as well as allowing the definition of meaningful descriptions and defaults values</li>
-                <li>Properties can be referenced by multiple artifacts so that if the property changes it will apply to all Artifacts which reference that property.</li>
-                <li>MyST will automatically determine which properties need to be defined based on the artifacts in a given deployment. This will generate a Stage Model which can be updated with the environment-specific values for deploy-time</li>
-                <li>The Stage Model is persisted at the platform instance-level so you only need to enter the values for the first deployment and when they need to change</li>
-                <li>MyST will show the exact Artifact version and build number in the deploy-time prompt for the Approver and Deployer</li>
-                <li>A CSV file of Application Models grouped by Application Blueprint Versions can be exported through the API</li>
-                <li>MyST verifies that two identical versions of the same Artifact do not exist across Release Pipelines that have stages pointing to the same platform instance</li>
-                <li>There is now a read-only view of all properties associated with a Platform Instance</li>
-                <li>It is now possible to easily change the version of a single artifact once even when it is listed within multiple application blueprints</li>
-                <li>Users can be granted Approver and Deployer role permissions per Stage in a Release Pipeline</li>
-                <li>The Approver and Deployer roles integrate seamlessly with the existing Role Based Access Control framework</li>
-                <li>New Intuitive User Experience for managing role permissions</li>
-                <li>Role Based Access Control for Application Release Automation including Release Pipelines, Pipeline Templates, Artifacts and Application Blueprints </li>
-                <li>Finer-grained Role Based Access Control for resources such as the Platform Instance to allow for the design of roles at a much more granular level with restricted permissions</li>
-                <li>Clearer and more consistent User Experience so that only controls which are operational for the given users role are displayed. Previously, users who were prevented from executing certain controls based on their role could still see the controls even though they would disallowed from choosing them.</li>
-                <li>Simpler to requesting the necessary grants due to improvements to the authorization failure message in the case of insufficient permissions</li>
-                <li>Focus on value-added capabilities through the removal of unused capabilities such as Bulk Activation and Deactivation of Roles where the old approach is no longer needed due to the new user experience.</li>
-                <li>Removed Obsolete Role Permissions such as the ability to create and delete Continuous Delivery Profiles</li>
-                <li>Workspaces  Application Release Automation resource types that can be associated to a workspace are now shown in thee workspace list and detail views</li>
-                <li>Complete audit of all events including failed events irrespective of whether it was due to a data retrieval or a manipulation. </li>
-                <li>Authorised users can see which user performed which action including each login and logout operation</li>
-                <li>Comprehensive troubleshooting information by capturing the complete error details in the audit log for all failed requests</li>
-                <li>Drill down on each event to see low-level HTTP interactions for complete traceability</li>
-                <li>Search filters for tracking specific audit types such as event status, resources type and action type to assist with log analysis</li>
-                <li>The MyST installer now comes with options to install a pre-configured MyST Build Server and MyST Artifact Repository to significantly reduce the installation effort especially when an existing CI server or Artifact Repository is not already available within an organisation</li>
-                <li>MyST Studio and associated components are now configured to automatically restart on system boot</li>
-                <li>MyST now comes with an installation option to automatically setup a CI server to support automated Oracle Middleware builds using Maven</li>
+                <li>Bug fix: For RAC databases, MyST now computes the correct DataSource URLs when the type is set to GridLink</li>
+                <li>MyST now prompts the user for the Database Host, Port and Service Name rather than requiring to enter the complete URL</li>
+                <li>While reverse registering artifacts, the MyST Jenkins plugin now raises a 'Conflict Detected' exception if a duplicate build is posted to the target MyST Studio instance. (A very likely cause of this would be a missing step in the Job to bump the artifact version)</li>
+                <li>All modal dialogs in the MyST user interface can now be maximized to occupy full screen width and height so that overflowing content can be easily visualized</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.5.0.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.5.1.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -216,8 +192,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.0.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.0.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.1.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.1.0.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -225,7 +201,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.0.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.1.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -243,6 +219,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.5.0.0</td>
+                  <td>24 Apr 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.5.0.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.5.0.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.0.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.0.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.0.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.4.2.1</td>
                   <td>06 Apr 2017</td>
