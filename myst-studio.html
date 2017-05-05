@@ -164,19 +164,17 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.5.1.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.5.1.1 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.5.1.0</strong></p>
+              <p><strong>What's new in v5.5.1.1</strong></p>
               <ul class="tick">
-                <li>Bug fix: For RAC databases, MyST now computes the correct DataSource URLs when the type is set to GridLink</li>
-                <li>MyST now prompts the user for the Database Host, Port and Service Name rather than requiring to enter the complete URL</li>
-                <li>While reverse registering artifacts, the MyST Jenkins plugin now raises a 'Conflict Detected' exception if a duplicate build is posted to the target MyST Studio instance. (A very likely cause of this would be a missing step in the Job to bump the artifact version)</li>
-                <li>All modal dialogs in the MyST user interface can now be maximized to occupy full screen width and height so that overflowing content can be easily visualized</li>
+                <li>Hotfix - Gridlink URL changes had broken the Platform Model Wizard in 5.5.1.0</li>
+                <li>Hotfix - Fixed data migration issue for artifacts introduced in 5.5.0.0</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.5.1.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.5.1.1" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -192,8 +190,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.1.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.1.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.1.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.1.1.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -201,7 +199,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.1.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.1.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -219,6 +217,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.5.1.0</td>
+                  <td>04 May 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.5.1.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.5.1.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.1.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.1.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.1.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.5.0.0</td>
                   <td>24 Apr 2017</td>
