@@ -164,32 +164,16 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.5.2.1 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.5.2.2 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.5.2.1</strong></p>
+              <p><strong>What's new in v5.5.2.2</strong></p>
               <ul class="tick">
-                <li>MyST now allows scheduling of release pipeline deployments for a future date / time. A previously scheduled deployment can be unscheduled as well if its execution time has not been reached yet.</li>
-                <li>Properties starting with 'core.' are no longer introspected by the MyST Jenkins Plugin so that conflicts can be avoided against the platform properties.</li>
-                <li>MyST now allows the user to mark properties in the artifact property registry as encrypted (passwords etc.) and if so, masks the artifact property values on the UI and persists them in encrypted form as well</li>
-                <li>For property keys containing the word 'password', MyST now automatically marks them as encrypted while registering them in the artifact property registry.</li>
-                <li>It is now possible to override the default artifact packaging type which is auto-discovered by MyST using the POM property, 'artifact.repository.type'.</li>
-                <li>MyST now prints a deployment summary at the end of each deploy log listing the exact artifact builds that were deployed and also those that were undeployed.</li>
-                <li>The Application Model CSV export now contains the Environment Type name as well for easier correlation while exporting / importing data into MyST.</li>
-                <li>One can now bypass introspection of properties at the Job level while using the MyST Jenkins plugin. By default, the behaviour is to introspect the artifact properties and report to MyST.</li>
-                <li>The application blueprint association with platform blueprints has been deprecated from the UI as it has no relevance any more.</li>
-                <li>The MyST Jenkins plugin now has the ability perform a dry run whereby it will show the JSON payload that will be posted to MyST but will not actually send it, thereby allowing the user to validate the Job configuration without affecting the MyST instance.</li>
-                <li>WebLogic resources such as File Stores and JDBC Data Sources can now be created without targeting them to any servers or clusters.</li>
-                <li>MyST now captures the user who is committing configuration changes to platform blueprints and models in addition to the commit message.</li>
-                <li>One can now commit platform blueprints and models from the list and summary screens itself without going into the detailed configuration view.</li>
-                <li>Hotfix: Fixed a regression whereby MyST custom actions stopped working as of 5.5.0.0.</li>
-                <li>Bug fix: Platform Blueprint versions are now ordered semantically based on the version numbers rather than in lexical order.</li>
-                <li>Bug fix: For older configuration based on Gridlink data sources, the RCU Runtime URL is now based on the normal URL when the Host parameter is not set in order to ensure backward compatibility of configuration</li>
-                <li>MyST now validates if all products are already part of the blueprint or not before allowing to add more.</li>
+                <li>Hotfix: Fixed data migration issue when multiple platform models exist with same name</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.5.2.1" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.5.2.2" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -205,8 +189,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.2.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.2.1.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.2.2.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.2.2.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -214,7 +198,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.2.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.2.2.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -232,6 +216,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.5.2.1</td>
+                  <td>18 May 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.5.2.1" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.5.2.1/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.5.2.1.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.5.2.1.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.5.2.1.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.5.1.1</td>
                   <td>05 May 2017</td>
