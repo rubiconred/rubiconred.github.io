@@ -61,6 +61,35 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.6.0.0">MyST Studio 5.6.0.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4415 - MyST now allows one to rollback an SQL change by providing a compensation script and indicating the intent of rolling back through a flag.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4417 - The restriction on deployment types has now been removed so that custom artifact packaging types such as 'pol' do not fail validation during deployment.</li>
+                  <li>FC-4383 - The execution log dialog can now be maximized to make effective use of real estate where the user wants.</li>
+                  <li>FC-3641 - MyST now clips potential long names on screens to show a limited number of characters. The entire text is now shown on hover as a tooltip.</li>
+                  <li>FC-2527 - MyST now tries to create the agent installation directory (including missing parent directories) before installing the agent on the remote nodes.</li>
+                  <li>FC-4382 - MyST now shows a default placeholder value for ONS nodes in the platform model wizard to guide the user towards entering a proper value for it.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4396 - Bug fix: The release pipeline scheduled deployment times are now aware of the browser timezone and hence will deploy at the correct time even if the browser from where the request was made is in a different timezone from the server hosting MyST.</li>
+                  <li>FC-4427 - Bug fix: MyST now checks for active artifacts before reporting duplicates while registering artifact builds without which previously deleted artifacts were being considered for validation at the time of build registration.</li>
+                  <li>FC-4429 - Bug fix: Fixed bug where deployments were failing when the corresponding stream model has not been saved even once.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.5.2.2">MyST Studio 5.5.2.2 Release</h1>
               <h2 class="underlined_title">Bug Fixes</h2>
               <div class="bullet-points">
