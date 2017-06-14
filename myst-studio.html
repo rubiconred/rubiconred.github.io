@@ -164,24 +164,17 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.6.0.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.6.0.1 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.6.0.0</strong></p>
+              <p><strong>What's new in v5.6.0.1</strong></p>
               <ul class="tick">
-                <li>MyST now allows one to rollback an SQL change by providing a compensation script and indicating the intent of rolling back through a flag.</li>
-                <li>The restriction on deployment types has now been removed so that custom artifact packaging types such as 'pol' do not fail validation during deployment.</li>
-                <li>The execution log dialog can now be maximized to make effective use of real estate where the user wants.</li>
-                <li>Bug fix: The release pipeline scheduled deployment times are now aware of the browser timezone and hence will deploy at the correct time even if the browser from where the request was made is in a different timezone from the server hosting MyST.</li>
-                <li>Bug fix: MyST now checks for active artifacts before reporting duplicates while registering artifact builds without which previously deleted artifacts were being considered for validation at the time of build registration.</li>
-                <li>Bug fix: Fixed bug where deployments were failing when the corresponding stream model has not been saved even once.</li>
-                <li>MyST now clips potential long names on screens to show a limited number of characters. The entire text is now shown on hover as a tooltip.</li>
-                <li>MyST now tries to create the agent installation directory (including missing parent directories) before installing the agent on the remote nodes.</li>
-                <li>MyST now shows a default placeholder value for ONS nodes in the platform model wizard to guide the user towards entering a proper value for it.</li>
+                <li>Bug fix: Fixed issue where some blueprints could not be upgraded due to missing options in the hard-coded version list. Changed this to choose the versions based on the product catalog definition.</li>
+                <li>Bug fix: Fixed issue where the blueprint configuration broke if the user provided multiple source files for any product.</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.6.0.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.6.0.1" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -197,8 +190,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.6.0.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.6.0.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.6.0.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.6.0.1.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -206,7 +199,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.6.0.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.6.0.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -224,6 +217,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.6.0.0</td>
+                  <td>02 Jun 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.6.0.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.6.0.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.6.0.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.6.0.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.6.0.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.5.2.2</td>
                   <td>23 May 2017</td>
