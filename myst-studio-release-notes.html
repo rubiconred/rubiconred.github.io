@@ -61,6 +61,55 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.6.1.1">MyST Studio 5.6.1.1 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4151 - System administrators can now apply / renew the MyST license from the console itself by uploading a valid license archive.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4348 - While reprovisioning platform instances, instead of automatically deploying previously deployed artifacts, MyST now lets the user control that behaviour from the user interface. Also, this fixes a bug present in 5.5.0.0 and above where MyST would not be able to deploy artifacts successfully on re-provision.</li>
+                  <li>FC-4527 - Additional settings for LDAP based authentication providers can now be configured in the platform blueprint / model.</li>
+                  <li>FC-4526 - Extended Logging Format fields can now be specified for WebLogic servers in the platform blueprint / model configuration.</li>
+                  <li>FC-4525 - Log filters can now be configured and associated with WebLogic servers in the platform blueprint / model configuration.</li>
+                  <li>FC-4461 - Configuration backup settings can now be specified against the Domain within the blueprint / model editor.</li>
+                  <li>FC-4453 - MyST now supports out-of-the-box configuration for JMS Thresholds and Quotas.</li>
+                  <li>FC-4452 - MyST now supports out-of-the-box configuration support for Foreign JMS Servers.</li>
+                  <li>FC-4389 - MyST now supports configuration of network connection filters so that network level access can be controlled.</li>
+                  <li>FC-3041 - The WebLogic Protocol Maximum Message Size can now be specified in the platform blueprint / model configuration.</li>
+                  <li>FC-2305 - JMS Destination configuration now supports the TimeToLive parameter out-of-the-box.</li>
+                  <li>FC-2240 - JDBC DataSource configuration now supports the StatementCacheSize parameter.</li>
+                  <li>FC-2238 - WebLogic server configuration now supports the parameter ClientCertProxyEnabled out of the box.</li>
+                  <li>FC-1985 - PKI based Credential Maps can now be configured in the platform blueprint / model configuration.</li>
+                  <li>FC-4026 - The configuration drift and dry run reports can now be seen for historic platform actions as well along with the execution log.</li>
+                  <li>FC-4437 - All modal dialogs can now be closed easily by using the newly provided 'x' button on the top right corner in addition to the existing 'Close' buttons.</li>
+                  <li>FC-4009 - One can no longer delete streams and stages from release pipelines if corresponding deployment revisions have been generated against them.</li>
+                  <li>FC-3497 - MyST now paginates the list of versions / revisions of a platform model in its summary view.</li>
+                  <li>FC-4471 - MyST now allows 4000 characters to be entered for the application blueprint description which would enable a user to verbosely describe it.</li>
+                  <li>NOTE: Introspection for all the above MyST configuration extensions are not yet supported and would be implemented shortly as part of future releases.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4462 - Bug fix: Fixed issue where MyST was showing only 50 items on many screens even though more existed.</li>
+                  <li>FC-4232 - Bug fix: Fix issue where MyST update actions from CLI had broken by ensuring that MyST will update to the latest committed revision of the current version in case the revision information is not set while running the action. Also provided the option to specify the exact version and revision to update to using the 'update.version' property.</li>
+                  <li>FC-4460 - Bug fix: Fixed issue where Java shared libraries were being deployed as applications instead of libraries when initiated from MyST Studio.</li>
+                  <li>FC-4209 - Bug fix: Fixed issue when wrong artifacts were getting deployed as a result of configuration overlap if more than one artifact inside an application blueprint share the same Maven Artifact ID.</li>
+                  <li>FC-4422 - Bug fix: Fixed an issue where under certain conditions, duplicate resources were being generated inside the platform blueprint / model configuration.</li>
+                  <li>FC-3437 - Bug fix: Unsupported MyST extensions have now been removed from the blueprint / model configuration.</li>
+                  <li>FC-1866 - Bug fix: Fixed issue where the 'weblogic-plugin-enabled' attribute was not applied to the domain even if set in the configuration.</li>
+                  <li>FC-4522 - Bug fix: Fixed issue where artifacts did not get downloaded due to missing Maven configuration when MyST CLI is used to manage MyST Studio.</li>
+                  <li>FC-4504 - Bug fix: Fixed issue where clicking on 'Cancel' on the Application Blueprint detail screen broke the user interface under certain conditions.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.6.0.3">MyST Studio 5.6.0.3 Release</h1>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">

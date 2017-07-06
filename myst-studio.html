@@ -164,16 +164,44 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.6.0.3 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.6.1.1 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.6.0.3</strong></p>
+              <p><strong>What's new in v5.6.1.1</strong></p>
               <ul class="tick">
-                <li>MyST artifact download is no longer dependent on WLST, thus enabling support for non-WebLogic deployments.</li>
+                <li>System administrators can now apply / renew the MyST license from the console itself by uploading a valid license archive.</li>
+                <li>While reprovisioning platform instances, instead of automatically deploying previously deployed artifacts, MyST now lets the user control that behaviour from the user interface. Also, this fixes a bug present in 5.5.0.0 and above where MyST would not be able to deploy artifacts successfully on re-provision.</li>
+                <li>Additional settings for LDAP based authentication providers can now be configured in the platform blueprint / model.</li>
+                <li>Extended Logging Format fields can now be specified for WebLogic servers in the platform blueprint / model configuration.</li>
+                <li>Log filters can now be configured and associated with WebLogic servers in the platform blueprint / model configuration.</li>
+                <li>Configuration backup settings can now be specified against the Domain within the blueprint / model editor.</li>
+                <li>MyST now supports out-of-the-box configuration for JMS Thresholds and Quotas.</li>
+                <li>MyST now supports out-of-the-box configuration support for Foreign JMS Servers.</li>
+                <li>MyST now supports configuration of network connection filters so that network level access can be controlled.</li>
+                <li>The WebLogic Protocol Maximum Message Size can now be specified in the platform blueprint / model configuration.</li>
+                <li>JMS Destination configuration now supports the TimeToLive parameter out-of-the-box.</li>
+                <li>JDBC DataSource configuration now supports the StatementCacheSize parameter.</li>
+                <li>WebLogic server configuration now supports the parameter ClientCertProxyEnabled out of the box.</li>
+                <li>PKI based Credential Maps can now be configured in the platform blueprint / model configuration.</li>
+                <li>The configuration drift and dry run reports can now be seen for historic platform actions as well along with the execution log.</li>
+                <li>All modal dialogs can now be closed easily by using the newly provided 'x' button on the top right corner in addition to the existing 'Close' buttons.</li>
+                <li>Bug fix: Fixed issue where MyST was showing only 50 items on many screens even though more existed.</li>
+                <li>Bug fix: Fix issue where MyST update actions from CLI had broken by ensuring that MyST will update to the latest committed revision of the current version in case the revision information is not set while running the action. Also provided the option to specify the exact version and revision to update to using the 'update.version' property.</li>
+                <li>Bug fix: Fixed issue where Java shared libraries were being deployed as applications instead of libraries when initiated from MyST Studio.</li>
+                <li>Bug fix: Fixed issue when wrong artifacts were getting deployed as a result of configuration overlap if more than one artifact inside an application blueprint share the same Maven Artifact ID.</li>
+                <li>Bug fix: Fixed an issue where under certain conditions, duplicate resources were being generated inside the platform blueprint / model configuration.</li>
+                <li>Bug fix: Unsupported MyST extensions have now been removed from the blueprint / model configuration.</li>
+                <li>Bug fix: Fixed issue where the 'weblogic-plugin-enabled' attribute was not applied to the domain even if set in the configuration.</li>
+                <li>Bug fix: Fixed issue where artifacts did not get downloaded due to missing Maven configuration when MyST CLI is used to manage MyST Studio.</li>
+                <li>Bug fix: Fixed issue where clicking on 'Cancel' on the Application Blueprint detail screen broke the user interface under certain conditions.</li>
+                <li>One can no longer delete streams and stages from release pipelines if corresponding deployment revisions have been generated against them.</li>
+                <li>MyST now paginates the list of versions / revisions of a platform model in its summary view.</li>
+                <li>MyST now allows 4000 characters to be entered for the application blueprint description which would enable a user to verbosely describe it.</li>
+                <li>NOTE: Introspection for all the above MyST configuration extensions are not yet supported and would be implemented shortly as part of future releases.</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.6.0.3" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.6.1.1" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -189,8 +217,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.6.0.3.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.6.0.3.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.6.1.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.6.1.1.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -198,7 +226,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.6.0.3.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.6.1.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -216,6 +244,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.6.0.3</td>
+                  <td>19 Jun 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.6.0.3" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.6.0.3/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.6.0.3.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.6.0.3.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.6.0.3.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.6.0.2</td>
                   <td>16 Jun 2017</td>

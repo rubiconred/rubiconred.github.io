@@ -61,6 +61,36 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.6.1.1">MyST CLI 5.6.1.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4527 - Additional settings for LDAP based authentication providers can now be configured in the platform blueprint / model.</li>
+                  <li>FC-4526 - Extended Logging Format fields can now be specified for WebLogic servers in the platform blueprint / model configuration.</li>
+                  <li>FC-4525 - Log filters can now be configured and associated with WebLogic servers in the platform blueprint / model configuration.</li>
+                  <li>FC-4461 - Configuration backup settings can now be specified against the Domain within the blueprint / model editor.</li>
+                  <li>FC-4453 - MyST now supports out-of-the-box configuration for JMS Thresholds and Quotas.</li>
+                  <li>FC-4452 - MyST now supports out-of-the-box configuration support for Foreign JMS Servers.</li>
+                  <li>FC-4389 - MyST now supports configuration of network connection filters so that network level access can be controlled.</li>
+                  <li>FC-3041 - The WebLogic Protocol Maximum Message Size can now be specified in the platform blueprint / model configuration.</li>
+                  <li>FC-2305 - JMS Destination configuration now supports the TimeToLive parameter out-of-the-box.</li>
+                  <li>FC-2240 - JDBC DataSource configuration now supports the StatementCacheSize parameter.</li>
+                  <li>FC-2238 - WebLogic server configuration now supports the parameter ClientCertProxyEnabled out of the box.</li>
+                  <li>FC-1985 - PKI based Credential Maps can now be configured in the platform blueprint / model configuration.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4232 - Bug fix: Fix issue where MyST update actions from CLI had broken by ensuring that MyST will update to the latest committed revision of the current version in case the revision information is not set while running the action. Also provided the option to specify the exact version and revision to update to using the 'update.version' property.</li>
+                  <li>FC-3437 - Bug fix: Unsupported MyST extensions have now been removed from the blueprint / model configuration.</li>
+                  <li>FC-4522 - Bug fix: Fixed issue where artifacts did not get downloaded due to missing Maven configuration when MyST CLI is used to manage MyST Studio.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.6.0.3">MyST CLI 5.6.0.3 Release</h1>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">
