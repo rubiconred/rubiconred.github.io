@@ -61,6 +61,39 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.6.2.0">MyST Studio 5.6.2.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4463 - MyST now allows publishing of releases (which marks application blueprint versions and platform blueprint versions as FINAL) once a stream deployment has made its way up to the last stage in a release pipeline</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4431 - The Jenkins plugin now introspects only those properties which are supported for customization by MyST during artifact deployment instead of scanning all .xml and .properties files</li>
+                  <li>FC-4626 - For composite deployments MyST will no longer fail deployments stating that 'they already exist' when the 'sca.composite.overwrite' flag is set to 'false'</li>
+                  <li>FC-4590 - For JCA adapters, MyST now allows the transaction support parameter to be configured on a per connection instance level as well in addition to the connection factory level</li>
+                  <li>FC-4589 - MyST now supports Oracle Unified Directory as an Authentication Provider (Use 'OUD' as the provider type to configure it).</li>
+                  <li>FC-3999 - MyST now allows users to trigger the post-deployment job (if configured) for the last successfully completed deployment to a stage within a release pipeline</li>
+                  <li>FC-3225 - MyST now applies transaction timeouts to most of the BPM EJBs as well (see documentation for exact beans supported).</li>
+                  <li>FC-4297 - MyST now applies EJB timeouts to the CompositeMetaDataServiceBean and the BPELAuditTrailBean beans as well.</li>
+                  <li>FC-4573 - MyST now supports the 'hmac-sha2-512' and 'hmac-sha2-256' MACs (Message Authentication Codes) while establishing SSH connections to remote compute nodes.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4632 - Bug fix: Fixed issue where MyST was setting both the listen port and the public port of the Network Access Points to the same value as that of the listen port</li>
+                  <li>FC-4604 - Bug fix: Fixed issue where the option to view the 'Dry Run' report does not appear even if the dry run completed successfully.</li>
+                  <li>FC-4599 - Bug fix: Fixed issue where the 'pull.sh' provided as part of the MyST installer does not work for Docker version 17.06</li>
+                  <li>FC-4581 - Bug fix: Fixed issue where adapter deployment plans are persisted even they fail validation resulting in the adapter going into a state where no further changes can be made without fixing the plan files manually.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.6.1.2">MyST Studio 5.6.1.2 Release</h1>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">
