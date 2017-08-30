@@ -61,6 +61,32 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.6.5">MyST Studio 5.6.5 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4580 - MyST now allows artifact properties to be marked as nullable in Property Registry and therefore ensures that activities like commit, approval, and deployment happen seamlessly, even when the property has a null value</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4633 - MyST splash screen image has been updated</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4759 - Big fix: Fixed issue where SSH connectivity was broken in version 5.6.4 if the Java version used by the MyST agent is 1.6.x</li>
+                  <li>FC-4592 - Bug fix: Fixed issue where the MyST license could not be uploaded in a 'tar.gz' format</li>
+                  <li>FC-4696 - Bug fix: Fixed issue where MyST Jenkins Plugin was throwing error while attempting to introspect SOA Extension artifacts.</li>
+                  <li>FC-4502 - Bug fix: Fixed issues where the deployed artifacts were being shown incorrectly under certain circumstances against the Platform Instance in the Release Pipeline dashboard</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.6.4">MyST Studio 5.6.4 Release</h1>
               <h2 class="underlined_title">New Features</h2>
               <div class="bullet-points">
