@@ -61,6 +61,39 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.7.0">MyST Studio 5.7.0 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4541 - MyST now allow users to add properties inside properties registry & stream model in bulk.</li>
+                  <li>FC-4539 - MyST now allows provisioning of fresh Platform Instance based on release tags of an existing Platform Blueprint Version.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4748 - MyST Jenkins Plugin now raises error if type of an already registered artifacts is attempted to be changed.</li>
+                  <li>FC-4637 - MyST now allows redeployment of applications by anyone irrespective of their role for those release pipeline stages which have the scheme set to 'Automatic'.</li>
+                  <li>FC-4476 - One can now escape variable substitutions inside configuration files by using an extra $ sign. So to retain a text such as ${var}, one should use $${var}.</li>
+                  <li>FC-4529 - The MyST Configuration Plan now allows one to remove elements from XML files based on XPath search expressions by specifying the value to be replaced as '_REMOVE_'.</li>
+                  <li>FC-4672 - MyST now has better support while introspecting properties for MDS artifacts.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4750 - Bug fix: Fixed issue with invalid variable references in the 'install-fmw.sh' script which is shipped along with the MyST installer.</li>
+                  <li>FC-4780 - Bug fix: Fixed issue where deployment of artifacts stopped working for CLI customers who are not using Maven.</li>
+                  <li>FC-4747 - Bug fix: Fixed issue where resources were not being properly cleaned up when more than one product are targeted to the same cluster.</li>
+                  <li>FC-4791 - Bug fix: Fixed regression (which resurfaced since 5.6.1.0) where the application blueprint description was only allowing 255 characters instead of the expected number of 1000.</li>
+                  <li>FC-4739 - Bug fix: Fixed issue with respect to provisioning of WebCenter 12c components.</li>
+                  <li>FC-4596 - Bug fix: Fixed the issue where MyST was failing to invoke Post Deployment Job on Jenkins CI server, when CSRF is enabled.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.6.6">MyST Studio 5.6.6 Release</h1>
               <h2 class="underlined_title">Improvements</h2>
               <div class="bullet-points">
