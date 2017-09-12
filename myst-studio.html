@@ -164,28 +164,16 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.7.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.7.1 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.7.0</strong></p>
+              <p><strong>What's new in v5.7.1</strong></p>
               <ul class="tick">
-                <li>MyST now allow users to add properties inside properties registry & stream model in bulk.</li>
-                <li>MyST now allows provisioning of fresh Platform Instance based on release tags of an existing Platform Blueprint Version.</li>
-                <li>MyST Jenkins Plugin now raises error if type of an already registered artifacts is attempted to be changed.</li>
-                <li>MyST now allows redeployment of applications by anyone irrespective of their role for those release pipeline stages which have the scheme set to 'Automatic'.</li>
-                <li>One can now escape variable substitutions inside configuration files by using an extra $ sign. So to retain a text such as ${var}, one should use $${var}.</li>
-                <li>The MyST Configuration Plan now allows one to remove elements from XML files based on XPath search expressions by specifying the value to be replaced as '_REMOVE_'.</li>
-                <li>MyST now has better support while introspecting properties for MDS artifacts.</li>
-                <li>Bug fix: Fixed issue with invalid variable references in the 'install-fmw.sh' script which is shipped along with the MyST installer.</li>
-                <li>Bug fix: Fixed issue where deployment of artifacts stopped working for CLI customers who are not using Maven.</li>
-                <li>Bug fix: Fixed issue where resources were not being properly cleaned up when more than one product are targeted to the same cluster.</li>
-                <li>Bug fix: Fixed regression (which resurfaced since 5.6.1.0) where the application blueprint description was only allowing 255 characters instead of the expected number of 1000.</li>
-                <li>Bug fix: Fixed issue with respect to provisioning of WebCenter 12c components.</li>
-                <li>Bug fix: Fixed the issue where MyST was failing to invoke Post Deployment Job on Jenkins CI server, when CSRF is enabled.</li>
+                <li>Bug fix: Fixed regression where action history was showing up full payload text instead of appropriate text</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.7.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.7.1" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -201,8 +189,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.7.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.7.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.7.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.7.1.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -210,7 +198,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.7.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.7.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -228,6 +216,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.7.0</td>
+                  <td>12 Sep 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.7.0" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.7.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.7.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.7.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.7.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.6.6</td>
                   <td>01 Sep 2017</td>
