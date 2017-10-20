@@ -164,28 +164,19 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.8.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.7.3 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.8.0</strong></p>
+              <p><strong>What's new in v5.7.3</strong></p>
               <ul class="tick">
-                <li>MyST now deploys artifacts following the sequence in which they are configured inside Application Blueprint Version. Note, this mechanism makes deployment within a session for all artifacts, wherever found necessary.</li>
-                <li>MyST now supports provisioning of SOA, OSB, ESS, BAM, WSM & BPM for OFMW version 12.2.1.3.0</li>
-                <li>MyST now allows role based access control to be configured for triggering post deployment actions for a release pipeline stage.</li>
-                <li>MyST now allows one to override the deployment names for Java EE EARs, WARs and JARs through the 'j2ee.name' metadata property. Also, all of them can now deployed as shared libraries or applications based on the 'library' metadata flag</li>
-                <li>For all application deployments, MyST now allows a consistent format '(EMBEDDED)/<plan-file>' to be used while specifying the MyST configuration plan</li>
-                <li>During artifact property introspection, the MyST Jenkins plugin now ignores those properties which are escaped using a double dollar (e.g. $${ignoreme})</li>
-                <li>MyST now allows one to escape property values within the MyST model itself using double dollars, (e.g. 'key=$${retainme}')</li>
-                <li>Bug Fix: Fixed an issue due to which MyST was not persisting new property of an artifact from Stream Model UI</li>
-                <li>Bug Fix: Fixed an issue due to which MyST was not allowing to use default value of a property in Stream Model UI</li>
-                <li>Bug Fix: Fixed an issue to support property introspection of OWSM policy and J2EE JAR artifacts</li>
-                <li>Bug Fix: Fixed issue where setting a WebLogic cluster target explicitly for UMS configuration was failing.</li>
-                <li>Bug Fix: MyST does not try to set the deployment order for shared libraries and also properly cleans up the edit session in case of deployment failures</li>
-                <li>Bug Fix: Fixed an issue where MyST was re-deploying JCA adapters even when their configuration has not been changed.</li>
+                <li>Improved user interface performance while editing release pipelines.</li>
+                <li>Bug fix: Fixed issue where the Jenkins plugin stopped introspecting properties since 5.6.2.0 if running on a slave node.</li>
+                <li>Bug fix: Fixed issue where under some conditions, wrong metadata properties show up on the user interface while clicking on an artifact in the list view.</li>
+                <li>Bug fix: Fixed issue where, for LDAP authentication providers, the 'IgnoreDuplicateMembership' flag was not getting set correctly.</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.8.0" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.7.3" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -201,8 +192,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.7.3.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.7.3.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -210,7 +201,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.7.3.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -228,31 +219,6 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
-                <tr>
-                  <td>5.7.3</td>
-                  <td>22 Sep 2017</td>
-                  <td>
-                    <span class="doc-link">
-                      <a href="myst-studio-release-notes.html#5.7.3" target="_blank">View <i class="fa fa-external-link"></i></a>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="doc-link">
-                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.7.3/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
-                    </span>
-                  </td>
-                  <td>
-                    <div class="doc-link">
-                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.7.3.tar.gz">Docker Image <i class="fa fa-download"></i></a>
-                    </div>
-                    <div class="doc-link">
-                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.7.3.jar">JAR Installer <i class="fa fa-download"></i></a>
-                    </div>
-                    <div class="doc-link">
-                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.7.3.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
-                    </div>
-                  </td>
-                </tr>
                 <tr>
                   <td>5.7.2</td>
                   <td>20 Sep 2017</td>
