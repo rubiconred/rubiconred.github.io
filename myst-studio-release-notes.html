@@ -61,6 +61,31 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.8.1">MyST Studio 5.8.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4861 - Quite a few bug fixes and enhancements around the platform introspection capability in order to support the complete set of configuration properties supported by MyST</li>
+                  <li>FC-4865 - Fixed regression and brought back older version of Stream Model editor, to stay side by side of the new Bulk Update editor</li>
+                  <li>FC-4862 - MyST now supports setting of the deployed version for WebLogic shared libraries by allowing the libSpecVersion and libImplVersion parameters to be specified in the artifact metadata</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4890 - MyST now allows one to re-target the Admin Server component on to another compute group and node to fix issues with topologies but does not do any proactive validation, hence is left to the user's discretion</li>
+                  <li>FC-4823 - Bug Fix: Fixed an issue, due to which Platform Blueprint Version could not be deleted, even when behavior is set to NONE, at Stream level</li>
+                  <li>FC-4889 - Bug fix: Fixed an issue due to which Release Pipeline would stay locked surviving a server restart. Due to this issue, if user inactivates a release pipeline, while it's processing is still in progress, and also restarts MyST Application docker container, when Application comes back, the release pipeline stays locked showing "Execution in progress" which is not happening in reality.</li>
+                  <li>FC-4887 - Bug Fix: Fixed issue where the license details do not show up in the footer on a few screens</li>
+                  <li>FC-4834 - Bug Fix: Fixed issue where the SOA EJB timeouts were not being correctly applied in those clustered environments where the file system for hosting the soa-infra deployment plans were not hosted on a shared file system</li>
+                  <li>FC-4872 - Bug Fix: Fixed a bug due to which 'sca.composite.overwrite' property is not being taken into account while MyST deploys SCA artifact in version 5.8.0</li>
+                  <li>FC-4873 - Bug Fix: Fixed issue where SOA extensions were failing to deploy to multi-node environments which use SSH keys for authentication</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.8.0">MyST Studio 5.8.0 Release</h1>
               <h2 class="underlined_title">New Features</h2>
               <div class="bullet-points">

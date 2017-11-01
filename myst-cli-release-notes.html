@@ -61,6 +61,26 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.8.1">MyST CLI 5.8.1 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4862 - MyST now supports setting of the deployed version for WebLogic shared libraries by allowing the libSpecVersion and libImplVersion parameters to be specified in the artifact metadata</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4890 - MyST now allows one to re-target the Admin Server component on to another compute group and node to fix issues with topologies but does not do any proactive validation, hence is left to the user's discretion</li>
+                  <li>FC-4834 - Bug Fix: Fixed issue where the SOA EJB timeouts were not being correctly applied in those clustered environments where the file system for hosting the soa-infra deployment plans were not hosted on a shared file system</li>
+                  <li>FC-4872 - Bug Fix: Fixed a bug due to which 'sca.composite.overwrite' property is not being taken into account while MyST deploys SCA artifact in version 5.8.0</li>
+                  <li>FC-4873 - Bug Fix: Fixed issue where SOA extensions were failing to deploy to multi-node environments which use SSH keys for authentication</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.8.0">MyST CLI 5.8.0 Release</h1>
               <h2 class="underlined_title">New Features</h2>
               <div class="bullet-points">
