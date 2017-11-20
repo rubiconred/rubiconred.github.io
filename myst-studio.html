@@ -164,25 +164,20 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.8.1 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.8.2 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.8.1</strong></p>
+              <p><strong>What's new in v5.8.2</strong></p>
               <ul class="tick">
-                <li>Quite a few bug fixes and enhancements around the platform introspection capability in order to support the complete set of configuration properties supported by MyST</li>
-                <li>MyST now allows one to re-target the Admin Server component on to another compute group and node to fix issues with topologies but does not do any proactive validation, hence is left to the user's discretion</li>
-                <li>Fixed regression and brought back older version of Stream Model editor, to stay side by side of the new Bulk Update editor</li>
-                <li>Bug Fix: Fixed an issue, due to which Platform Blueprint Version could not be deleted, even when behavior is set to NONE, at Stream level</li>
-                <li>Bug fix: Fixed an issue due to which Release Pipeline would stay locked surviving a server restart. Due to this issue, if user inactivates a release pipeline, while it's processing is still in progress, and also restarts MyST Application docker container, when Application comes back, the release pipeline stays locked showing "Execution in progress" which is not happening in reality.</li>
-                <li>Bug Fix: Fixed issue where the license details do not show up in the footer on a few screens</li>
-                <li>Bug Fix: Fixed issue where the SOA EJB timeouts were not being correctly applied in those clustered environments where the file system for hosting the soa-infra deployment plans were not hosted on a shared file system</li>
-                <li>Bug Fix: Fixed a bug due to which 'sca.composite.overwrite' property is not being taken into account while MyST deploys SCA artifact in version 5.8.0</li>
-                <li>Bug Fix: Fixed issue where SOA extensions were failing to deploy to multi-node environments which use SSH keys for authentication</li>
-                <li>MyST now supports setting of the deployed version for WebLogic shared libraries by allowing the libSpecVersion and libImplVersion parameters to be specified in the artifact metadata</li>
+                <li>Bug fix: Fixed issued where for version 12.2.1.3, the WLSSchemaDataSource was not getting auto-computed for all product combinations</li>
+                <li>MyST now allows one to control the exact lifecycle phase during which system artifacts (those defined as part of the platform) are deployed as part of provisioning.</li>
+                <li>Bug fix: Fixed issue where the MyST support artifacts could not be downloaded when the web console was accessed through an SSL port</li>
+                <li>Bug fix: Fixed an issue due to which some configuration parameters such as 'config-backup-enabled', 'archive-configuration-count' and 'configuration-audit-type' were getting set incorrectly during platform introspection</li>
+                <li>Bug fix: Introspection is improved for 11g environment that has the 11.1.1.9 patch applied</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.8.1" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.8.2" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -198,8 +193,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.1.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.2.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.2.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -207,7 +202,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.2.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -225,6 +220,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.8.1</td>
+                  <td>01 Nov 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.8.1" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.8.1/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.1.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.1.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.1.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.8.0</td>
                   <td>20 Oct 2017</td>
