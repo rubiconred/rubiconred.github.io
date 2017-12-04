@@ -164,20 +164,21 @@
         <div class="row">
           <div class="release-notes two-third-grid">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.8.2 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.8.3 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.8.2</strong></p>
+              <p><strong>What's new in v5.8.3</strong></p>
               <ul class="tick">
-                <li>Bug fix: Fixed issued where for version 12.2.1.3, the WLSSchemaDataSource was not getting auto-computed for all product combinations</li>
-                <li>MyST now allows one to control the exact lifecycle phase during which system artifacts (those defined as part of the platform) are deployed as part of provisioning.</li>
-                <li>Bug fix: Fixed issue where the MyST support artifacts could not be downloaded when the web console was accessed through an SSL port</li>
-                <li>Bug fix: Fixed an issue due to which some configuration parameters such as 'config-backup-enabled', 'archive-configuration-count' and 'configuration-audit-type' were getting set incorrectly during platform introspection</li>
-                <li>Bug fix: Introspection is improved for 11g environment that has the 11.1.1.9 patch applied</li>
+                <li>MyST now supports provisioning and configuration of WebTier 12.2.1.3.0</li>
+                <li>Bug fix: Fixed issue where additional servers were not getting properly cleaned up when multiple products such as ESS and OSB were targeted to the same managed server.</li>
+                <li>Bug fix: Addressed an issue introduced by 5.8.2 for customers that use the feature for running custom SQL pre or post RCU.</li>
+                <li>Bug fix: Fixed issue where users were being mislead by the rollback message shown during update. Changed the message to indicate that rollback may not be possible under certain scenarios.</li>
+                <li>Bug fix: Fixed issue where the coherence listen port was not being applied for OFMW versions 12c and above.</li>
+                <li>Bug fix: Fixed an issue where the supervisor-password and work-repository-password were not auto-computed for Oracle Data Integrator (ODI) 12c</li>
               </ul>
             </div>
             <h4 class="doc-link">
-              <a href="myst-studio-release-notes.html#5.8.2" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="myst-studio-release-notes.html#5.8.3" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -193,8 +194,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.2.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.2.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.3.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.3.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -202,7 +203,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.2.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.3.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -220,6 +221,31 @@
                 <th>Downloads</th>
               </tr>
               <tbody>
+                <tr>
+                  <td>5.8.2</td>
+                  <td>20 Nov 2017</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="myst-studio-release-notes.html#5.8.2" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.8.2/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.2.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.2.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.2.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 <tr>
                   <td>5.8.1</td>
                   <td>01 Nov 2017</td>
