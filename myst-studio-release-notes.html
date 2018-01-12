@@ -61,6 +61,34 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.8.6">MyST Studio 5.8.6 Release</h1>
+              <h2 class="underlined_title">New Features</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4977 - ODI and OEDQ 12.2.1.3.0 configurations can now be created in MyST Studio. Software installation and domain creation is supported.</li>
+                  <li>FC-4752 - WCC, WCC UI and IBR 12.2.1.3.0 configurations can now be created in MyST Studio. Software installation and domain creation is supported.</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-4881 - Improvement: Now MyST will provide an option to disable version conflict validation for a Release Pipeline</li>
+                  <li>FC-5039 - Added 12.2.1.3.0 support for MyST Build Extensions</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-5015 - Bug fix: Fixed issue where the SSH private keys could be accessed through the file system and the support artifact, thus leading to a security vulnerability</li>
+                  <li>FC-4858 - Bug fix: Fixed a synchronization issue around Stream Model Properties</li>
+                  <li>FC-4891 - Bug Fix: Fixed an issue due to which failed stream revisions from previous stage were appearing as available for deployment in current stage. It has been ensured if a stream revision fails to deploy at 1st stage, it won't appear in the 2nd stage as a valid deployment candidate.</li>
+                  <li>FC-5021 - Fixed an regression originally caused by fix</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.8.5">MyST Studio 5.8.5 Release</h1>
               <h2 class="underlined_title">Bug Fixes</h2>
               <div class="bullet-points">
