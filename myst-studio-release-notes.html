@@ -61,6 +61,25 @@
         <div class="container">
           <div class="row">
             <div class="release-notes full-grid">
+              <h1 class="underlined_title" id="5.8.7">MyST Studio 5.8.7 Release</h1>
+              <h2 class="underlined_title">Improvements</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-5067 - While activating release pipeline, the validation process now  shows Application Blueprint Name apart from ID, as part of the validation failed error message</li>
+                </ul>
+              </div>
+              <h2 class="underlined_title">Bug Fixes</h2>
+              <div class="bullet-points">
+                <ul class="tick">
+                  <li>FC-5081 - Bug fix: Fixed an issue due to which Release Pipeline was raising NullPointerException when attempting to deploy an Application Blueprint Revision whose parent Application Blueprint Version is now retired.</li>
+                  <li>FC-5084 - Bug fix: WCC 12c provisioning on environments with a standalone admin server fails when processing wcc_servern_intradoc.cfg which does not exist.</li>
+                  <li>FC-5050 - Bug fix: Fixed an issue due to which deployment of BAM artifact was failing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="release-notes full-grid">
               <h1 class="underlined_title" id="5.8.6">MyST Studio 5.8.6 Release</h1>
               <h2 class="underlined_title">New Features</h2>
               <div class="bullet-points">
