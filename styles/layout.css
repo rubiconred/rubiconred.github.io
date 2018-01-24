@@ -29,6 +29,7 @@
 }
 
 /*row*/
+
 .row{
     display: block;
     position: relative;
@@ -45,6 +46,7 @@
     clear: both;
     content: "";
 }
+
 /*Girds*/
 
 .full-grid,
@@ -79,6 +81,7 @@
 .three-fourth-grid {
     width: 75%;
 }
+
 /*Navigation Section*/
 
 .navbar {
@@ -127,17 +130,21 @@
         width: 750px
     }
 }
+
+
 @media (min-width: 992px) {
     .container {
         width: 970px
     }
     .header .nav {display: block!important;}
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
+
 
 @media(max-width:992px){
     .navbar-header {
@@ -145,6 +152,7 @@
         float: none;
     }
 }
+
 @media(max-width:767px){
     
     .container,

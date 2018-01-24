@@ -34,6 +34,13 @@
 	padding-left: 0;
 }
 
+#main .release-notes ul li:before {
+	display: inline-block;
+	content: "\2713";
+	width: 1.5em;
+	margin-left: -1em;
+}
+
 #main .release-notes ul li{
 	display: list-item;
 	margin-left: 30px;
@@ -89,6 +96,16 @@
 
 #older-releases table tbody > tr:nth-child(even){
 	background-color: #E9E9E9;
+}
+
+h1 {
+	padding-bottom: 15px;
+	border-bottom: 2px solid #ED1F24;
+}
+
+h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ED1F24;
 }
 
 h1.underlined_title{

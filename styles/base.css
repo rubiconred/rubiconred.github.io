@@ -829,6 +829,7 @@ border: 0 none;
 /*Responsive CSS*/
 /*************************************************************/
 
+/*
 @media(max-width:1200px){
     body{padding-top: 50px;}
     .banner-section .banner .banner-text .banner-title,
@@ -839,6 +840,8 @@ border: 0 none;
     .banner-section .owl-controls .owl-buttons .owl-prev{margin-left:-485px;}
     .banner-section .owl-controls .owl-buttons .owl-next{margin-right:-485px;}
 }
+*/
+
 /*Mini Desktop*/
 
 @media(max-width:992px){
