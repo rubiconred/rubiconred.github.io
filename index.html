@@ -171,20 +171,19 @@
         <div class="row">
           <div class="release-notes">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.8.7 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.8.8 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.8.7</strong></p>
+              <p><strong>What's new in v5.8.8</strong></p>
               <ul>
-  <li>Bug fix: Fixed an issue where Release Pipeline was raising NullPointerException when attempting to deploy an Application Blueprint Revision whose parent Application Blueprint Version is now retired.</li>
-  <li>Bug fix: WCC 12c provisioning on environments with a standalone admin server fails when processing wcc_servern_intradoc.cfg which does not exist.</li>
-  <li>Bug fix: Fixed an issue where deployment of BAM artifacts were failing</li>
-  <li>While activating release pipeline, the validation process now shows Application Blueprint Name apart from ID, as part of the validation failed error message</li>
+  <li>MyST Studio has been certified for OTD 12.2.1.3.0 in a standalone (non-database) configuration.</li>
+  <li>Bug fix: Fixed an issue where OSB session is getting discard on deployment failure. This feature can be overridden by adding property in global variables by the name “discard.osb.session” and value “true/false”.</li>
+  <li>Bug fix: Fixed configure-wcc runtime error and fixed intradoc.cfg not updating on a managed server collocated with an adminserver</li>
 </ul>
 
             </div>
             <h4 class="doc-link">
-              <a href="release-notes.html#myst-studio-587" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="release-notes.html#myst-studio-588" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -200,8 +199,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.7.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.7.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.8.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.8.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -209,7 +208,7 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.7.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.8.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -228,6 +227,34 @@
               </tr>
               <tbody>
                 
+                
+                
+                
+                <tr>
+                  <td>5.8.7</td>
+                  <td>23 Jan 2018</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="release-notes.html#myst-studio-587" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.8.7/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.8.7.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.8.7.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.8.7.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 
                 
                 
