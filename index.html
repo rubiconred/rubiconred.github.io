@@ -181,6 +181,19 @@
   <li>MyST now allows one to test the connectivity of hosts while configuring pre-existing infrastructure providers</li>
   <li>MyST now visually indicates when deployments in specific stages of a release pipeline are behind the latest revisions of either the previous stage or the latest build in case it is the first stage.</li>
   <li>MyST now provides an option to redeploy a stream revision which has failed at pre - validation stage</li>
+  <li>For MyST extensions, the logging for resources that did not have a name has been improved so that troubleshooting is easier</li>
+  <li>Stream model UI now closes once save or save + commit buttons are pressed</li>
+  <li>
+    <p>MyST now shows date indicating when a platform model is provisioned/reprovisioned in the model overview page. It is also possible to sort based on this date.</p>
+  </li>
+  <li>Fixed an issue where the user interface was caching role data, hence rendering wrong privileges for roles on the screen.</li>
+  <li>Fixed an issue due to which name and description were not getting saved from EDIT view of Application Blueprint (Version).</li>
+  <li>Fixed an issue due to which useful debug information was not getting printed on log when MyST has faced an exception during OSB deployment.</li>
+  <li>Fixed an issue due to which MyST was not creating a new “build” for Third Party artifacts, even in a valid scenario, where metadata for the artifact is updated.</li>
+  <li>Fixed an issue where MyST used to allow deployment of a release candidate despite the user explicitly rejecting it.</li>
+  <li>Fixed data upgrade issue with respect to artifact build metadata. This issue was causing user to successfully upgrade to 5.9.0 version.</li>
+  <li>Fixed an issue due to which “packaging” field in Artifact detail UI was always showing default packaging (for the artifact type) instead of user entered value.</li>
+  <li>Fixed an issue where BPM was being erroneously introspected on 11g</li>
 </ul>
 
 <p><strong>NOTE:</strong> You must upgrade the Jenkins plugin when upgrading to this version of MyST</p>
