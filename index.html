@@ -194,6 +194,7 @@
   <li>Fixed data upgrade issue with respect to artifact build metadata. This issue was causing user to successfully upgrade to 5.9.0 version.</li>
   <li>Fixed an issue due to which “packaging” field in Artifact detail UI was always showing default packaging (for the artifact type) instead of user entered value.</li>
   <li>Fixed an issue where BPM was being erroneously introspected on 11g</li>
+  <li>Fixed an issue around configuring of JKS keystores in 12c FMW environment. Now, MyST configures JKS keystores correctly in 12c FMW environments to support OWSM security configuration. JKS keystores are available within the Enterprise Manager control, and can be selected when configuring OWSM security to support signing and encrypting.</li>
 </ul>
 
 <p><strong>NOTE:</strong> You must upgrade the Jenkins plugin when upgrading to this version of MyST</p>

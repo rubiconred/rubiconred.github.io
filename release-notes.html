@@ -82,9 +82,7 @@
 <h2 id="bug-fixes">Bug Fixes</h2>
 
 <ul>
-  <li>
-    <p>FC-5130 - Fixed an issue where the user interface was caching role data, hence rendering wrong privileges for roles on the screen.</p>
-  </li>
+  <li>FC-5130 - Fixed an issue where the user interface was caching role data, hence rendering wrong privileges for roles on the screen.</li>
   <li>FC-5126 - Fixed an issue due to which name and description were not getting saved from EDIT view of Application Blueprint (Version).</li>
   <li>FC-5109 - Fixed an issue due to which useful debug information was not getting printed on log when MyST has faced an exception during OSB deployment.</li>
   <li>FC-5132 - Fixed an issue due to which MyST was not creating a new “build” for Third Party artifacts, even in a valid scenario, where metadata for the artifact is updated.</li>
@@ -92,6 +90,7 @@
   <li>FC-5139 - Fixed data upgrade issue with respect to artifact build metadata. This issue was causing user to successfully upgrade to 5.9.0 version.</li>
   <li>FC-5157 - Fixed an issue due to which “packaging” field in Artifact detail UI was always showing default packaging (for the artifact type) instead of user entered value.</li>
   <li>FC-5175 - Fixed an issue where BPM was being erroneously introspected on 11g</li>
+  <li>FC-5120 - Fixed an issue around configuring of JKS keystores in 12c FMW environment. Now, MyST configures JKS keystores correctly in 12c FMW environments to support OWSM security configuration. JKS keystores are available within the Enterprise Manager control, and can be selected when configuring OWSM security to support signing and encrypting.</li>
 </ul>
 
 <h1 id="myst-studio-590">MyST Studio 5.9.0</h1>
