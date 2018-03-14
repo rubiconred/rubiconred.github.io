@@ -171,37 +171,19 @@
         <div class="row">
           <div class="release-notes">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v5.9.1 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v6.0.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v5.9.1</strong></p>
+              <p><strong>What's new in v6.0.0</strong></p>
               <ul>
-  <li>MyST now supports configuration of the Oracle Virtual Directory authentication provider.</li>
-  <li>MyST now shows the name of the user who executed an action in Action History UI</li>
-  <li>MyST now allows one to test the connectivity of hosts while configuring pre-existing infrastructure providers</li>
-  <li>MyST now visually indicates when deployments in specific stages of a release pipeline are behind the latest revisions of either the previous stage or the latest build in case it is the first stage.</li>
-  <li>MyST now provides an option to redeploy a stream revision which has failed at pre - validation stage</li>
-  <li>For MyST extensions, the logging for resources that did not have a name has been improved so that troubleshooting is easier</li>
-  <li>Stream model UI now closes once save or save + commit buttons are pressed</li>
-  <li>
-    <p>MyST now shows date indicating when a platform model is provisioned/reprovisioned in the model overview page. It is also possible to sort based on this date.</p>
-  </li>
-  <li>Fixed an issue where the user interface was caching role data, hence rendering wrong privileges for roles on the screen.</li>
-  <li>Fixed an issue due to which name and description were not getting saved from EDIT view of Application Blueprint (Version).</li>
-  <li>Fixed an issue due to which useful debug information was not getting printed on log when MyST has faced an exception during OSB deployment.</li>
-  <li>Fixed an issue due to which MyST was not creating a new “build” for Third Party artifacts, even in a valid scenario, where metadata for the artifact is updated.</li>
-  <li>Fixed an issue where MyST used to allow deployment of a release candidate despite the user explicitly rejecting it.</li>
-  <li>Fixed data upgrade issue with respect to artifact build metadata. This issue was causing user to successfully upgrade to 5.9.0 version.</li>
-  <li>Fixed an issue due to which “packaging” field in Artifact detail UI was always showing default packaging (for the artifact type) instead of user entered value.</li>
-  <li>Fixed an issue where BPM was being erroneously introspected on 11g</li>
-  <li>Fixed an issue around configuring of JKS keystores in 12c FMW environment. Now, MyST configures JKS keystores correctly in 12c FMW environments to support OWSM security configuration. JKS keystores are available within the Enterprise Manager control, and can be selected when configuring OWSM security to support signing and encrypting.</li>
+  <li>MyST now has a newly designed editor for platform configuration which significantly enhances user experience. Please consult updated product documentation for further information.</li>
 </ul>
 
-<p><strong>NOTE:</strong> You must upgrade the Jenkins plugin when upgrading to this version of MyST</p>
+<p><strong>NOTE</strong>: You <strong>must take a backup of database</strong> before upgrading from older version to this version of MyST</p>
 
             </div>
             <h4 class="doc-link">
-              <a href="release-notes.html#myst-studio-591" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="release-notes.html#myst-studio-600" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -217,8 +199,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.9.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.9.1.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.0.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.0.0.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -226,10 +208,10 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.9.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.0.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-5.9.1-jar-with-dependencies.jar">MyST Studio Transport JAR <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.0.0-jar-with-dependencies.jar">MyST Studio Transport JAR <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -248,6 +230,37 @@
               </tr>
               <tbody>
                 
+                
+                
+                
+                <tr>
+                  <td>5.9.1</td>
+                  <td>08 Mar 2018</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="release-notes.html#myst-studio-591" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-5.9.1/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-5.9.1.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-5.9.1.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-5.9.1.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-5.9.1-jar-with-dependencies.jar">Transport JAR <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 
                 
                 
