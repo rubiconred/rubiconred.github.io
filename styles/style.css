@@ -27,6 +27,18 @@
 	margin-bottom: 5px;
 }
 
+/* 
+Required due to <a> being set to text-decoration: none; in normalize.css 
+Otherwise links in the what's new section don't show up
+*/
+#main .release-notes .bullet-points a{
+	text-decoration: underline;
+}
+
+#main .content-section a{
+	text-decoration: underline;
+}
+
 #main .release-notes ul{
 	display: block;
 	list-style: none;

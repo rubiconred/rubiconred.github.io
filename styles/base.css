@@ -698,6 +698,8 @@ section:after {
     padding-left: 10px;
     padding-right: 10px;
 }
+/*
+Commented out by Craig to ensure that the links display correctly in the What's new section.
 .resources-section .resources-navigation ul li a{
     position: relative;
     display: block;
@@ -720,6 +722,7 @@ section:after {
     border-top-color:#ed1f24;
     content: "";
 }
+*/
 
 .resources-section .resources-masonry{}
 .resources-section .resources-masonry .masonry-tile{
