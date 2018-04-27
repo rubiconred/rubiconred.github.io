@@ -171,20 +171,34 @@
         <div class="row">
           <div class="release-notes">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v6.1.0 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v6.2.0 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v6.1.0</strong></p>
+              <p><strong>What's new in v6.2.0</strong></p>
               <ul>
-  <li><a href="https://docs.rubiconred.com/myst-studio/appendix/artifact/#integration-cloud-archive">Oracle Integration Cloud</a> and <a href="https://docs.rubiconred.com/myst-studio/appendix/artifact/#process-cloud-archive">Process Cloud</a> artifacts can now be deployed through a MyST Studio Release Pipeline</li>
-  <li>Improved rendering of the Release Pipeline in a case where there are Multiple versions of an Application Blueprint</li>
-  <li>Maven classifier is now a supported artifact attribute in MyST Studio</li>
-  <li>Webtier 11.1.1.7.0 can now be provisioned standalone</li>
+  <li>Performance Improvements
+    <ul>
+      <li>Significant improvement to the response time for UI when listing Platform Blueprints, Platform Models, Platform Instances, Artifacts, Application Blueprints and Release Pipelines</li>
+      <li>Release Pipelines revision updates are now delivered through an event-driven architecture rather than a polling mechanism</li>
+    </ul>
+  </li>
+  <li>Installer Improvements
+    <ul>
+      <li>The MyST Jenkins Plugin and SDK Jar are now bundled in the MyST Build Server.</li>
+      <li>The MyST Build Server is now pulled from the Repository rather than being built from scratch.</li>
+    </ul>
+  </li>
+  <li>WebLogic domain templates can now be overriden in the platform configuration editor</li>
+  <li>MyST now supports registration of multi-module maven projects where each sub-module is discovered and registered independently</li>
+  <li>Made a few properties such as passwords and listen addresses editable even at the blueprint level but in advanced mode.</li>
+  <li>Error messages are displayed with a non-administrative user tries to kick off any of the deployment actions and the deployer role is not set for the pipeline stage.</li>
+  <li>MyST now supports copying of Global Variable property references for use in other parts of the Blueprint or Model</li>
+  <li>Improved usability of custom action selection screen</li>
 </ul>
 
             </div>
             <h4 class="doc-link">
-              <a href="release-notes.html#myst-studio-610" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="release-notes.html#myst-studio-620" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -200,8 +214,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.1.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.1.0.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.2.0.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.2.0.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -209,10 +223,10 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.1.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.2.0.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.1.0-jar-with-dependencies.jar">MyST Studio Transport JAR <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.2.0-jar-with-dependencies.jar">MyST Studio Transport JAR <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -231,6 +245,37 @@
               </tr>
               <tbody>
                 
+                
+                
+                
+                <tr>
+                  <td>6.1.0</td>
+                  <td>16 April 2018</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="release-notes.html#myst-studio-610" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-6.1.0/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.1.0.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.1.0.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.1.0.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.1.0-jar-with-dependencies.jar">Transport JAR <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 
                 
                 
