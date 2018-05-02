@@ -79,7 +79,7 @@
   <li>FC-5261 - WebLogic domain templates can now be overriden in the platform configuration editor</li>
   <li>FC-4962 - MyST now supports registration of multi-module maven projects where each sub-module is discovered and registered independently</li>
   <li>FC-5220 - Made a few properties such as passwords and listen addresses editable even at the blueprint level but in advanced mode.</li>
-  <li>FC-4878 - Error messages are displayed with a non-administrative user tries to kick off any of the deployment actions and the deployer role is not set for the pipeline stage.</li>
+  <li>FC-4878 - Error messages are displayed when a non-administrative user tries to kick off any of the deployment actions and the deployer role is not set for the pipeline stage.</li>
   <li>FC-5217 - MyST now supports copying of Global Variable property references for use in other parts of the Blueprint or Model</li>
   <li>FC-5111 - Improved usability of custom action selection screen</li>
 </ul>
@@ -93,6 +93,17 @@
   <li>FC-5262 - Fixed an issue where MyST Studio was not starting up without having an access to internet.</li>
   <li>FC-5230 - Fixed an issue where MyST was not allowing addition or removal of ABPs from a release pipeline without having to deactivate first</li>
   <li>FC-5268 - Fixed an issue where Service Console was not showing up correctly in the summary when registering OPAAS instances</li>
+</ul>
+
+<h2 id="known-issues">Known Issues</h2>
+
+<ul>
+  <li>Fresh MyST Studio installs fail due to the 6.2.0 installer using latest mysql docker image.
+    <ul>
+      <li>Workaround is to update <code class="highlighter-rouge">/opt/myst-studio/conf/docker-compose.yml:16</code> from mysql to mysql:5 for example:<br /><code class="highlighter-rouge">image: mysql:5</code></li>
+      <li>This issue does <strong>not</strong> affect existing users who are doing an <code class="highlighter-rouge">upgrade.sh</code></li>
+    </ul>
+  </li>
 </ul>
 
 <h1 id="myst-studio-610">MyST Studio 6.1.0</h1>
@@ -142,7 +153,7 @@
   <li>FC-4706 - MyST now has a newly designed <a href="https://docs.rubiconred.com/myst-studio/platform/definitions/editor/">platform editor</a> for platform configuration which significantly enhances user experience</li>
 </ul>
 
-<h2 id="known-issues">Known Issues</h2>
+<h2 id="known-issues-1">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of a 6.0.1+ release</li>
@@ -199,7 +210,7 @@
   <li>FC-5120 - Fixed an issue around configuring of JKS keystores in 12c FMW environment. Now, MyST configures JKS keystores correctly in 12c FMW environments to support OWSM security configuration. JKS keystores are available within the Enterprise Manager control, and can be selected when configuring OWSM security to support signing and encrypting.</li>
 </ul>
 
-<h2 id="known-issues-1">Known Issues</h2>
+<h2 id="known-issues-2">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of the 5.9.1.1 release or a 6.0.1+ release.</li>
@@ -241,7 +252,7 @@
   <li>FC-5105 - Fixed an issue with BAM provisioning on a cluster for 12c</li>
 </ul>
 
-<h2 id="known-issues-2">Known Issues</h2>
+<h2 id="known-issues-3">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of the 5.9.1.1 release or a 6.0.1+ release.</li>

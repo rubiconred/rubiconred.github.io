@@ -191,10 +191,19 @@
   <li>WebLogic domain templates can now be overriden in the platform configuration editor</li>
   <li>MyST now supports registration of multi-module maven projects where each sub-module is discovered and registered independently</li>
   <li>Made a few properties such as passwords and listen addresses editable even at the blueprint level but in advanced mode.</li>
-  <li>Error messages are displayed with a non-administrative user tries to kick off any of the deployment actions and the deployer role is not set for the pipeline stage.</li>
+  <li>Error messages are displayed when a non-administrative user tries to kick off any of the deployment actions and the deployer role is not set for the pipeline stage.</li>
   <li>MyST now supports copying of Global Variable property references for use in other parts of the Blueprint or Model</li>
   <li>Improved usability of custom action selection screen</li>
 </ul>
+
+<p><strong>Known Issues</strong></p>
+
+<p>Fresh MyST Studio installs fail due to the 6.2.0 installer using latest mysql docker image.</p>
+<ol>
+  <li>Workaround is to update <code class="highlighter-rouge">/opt/myst-studio/conf/docker-compose.yml:16</code> from mysql to mysql:5 for example:<br /><code class="highlighter-rouge">image: mysql:5</code></li>
+  <li>This issue does <strong>not</strong> affect existing users who are doing an <code class="highlighter-rouge">upgrade.sh</code></li>
+</ol>
+
 
             </div>
             <h4 class="doc-link">
