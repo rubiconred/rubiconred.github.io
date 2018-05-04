@@ -199,9 +199,17 @@
 <p><strong>Known Issues</strong></p>
 
 <p>Fresh MyST Studio installs fail due to the 6.2.0 installer using latest mysql docker image.</p>
+
 <ol>
   <li>Workaround is to update <code class="highlighter-rouge">/opt/myst-studio/conf/docker-compose.yml:16</code> from mysql to mysql:5 for example:<br /><code class="highlighter-rouge">image: mysql:5</code></li>
   <li>This issue does <strong>not</strong> affect existing users who are doing an <code class="highlighter-rouge">upgrade.sh</code></li>
+</ol>
+
+<p>MyST Studio users under Role Based Access Control (RBAC) can no longer see Platform Models, Templates, and Instances.</p>
+
+<ol>
+  <li>There is currently no workaround unless you login as a user with System Administrator privileges</li>
+  <li>Do not upgrade to 6.2.0 if using RBAC</li>
 </ol>
 
 
