@@ -79,6 +79,12 @@
   <li>FC-5320 - Fixed issue where a non-admin user was being directed to the login screen when downloading support artifacts from the platform instance action history dialog</li>
 </ul>
 
+<h2 id="known-issues">Known Issues</h2>
+<p>Affects MyST running on SSL and results in users no longer being able to log into MyST Studio. After upgrading and going to the MyST Studio URL a <code class="highlighter-rouge">MYST0000 - Service Unavailable</code> error is displayed.</p>
+<ol>
+  <li>Workaround by disabling SSL for MyST</li>
+</ol>
+
 <h1 id="myst-studio-621">MyST Studio 6.2.1</h1>
 
 <h2 id="new-features">New Features</h2>
@@ -139,7 +145,7 @@
   <li>FC-5268 - Fixed an issue where Service Console was not showing up correctly in the summary when registering OPAAS instances</li>
 </ul>
 
-<h2 id="known-issues">Known Issues</h2>
+<h2 id="known-issues-1">Known Issues</h2>
 
 <ul>
   <li>Fresh MyST Studio installs fail due to the 6.2.0 installer using latest mysql docker image.
@@ -202,7 +208,7 @@
   <li>FC-4706 - MyST now has a newly designed <a href="https://docs.rubiconred.com/myst-studio/platform/definitions/editor/">platform editor</a> for platform configuration which significantly enhances user experience</li>
 </ul>
 
-<h2 id="known-issues-1">Known Issues</h2>
+<h2 id="known-issues-2">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of a 6.0.1+ release</li>
@@ -259,7 +265,7 @@
   <li>FC-5120 - Fixed an issue around configuring of JKS keystores in 12c FMW environment. Now, MyST configures JKS keystores correctly in 12c FMW environments to support OWSM security configuration. JKS keystores are available within the Enterprise Manager control, and can be selected when configuring OWSM security to support signing and encrypting.</li>
 </ul>
 
-<h2 id="known-issues-2">Known Issues</h2>
+<h2 id="known-issues-3">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of the 5.9.1.1 release or a 6.0.1+ release.</li>
@@ -301,7 +307,7 @@
   <li>FC-5105 - Fixed an issue with BAM provisioning on a cluster for 12c</li>
 </ul>
 
-<h2 id="known-issues-3">Known Issues</h2>
+<h2 id="known-issues-4">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of the 5.9.1.1 release or a 6.0.1+ release.</li>
