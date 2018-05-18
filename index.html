@@ -171,35 +171,21 @@
         <div class="row">
           <div class="release-notes">
             <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v6.2.2 <i class="fa fa-external-link"></i></a></span>
+              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v6.2.3 <i class="fa fa-external-link"></i></a></span>
             </h2>
             <div class="bullet-points">
-              <p><strong>What's new in v6.2.2</strong></p>
+              <p><strong>What's new in v6.2.3</strong></p>
               <ul>
   <li>Deployed Artifacts can now be viewed against a given Platform Instance. Previously, this was only possible to see within a Release Pipeline Stage.</li>
-  <li>Improved performance of stream model editing in a case where there is a large number of properties</li>
+  <li>Improved performance of stream model editing in a case where there is a large number of properties.</li>
   <li>Artifacts that have changed in a given release are now highlighted.</li>
-  <li>Bug Fixes
-    <ul>
-      <li>Fixed an issue introduced in 6.2.0 where pipelines that were locked prior to a shutdown were no longer being unlocked when the server restarted</li>
-      <li>SSL is now correctly configured for WebTier version 12.2.x</li>
-      <li>MyST now displays an error message if invalid characters are used in a user password</li>
-      <li>Resolved an issue where artifact introspection was erroneously introspecting values from the pom.xml such as <code class="highlighter-rouge">project.basedir</code></li>
-      <li>Fixed issue where a non-admin user was being directed to the login screen when downloading support artifacts from the platform instance action history dialog</li>
-    </ul>
-  </li>
+  <li>MyST now provides the option to de-activate release pipelines from the dashboard view.</li>
+  <li>Bug Fixes. See <a href="https://docs.rubiconred.com/release-notes.html">release notes</a> for more information.</li>
 </ul>
-
-<p><strong>Known Issues</strong></p>
-
-<p>Affects MyST running on SSL and results in users no longer being able to log into MyST Studio. After upgrading and going to the MyST Studio URL a <code class="highlighter-rouge">MYST0000 - Service Unavailable</code> error is displayed. A hotfix is underway.</p>
-<ol>
-  <li>Workaround by disabling SSL for MyST</li>
-</ol>
 
             </div>
             <h4 class="doc-link">
-              <a href="release-notes.html#myst-studio-622" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="release-notes.html#myst-studio-623" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <!--
@@ -215,8 +201,8 @@
             <div class="row">
               <div class="two-third-grid">
                 <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.2.2.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.2.2.jar"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.2.3.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.2.3.jar"><i class="fa fa-download"></i></a></span></div>
                 </h4>
               </div>
               <div class="one-third-grid highlight">
@@ -224,10 +210,10 @@
                   <span><strong>Recommended Downloads</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.2.2.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.2.3.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
                 </p>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.2.2-jar-with-dependencies.jar">MyST Studio Transport JAR <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.2.3-jar-with-dependencies.jar">MyST Studio Transport JAR <i class="fa fa-external-link"></i></a>
                 </p>
               </div>
             </div>
@@ -246,6 +232,37 @@
               </tr>
               <tbody>
                 
+                
+                
+                
+                <tr>
+                  <td>6.2.2</td>
+                  <td>16 May 2018</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="release-notes.html#myst-studio-622" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-6.2.2/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.2.2.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.2.2.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.2.2.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.2.2-jar-with-dependencies.jar">Transport JAR <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 
                 
                 
