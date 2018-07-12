@@ -86,7 +86,7 @@ section:after {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #ffffff;
-    
+
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
@@ -328,7 +328,7 @@ section:after {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     font: normal normal normal 24px/1 FontAwesome;
-     content:"\f177"; 
+     content:"\f177";
 }
 .features-section .thumbnails-list .owl-controls .owl-buttons div.owl-next:before,
 .features-section .thumbnails-list .owl-controls .owl-nav div.owl-next:before{
@@ -422,7 +422,7 @@ section:after {
 }
 .tabs-trigger ul li a:before,
 .m-heading:before{
-     content: "\f192";   
+     content: "\f192";
     font-family: FontAwesome;
     margin-right: 5px;
 }
@@ -541,7 +541,7 @@ section:after {
     margin-left: -20px;
 }
 .footer-2 .social-footer li{
-    padding-left:20px; 
+    padding-left:20px;
 }
 .footer-2 .social-footer a{
     display: block;
@@ -790,13 +790,13 @@ border: 0 none;
   }
 .request-demo-form select::-ms-expand {
     display: none;
-}  
+}
 .request-demo-form input[type="submit"],
 .request-demo-form button{
     font-size: 20px;
     background-color: #ed1f24;
     color: #ffffff;
-	  
+
 
 }
 .res-but{height:50px;width: 100%;}
@@ -884,7 +884,7 @@ border: 0 none;
     .footer-2 .unstyle-list ul li{font-size: 16px;}
     .footer-2 .unstyle-list ul li span:first-child{display: none; margin-bottom: 5px;}
     .footer-2 .fa-mobile{font-size: 20px;}
-    
+
     .banner-section .banner .banner-text .half-grid{
         width: 100%;
         text-align: center;
@@ -910,7 +910,7 @@ border: 0 none;
         padding-right: 0;
         padding-left: 50px;
     }
-    
+
     /*********************
     Inner Css
     **********************/
@@ -925,11 +925,11 @@ border: 0 none;
     .elements-list .element .element-text{
         padding: 115px 15px 15px;
     }
-    
+
     .additional-info-list .additional-info{text-align: center;}
     .additional-info-list .additional-info img{float:none;}
     .additional-info-list .additional-info .additional-info-text{padding: 0;}
-    
+
     .resources-section .resources-navigation ul li a{
         font-size: 18px;
         line-height: 24px;
@@ -940,7 +940,7 @@ border: 0 none;
 
 @media(max-width:767px){
     .section-title strong{display: inline;}
-    
+
     .banner-section .banner .banner-text{
         position: relative;
         top: 0; left: 0; right: 0; bottom: 0;
@@ -956,11 +956,11 @@ border: 0 none;
     }
     .banner-section .owl-controls .owl-buttons .owl-next {
         right: 20px;
-        margin-right:0; 
+        margin-right:0;
     }
     .banner-section .owl-controls .owl-buttons .owl-prev {
         left: 20px;
-         margin-left:0; 
+         margin-left:0;
     }
     .features-section,
     .cta-section{padding: 30px 0;}
@@ -1024,7 +1024,7 @@ border: 0 none;
         padding-bottom: 10px;
     }
     .resources-section .resources-navigation ul li a.active:before{display: none;}
-    
+
     .request-demo-form{padding: 15px;}
     .request-demo-form input[type="text"],
     .request-demo-form select,
@@ -1052,7 +1052,7 @@ border: 0 none;
         background: #ed1f24;
         color: #ffffff;
     }
-    
+
     .banner-section .banner .banner-text p,
     .banner-section .owl-controls .owl-buttons .owl-prev,
     .banner-section .owl-controls .owl-buttons .owl-next{
@@ -1152,10 +1152,10 @@ margin-bottom: 10px;}
 .forget-pass input[type="submit"]{  width: 12%;
   padding: 10px;
   }
-  
-  
-  
-  
+
+
+
+
   /* messages[ */
 .success, .warning, .attention, .information {
 	padding: 10px 10px 10px 15px;

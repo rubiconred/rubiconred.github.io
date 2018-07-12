@@ -169,13 +169,10 @@
       -->
       <div class="container">
         <div class="row">
-          <div class="release-notes">
-            <h2 class="doc-link">
-              <span><a href="https://docs.rubiconred.com/myst-studio/index.html" target="_blank">MyST Studio User Guide v6.3.1 <i class="fa fa-external-link"></i></a></span>
-            </h2>
+          <div class="release-notes two-third-grid">
+            <h3><strong>What's new in v6.3.1</strong></h3>
             <div class="bullet-points">
-              <p><strong>What's new in v6.3.1</strong></p>
-              <ul>
+            <ul>
   <li>Artifact Retirement Support
     <ul>
       <li>Artifacts can now be retired from the Application Blueprint editor.</li>
@@ -208,38 +205,235 @@
               <a href="release-notes.html#myst-studio-631" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
-          <!--
           <div class="release-notes one-third-grid">
-            <h3>Featured Content</h3>
+            <h3><strong>Featured Content</strong></h3>
             <iframe width="360" height="300" src="https://www.youtube.com/embed/QKKRGSoXkjQ"></iframe>
           </div>
-          -->
+          <div class="release-notes one-third-grid">
+            <h3><strong>Documentation</strong></h3>
+            <p class="doc-link">
+              <a href="https://docs.rubiconred.com/myst-studio/introduction/" target="_blank">MyST Studio User Guide <i class="fa fa-external-link"></i></a>
+            </p>
+            <p class="doc-link">
+              <a href="https://docs.rubiconred.com/myst-studio/installation/myst-studio/" target="_blank">MyST Studio Installation Guide <i class="fa fa-external-link"></i></a>
+            </p>
+          </div>
         </div>
+        <br/>
+        <br/>
         <div class="row">
           <fieldset id="download-links" class="release-notes full-grid">
-            <legend>Download links</legend>
+            <legend><strong>Downloads</strong></legend>
             <div class="row">
               <div class="two-third-grid">
-                <h4 class="doc-link">
-                  <div><span><strong>MyST Studio Docker Image</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.3.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                  <div><span><strong>MyST Studio JAR Installer</strong> <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.3.1.jar"><i class="fa fa-download"></i></a></span></div>
-                </h4>
+                <p class="doc-link">
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.3.1.jar">MyST Studio Installer 6.3.1 <i class="fa fa-download"></i></a>
+                  <p>If you have previously installed MyST you can simply auto-upgrade by running</p>
+                  <code>/opt/myst-studio/bin/upgrade.sh</code>
+                </p>
               </div>
               <div class="one-third-grid highlight">
                 <h4 class="doc-link">
-                  <span><strong>Recommended Downloads</strong></span>
+                  <span><strong>Extensions</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.3.1.hpi">MyST Studio Plugin for Jenkins <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.3.1.hpi">MyST Studio Plugin for Jenkins 6.3.1 <i class="fa fa-download"></i></a>
                 </p>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.3.1-jar-with-dependencies.jar">MyST Studio Transport JAR <i class="fa fa-external-link"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.3.1-jar-with-dependencies.jar">MyST Studio Transport JAR 6.3.1 <i class="fa fa-download"></i></a>
                 </p>
               </div>
             </div>
           </fieldset>
         </div>
+
         <div class="row">
+            <div class="full-grid">
+              <div class="elements-list">
+                  <figure class="element">
+                      <div class="element-img"><img src="images/help.png" alt="Help"></div>
+                      <figcaption class="element-text">
+                          <h6>Are you installing MyST for the first time?</h6>
+                          <br/>
+                          <p>For a typical installation with Docker,<br/> MyST can be setup in a simple three step process.</p>
+                      </figcaption>
+                  </figure>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <fieldset id="download-links" class="release-notes full-grid">
+            <div class="row">
+              <div class="half-grid">
+                <h3 class="doc-link">
+                  <span><strong>Installation in 3 Steps</strong></span>
+                </h3>
+                <p class="doc-link">
+                  <p><strong>Step 1</strong>: Run the MyST Installer</p>
+                  <code>java -jar fc-installer-6.3.1.jar</code>
+                </p>
+                <p class="doc-link">
+                  <p><strong>Step 2</strong>: After running the installer, MyST can be started with</p>
+                  <code>/opt/myst-studio/bin/start.sh</code>
+                </p>
+                <p class="doc-link">
+                  <p><strong>Step 3</strong>: By default, the MyST Studio console is accessible from</p>
+                  <code>https://localhost/console</code>
+                </p>
+                <!--
+                <div class="doc-link">
+                  <p>By default, MyST Studio will boot up with demo SSL certificates.</p>
+                  <p>The certificates can be replaced under<p>
+                  <code>/opt/myst-studio/conf/data/nginx/ssl/</code>
+                </div>
+                -->
+              </div>
+              <div class="half-grid highlight">
+                <h4 class="doc-link">
+                  <span><strong>Behind an Internet Proxy?</strong></span>
+                </h4>
+                <div class="bullet-points">
+                <p>If you are behind an internet proxy, please follow <a href="https://rubiconred.gitbooks.io/myst-help-center/content/how-do-i-setup-myst-and-associated-components-to-use-an-internet-proxy.html">these steps</a> to ensure all installation dependencies can be directly pulled from the Rubicon Red Docker Registry.</p>
+                </div>
+                <p>Alternatively, the image is available for direct download</p>
+                <p class="doc-link">
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.3.1tar.gz">MyST Studio Image 6.3.1 <i class="fa fa-download"></i></a>
+                </p>
+                <!--
+                TODO: Make the other images available as tar.gz
+                <p class="doc-link">
+                  <a href="TODO">MyST Build Server Image 6.3.1 <i class="fa fa-download"></i></a>
+                </p>
+                <p class="doc-link">
+                  <a href="TODO">MyST Maven Repository Image 6.3.1 <i class="fa fa-download"></i></a>
+                </p>
+                -->
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="row">
+            <div class="full-grid">
+              <div class="elements-list">
+                  <figure class="element">
+                      <div class="element-img"><img src="images/rc-icon-02.png" alt="Release Candidates"></div>
+                      <figcaption class="element-text">
+                          <h6>Want to try the latest Release Candidate?</h6>
+                          <p>From July 2018, Rubicon Red are allowing for the download of future release candidates.
+                          <br/>
+                          Release candidates are great for exploring and providing feedback on upcoming features.
+                      </figcaption>
+                  </figure>
+              </div>
+            </div>
+        </div>
+        <div class="row right">
+          <p class="doc-link"  style="text-align:right">
+            <a href="release-notes.html#myst-studio-640-rc1" target="_blank">View release notes for 6.4.0-rc1 <i class="fa fa-external-link"></i></a>
+          </p>
+          <fieldset id="download-links" class="release-notes full-grid">
+            <legend><strong>Downloads</strong> (Edge)</legend>
+            <div class="row">
+              <div class="two-third-grid">
+                <p class="doc-link">
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.4.0-rc1.jar">MyST Studio Installer 6.4.0-rc1 <i class="fa fa-download"></i></a>
+                </p>
+                <p class="doc-link">
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.4.0-rc1.hpi">MyST Studio Plugin for Jenkins 6.4.0-rc1 <i class="fa fa-download"></i></a>
+                </p>
+                <p class="doc-link">
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.4.0-rc1-jar-with-dependencies.jar">MyST Studio Transport JAR 6.4.0-rc1 <i class="fa fa-download"></i></a>
+                </p>
+                <p class="doc-link">
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.4.0-rc1tar.gz">MyST Studio Image 6.4.0-rc1 <i class="fa fa-download"></i></a>
+                </p>
+                <p class="doc-link">
+                  <p>If you have previously installed MyST you can auto-upgrade by running</p>
+                  <code>/opt/myst-studio/bin/upgrade.sh 6.4.0-rc1</code>
+                </p>
+              </div>
+              <div class="one-third-grid highlight">
+                <h4 class="doc-link">
+                  <span><strong>Tell us what you think!</strong></span>
+                </h4>
+                <p class="doc-link">
+                  We'd love to hear from you.
+                  <br/>
+                  Did the release candidate hit the mark?
+                  <br/>
+                  Something you feel could be better?
+                  <br/>
+                  <a href="https://goo.gl/g9VPmk">Join us on Slack to share your experience <i class="fa fa-external-link"></i></a>
+                </p>
+              </div>
+            </div>
+           </fieldset>
+         </div>
+         <br/>
+         <div class="row">
+           <fieldset id="download-links" class="release-notes full-grid">
+             <legend><strong>Upgrading to a newer release</strong></legend>
+             <div class="row">
+               <div class="full-grid">
+                 <h4 class="doc-link">
+                   <p>A stable release can be auto-upgraded to a newer stable release or a newer release candidate.</p>
+                   <p>Similarly, an edge release can be upgraded to a newer release candidate or even a newer stable release.</p>
+                   <p>Irregardless of release type the upgrade process is always the same.</p>
+                   <p class="doc-link">
+                     <code>/opt/myst-studio/bin/upgrade.sh [version]</code>
+                   </p>
+                   <p>To allow for a seamless downgrade, always be sure to keep a copy of the backup file created during upgrade execution.</p>
+                 </h4>
+               </div>
+             </div>
+            </fieldset>
+          </div>
+         <br/>
+         <div class="row">
+           <fieldset id="download-links" class="release-notes full-grid">
+             <legend><strong>Reverting to a previous release</strong></legend>
+             <div class="row">
+               <div class="full-grid">
+                 <h4 class="doc-link">
+                   <p>Any release (stable or edge) can be simply reverted to a previously installed version in two steps</p>
+                   <p class="doc-link">
+                     <p><strong>Step 1</strong>: Retag the old version</p>
+                     <code>/opt/myst-studio/bin/pull.sh [previous-version]</code>
+                   </p>
+                   <p class="doc-link">
+                     <p><strong>Step 2</strong>: Switch to the database backup that was auto-created during the prior upgrade</p>
+                     <code>/opt/myst-studio/bin/update-database.sh [backup-file]</code>
+                   </p>
+                 </h4>
+               </div>
+             </div>
+            </fieldset>
+          </div>
+        <!--
+        <div class="row">
+          <div class="full-grid">
+            <h4 class="doc-link">
+              <a href="release-notes.html#myst-studio-631" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <fieldset id="download-links" class="release-notes full-grid">
+            <legend>Alternative Installations</legend>
+            <div class="row">
+              <div class="two-third-grid">
+                <h4 class="doc-link">
+                  <p><span>The recommended MyST installation is Docker-based. If you installed using the <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.3.1.jar">MyST Studio Installer<i class="fa fa-download"></i></a></span></p>
+                </h4>
+                <h4 class="doc-link">
+                  <div><span>MyST Studio Docker Image 6.3.1 <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.3.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
+                </h4>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      -->
           <div id="older-releases" class="full-grid">
             <div class="title"><i class="fa fa-plus-square"></i> Older releases</div>
             <table style="display: none;">
@@ -2983,7 +3177,7 @@
                 
                 
               </tbody>
-            </table>  
+            </table>
           </div>
         </div>
       </div>
