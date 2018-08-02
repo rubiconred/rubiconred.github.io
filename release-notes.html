@@ -59,17 +59,22 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-640-rc1">MyST Studio 6.4.0-rc1</h1>
+              <h1 id="myst-studio-640-rc2">MyST Studio 6.4.0-rc2</h1>
 
 <h2 id="new-features">New Features</h2>
 
 <ul>
   <li>FC-5276 - MyST will now notify participants via <a href="https://rubiconred.gitbooks.io/myst-help-center/content/myst-management/notifications/">Email</a> if a Release Pipeline Stage is waiting for approval</li>
+  <li>FC-5352 - Managed Servers are now allowed to be defined in Platform Blueprints so that repeated configuration can be avoided within the Platform Models. Reduce configuration overhead saves time and reduces the risk of making mistakes.</li>
 </ul>
 
 <h2 id="improvements">Improvements</h2>
 
 <ul>
+  <li>FC-5354 - When doing a Bulk Edit in the Blueprint/Model an auto-save is now performed to prevent an accidental loss of properties when a user navigating away from the component view</li>
+  <li>FC-4161 - The client-side cache is now refreshed (with a user prompt) after an upgrade to avoid end-user confusion.</li>
+  <li>FC-5376 - Resolved the unwarranted display of safe warn messages in the log that were causing undue alarm</li>
+  <li>FC-5464 - Platform Instance will now display more than 15 pending actions</li>
   <li>FC-5390 - Platform Blueprints can now be created for Oracle Business Intelligence Enterprise Edition 12c with the Oracle Webtier fronting the inbound requests</li>
   <li>FC-5048 - It is now possible to target a Foreign Server to a Sub-deployment under Messaging Configuration.</li>
   <li>FC-5250 - MyST now allows for a Custom Product Catalog when defining a Platform Blueprint. This is useful when needing to extend MyST to support a target deployment environment that is not already supported out-of-the-box. When used in combination with the Deployment SDK, this feature allows Application Release Automation for any type of change be it on-prem/cloud, oracle/non-oracle, infra/app etc.</li>
@@ -79,7 +84,12 @@
 </ul>
 
 <h2 id="bug-fixes">Bug Fixes</h2>
+
 <ul>
+  <li>FC-5462 - Addressed an issue with the <code class="highlighter-rouge">security</code> action when there is another provider which returns more than 1000 results</li>
+  <li>FC-5537 - Addressed an issue caused by FC-5250 which lead to a deployment failure in the pre-validation connectivity check</li>
+  <li>FC-5494 - Fixed an issue with Deploy SDK and OIC/PCS/ICS deploys being unable to use an embedded settings.xml from the CDP</li>
+  <li>FC-5473 - Fixed an issue where MyST agent was creating world readable log files in some instances</li>
   <li>FC-5298 - Infrastructure Provider SSH connection tests now work with SSH keys</li>
 </ul>
 
@@ -108,9 +118,9 @@
 <h2 id="improvements-1">Improvements</h2>
 
 <ul>
-  <li>FC-5054 - Usability improvements to the Platform Instance Report
+  <li>FC-5054 - Usability improvements to the Platform Instance Report</li>
+  <li>Topology View has been introduced
     <ul>
-      <li>Topology View has been introduced</li>
       <li>MyST Properties (aka name/value pairs) are now shown</li>
       <li>Addressed an issue where some tables were rendering off the page in a case of long strings (FC-5345)</li>
       <li>MyST Web is no longer required by customers</li>
