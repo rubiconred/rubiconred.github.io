@@ -59,7 +59,7 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-640-rc3">MyST Studio 6.4.0-rc3</h1>
+              <h1 id="myst-studio-640-rc4">MyST Studio 6.4.0-rc4</h1>
 
 <h2 id="new-features">New Features</h2>
 
@@ -80,6 +80,8 @@
   <li>FC-5266 - A new <code class="highlighter-rouge">backup-database-minimal.sh</code> script is provided to allow for easily generating a minified and redacted copy of user data in the case of raising a MyST support ticket.</li>
   <li>FC-5398 - Managed Server original name has been set to read-only as it should never need to be changed by the end user.</li>
   <li>FC-5298 - Infrastructure Provider SSH connection tests can be run without having to first save the host details</li>
+  <li>FC-5415 - Security Provider now supports Max Group Membership Search Level, Max Group Hierarchies In Cache, and Group Hierarchy Cache TTL</li>
+  <li>FC-5583 - Supports provisioning a vanilla environment by creating a WebLogic Blueprint then create a Model and add machines, managed servers, and clusters</li>
 </ul>
 
 <h2 id="bug-fixes">Bug Fixes</h2>
@@ -90,6 +92,7 @@
   <li>FC-5494 - Fixed an issue with Deploy SDK and OIC/PCS/ICS deploys being unable to use an embedded settings.xml from the CDP</li>
   <li>FC-5473 - Fixed an issue where MyST agent was creating world readable log files in some instances</li>
   <li>FC-5298 - Infrastructure Provider SSH connection tests now work with SSH keys</li>
+  <li>FC-5540 - MyST configure-wcc action no longer assumes server names and machine IDs are always sorted in same order.</li>
 </ul>
 
 <h1 id="myst-studio-631">MyST Studio 6.3.1</h1>
