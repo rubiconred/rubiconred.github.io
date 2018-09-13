@@ -89,6 +89,7 @@
   <li>FC-5298 - Infrastructure Provider SSH connection tests can be run without having to first save the host details</li>
   <li>FC-5415 - Security Provider now supports Max Group Membership Search Level, Max Group Hierarchies In Cache, and Group Hierarchy Cache TTL</li>
   <li>FC-5565 - Server groups for Managed Servers can now be defined in the Platform Blueprint</li>
+  <li>FC-5582 - Reintroduce pre-6.2.0 support for deployment of application configuration, WSM policies and OSB custom xpath libraries</li>
 </ul>
 
 <h2 id="bug-fixes">Bug Fixes</h2>
@@ -102,6 +103,13 @@
   <li>FC-5540 - MyST configure-wcc action no longer assumes server names and machine IDs are always sorted in same order.</li>
   <li>FC-5583 - Fixed issue where it was not possible to have a standalone admin server for a purely vanilla WebLogic domain.</li>
   <li>FC-5588 - Fixed a false positive for managed server arguments in a check for drift. This happened occasionally after an intropsection of complex arguments.</li>
+  <li>FC-5576 - Resolved a 6.3.0 regression which impacted the connectivity between MyST CLI and MyST Studio</li>
+</ul>
+
+<h2 id="breaking-changes-to-oracle-cloud-apis">Breaking Changes to Oracle Cloud APIs</h2>
+
+<ul>
+  <li>FC-5652 - Fixed issue in OIC connection retrieval caused by a breaking change to the API on Oracle’s side</li>
 </ul>
 
 <h1 id="myst-studio-631">MyST Studio 6.3.1</h1>
