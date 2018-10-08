@@ -1,0 +1,11 @@
+*New Features*
+• FC-5628 - Lifecycle Management for Axway: Start, Stop, Restart, Terminate
+*Improvements*
+• FC-5664 - Integration Cloud Deployment Automatic Retry
+• FC-5630 - Security Enhancements for Axway Provisioning
+• FC-5629 - Axway Reprovisioning without needing to do a Terminate first
+• FC-4695 - Deployment will halt if MyST Configuration Plan is set but does not exist (unless `ignore-missing-myst-config-plan=true`)
+*Bug Fixes*
+• FC-5592 - Resolved a defect related to Global Transaction Support for JCA Adapters
+• FC-5322 - Resolved an issue where certain OSB customisation file names did not work
+• FC-5671 - Addressed a regression to some CLI actions such as `init`

@@ -59,7 +59,7 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-640-rc7">MyST Studio 6.4.0-rc7</h1>
+              <h1 id="myst-studio-640-rc8">MyST Studio 6.4.0-rc8</h1>
 
 <h2 id="new-features">New Features</h2>
 
@@ -73,6 +73,7 @@
     </ul>
   </li>
   <li>FC-5267 - <a href="https://docs.axway.com/bundle/APIGateway_753_ConceptsGuide_allOS_en_HTML5/page/Content/ConceptsGuideTopics/2_api_server.htm">Axway API Gateway</a> automated platform provisioning support</li>
+  <li>FC-5628	- Lifecycle Management for Axway: Start, Stop, Restart, Terminate</li>
 </ul>
 
 <h2 id="improvements">Improvements</h2>
@@ -92,6 +93,10 @@
   <li>FC-5582 - Reintroduce pre-6.2.0 support for deployment of application configuration, WSM policies and OSB custom xpath libraries</li>
   <li>FC-5590 - The JNDI name is marked as mandatory for JCA Adapters</li>
   <li>FC-5621 - Connection Factory Interface is auto-calculated for each given JCA Adapter type when it is saved</li>
+  <li>FC-5664 - Integration Cloud Deployment Automatic Retry</li>
+  <li>FC-5630 - Security Enhancements for Axway Provisioning</li>
+  <li>FC-5629	- Axway Reprovisioning without needing to do a Terminate first</li>
+  <li>FC-4695 - Deployment will halt if MyST Configuration Plan is set but does not exist (unless <code class="highlighter-rouge">ignore-missing-myst-config-plan=true</code>)</li>
 </ul>
 
 <h2 id="bug-fixes">Bug Fixes</h2>
@@ -102,12 +107,14 @@
   <li>FC-5494 - Fixed an issue with Deploy SDK and OIC/PCS/ICS deploys being unable to use an embedded settings.xml from the CDP</li>
   <li>FC-5473 - Fixed an issue where MyST agent was creating world readable log files in some instances</li>
   <li>FC-5298 - Infrastructure Provider SSH connection tests now work with SSH keys</li>
-  <li>FC-5540 - MyST configure-wcc action no longer assumes server names and machine IDs are always sorted in same order.</li>
+  <li>FC-5540 - MyST <code class="highlighter-rouge">configure-wcc</code> action no longer assumes server names and machine IDs are always sorted in same order.</li>
   <li>FC-5583 - Fixed issue where it was not possible to have a standalone admin server for a purely vanilla WebLogic domain.</li>
-  <li>FC-5588 - Fixed a false positive for managed server arguments in a check for drift. This happened occasionally after an intropsection of complex arguments.</li>
+  <li>FC-5588 - Fixed a false positive for managed server arguments in a check for drift. This happened occasionally after an introspection of complex arguments.</li>
   <li>FC-5576 - Resolved a 6.3.0 regression which impacted the connectivity between MyST CLI and MyST Studio</li>
   <li>FC-5643 - Resolved introspection issue introduced on prior 6.4 release candidate</li>
   <li>FC-5643 - Resolved regression in SSH functionality during pack/unpack for advanced cipher settings</li>
+  <li>FC-5592 - Resolved a defect related to Global Transaction Support for JCA Adapters</li>
+  <li>FC-5322 - Resolved an issue where certain OSB customisation file names did not work</li>
 </ul>
 
 <h2 id="breaking-changes-to-oracle-cloud-apis">Breaking Changes to Oracle Cloud APIs</h2>
