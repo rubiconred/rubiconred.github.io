@@ -170,39 +170,51 @@
       <div class="container">
         <div class="row">
           <div class="release-notes two-third-grid">
-            <h3><strong>What's new in v6.3.1</strong></h3>
+            <h3><strong>What's new in v6.4.0</strong></h3>
             <div class="bullet-points">
             <ul>
-  <li>Artifact Retirement Support
+  <li><strong><a href="https://rubiconred.gitbooks.io/myst-help-center/content/myst-management/notifications/">Approval notifications</a></strong> for <a href="https://docs.rubiconred.com/myst-studio/release/">Release Pipeline</a> participants</li>
+  <li><strong>Platform Blueprint editor enhancements</strong>
     <ul>
-      <li>Artifacts can now be retired from the Application Blueprint editor.</li>
-      <li>Retired Artifacts are undeployed when the Application Blueprint is promoted through stages of a Release Pipeline</li>
+      <li>Managed Servers are now allowed to be defined in Platform Blueprints so that repeated configuration can be avoided within the Platform Models. The reduced configuration overhead saves time and reduces the risk of making mistakes.</li>
+      <li>Vertical scaling is now supported for vanilla WebLogic Managed Servers. This means that on a single host and within a cluster there can be multiple Managed Servers.</li>
+      <li>Additional vanilla WebLogic Managed Servers and Machines can now be manually added directly within Platform Blueprints after the wizard has completed.</li>
+      <li>Platform Blueprints can now be created for Oracle Business Intelligence Enterprise Edition 12c with the Oracle Webtier fronting the inbound requests</li>
+      <li>It is now possible to target a Foreign Server to a Sub-deployment under Messaging Configuration.</li>
+      <li>MyST now allows for a Custom Product Catalog when defining a Platform Blueprint. This is useful when needing to extend MyST to support a target deployment environment that is not already supported out-of-the-box. When used in combination with the Deployment SDK, this feature allows Application Release Automation for any type of change be it on-prem/cloud, oracle/non-oracle, infra/app etc.</li>
     </ul>
   </li>
-  <li>Oracle Communications Order and Service Management (OSM) 7.3.5 can now be provisioned with MyST</li>
-  <li>Usability improvements to the Platform Instance Report
+  <li><strong>Platform Lifecycle Management for <a href="https://docs.axway.com/bundle/APIGateway_753_ConceptsGuide_allOS_en_HTML5/page/Content/ConceptsGuideTopics/2_api_server.htm">Axway API Gateway</a></strong>
     <ul>
-      <li>Topology View has been introduced</li>
-      <li>MyST Properties (aka name/value pairs) are now shown</li>
-      <li>Addressed an issue where some tables were rendering off the page in a case of long strings (FC-5345)</li>
-      <li>MyST Web is no longer required by customers</li>
+      <li>Automated Platform Provisioning Support</li>
+      <li>Start, Stop, Restart &amp; Terminate Support</li>
     </ul>
   </li>
-  <li>Usability improvements to the Artifact Property Registry
+  <li><strong>Usability enhancements</strong>
     <ul>
-      <li>Significant improvements to performance through pagination</li>
-      <li>The lesser used description has been moved from the default columns to free up space for the property name</li>
+      <li>When doing a Bulk Edit in the Blueprint/Model an auto-save is now performed to prevent an accidental loss of properties when a user navigating away from the component view</li>
+      <li>Integration Cloud Deployment Automatic Retry</li>
+      <li>Infrastructure Provider SSH connection tests can be run without having to first save the host details</li>
+      <li>Security Provider now supports Max Group Membership Search Level, Max Group Hierarchies In Cache, and Group Hierarchy Cache TTL</li>
+      <li>Server groups for Managed Servers can now be defined in the Platform Blueprint</li>
+      <li>The JNDI name is marked as mandatory for JCA Adapters</li>
+      <li>Connection Factory Interface is auto-calculated for each given JCA Adapter type when it is saved</li>
+      <li>Platform Instance will now display more than 15 pending actions</li>
+      <li>And <a href="https://docs.rubiconred.com/release-notes.html">more</a>.</li>
     </ul>
   </li>
-  <li>MyST now redirects to the originally queried URL after login in a case where the session has timed out.</li>
-  <li>MyST now provides a REST API for querying artifact build metadata such as Git SHA.</li>
-  <li>MyST now allows the deletion of blueprint versions as long as they are not associated with an existing Platform Model version.</li>
-  <li>Bug Fixes. See <a href="https://docs.rubiconred.com/release-notes.html">release notes</a> for more information.</li>
+  <li><strong>Operational improvements</strong>
+    <ul>
+      <li>Resolved the unwarranted display of safe warn messages in the log that were causing undue alarm</li>
+      <li>A new <code class="highlighter-rouge">backup-database-minimal.sh</code> script is provided to allow for easily generating a minified and redacted copy of user data in the case of raising a MyST support ticket.</li>
+    </ul>
+  </li>
+  <li><strong>Bug Fixes.</strong> See <a href="https://docs.rubiconred.com/release-notes.html">release notes</a> for more information.</li>
 </ul>
 
             </div>
             <h4 class="doc-link">
-              <a href="release-notes.html#myst-studio-631" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
+              <a href="release-notes.html#myst-studio-640" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
             </h4>
           </div>
           <div class="release-notes one-third-grid">
@@ -230,7 +242,7 @@
             <div class="row">
               <div class="two-third-grid">
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.3.1.jar">MyST Studio Installer 6.3.1 <i class="fa fa-download"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.4.0.jar">MyST Studio Installer 6.4.0 <i class="fa fa-download"></i></a>
                   <p>If you have previously installed MyST you can simply auto-upgrade by running</p>
                   <code>/opt/myst-studio/bin/upgrade.sh</code>
                 </p>
@@ -240,10 +252,10 @@
                   <span><strong>Extensions</strong></span>
                 </h4>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.3.1.hpi">MyST Studio Plugin for Jenkins 6.3.1 <i class="fa fa-download"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.4.0.hpi">MyST Studio Plugin for Jenkins 6.4.0 <i class="fa fa-download"></i></a>
                 </p>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.3.1-jar-with-dependencies.jar">MyST Studio Transport JAR 6.3.1 <i class="fa fa-download"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.4.0-jar-with-dependencies.jar">MyST Studio Transport JAR 6.4.0 <i class="fa fa-download"></i></a>
                 </p>
               </div>
             </div>
@@ -273,7 +285,7 @@
                 </h3>
                 <p class="doc-link">
                   <p><strong>Step 1</strong>: Run the MyST Installer</p>
-                  <code>java -jar fc-installer-6.3.1.jar</code>
+                  <code>java -jar fc-installer-6.4.0.jar</code>
                 </p>
                 <p class="doc-link">
                   <p><strong>Step 2</strong>: After running the installer, MyST can be started with</p>
@@ -300,15 +312,15 @@
                 </div>
                 <p>Alternatively, the image is available for direct download</p>
                 <p class="doc-link">
-                  <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.3.1.tar.gz">MyST Studio Image 6.3.1 <i class="fa fa-download"></i></a>
+                  <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.4.0.tar.gz">MyST Studio Image 6.4.0 <i class="fa fa-download"></i></a>
                 </p>
                 <!--
                 TODO: Make the other images available as tar.gz
                 <p class="doc-link">
-                  <a href="TODO">MyST Build Server Image 6.3.1 <i class="fa fa-download"></i></a>
+                  <a href="TODO">MyST Build Server Image 6.4.0 <i class="fa fa-download"></i></a>
                 </p>
                 <p class="doc-link">
-                  <a href="TODO">MyST Maven Repository Image 6.3.1 <i class="fa fa-download"></i></a>
+                  <a href="TODO">MyST Maven Repository Image 6.4.0 <i class="fa fa-download"></i></a>
                 </p>
                 -->
               </div>
@@ -316,6 +328,8 @@
           </fieldset>
         </div>
 
+      <!--
+      Uncomment when we do the next release candidate
         <div class="row">
             <div class="full-grid">
               <div class="elements-list">
@@ -373,6 +387,7 @@
             </div>
            </fieldset>
          </div>
+          -->
          <br/>
          <div class="row">
            <fieldset id="download-links" class="release-notes full-grid">
@@ -413,30 +428,7 @@
              </div>
             </fieldset>
           </div>
-        <!--
-        <div class="row">
-          <div class="full-grid">
-            <h4 class="doc-link">
-              <a href="release-notes.html#myst-studio-631" target="_blank">View release notes <i class="fa fa-external-link"></i></a>
-            </h4>
-          </div>
-        </div>
-        <div class="row">
-          <fieldset id="download-links" class="release-notes full-grid">
-            <legend>Alternative Installations</legend>
-            <div class="row">
-              <div class="two-third-grid">
-                <h4 class="doc-link">
-                  <p><span>The recommended MyST installation is Docker-based. If you installed using the <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.3.1.jar">MyST Studio Installer<i class="fa fa-download"></i></a></span></p>
-                </h4>
-                <h4 class="doc-link">
-                  <div><span>MyST Studio Docker Image 6.3.1 <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.3.1.tar.gz"><i class="fa fa-download"></i></a></span></div>
-                </h4>
-              </div>
-            </div>
-          </fieldset>
-        </div>
-      -->
+          
           <div id="older-releases" class="full-grid">
             <div class="title"><i class="fa fa-plus-square"></i> Older releases</div>
             <table style="display: none;">
@@ -449,6 +441,37 @@
               </tr>
               <tbody>
                 
+                
+                
+                
+                <tr>
+                  <td>6.3.1</td>
+                  <td>14 June 2018</td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="release-notes.html#myst-studio-631" target="_blank">View <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/myst-studio-user-guide-6.3.1/index.html" target="_blank">User Guide <i class="fa fa-external-link"></i></a>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/myst-studio-docker-image-6.3.1.tar.gz">Docker Image <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-installer-6.3.1.jar">JAR Installer <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-myst-studio-jenkins-plugin-light-6.3.1.hpi">Jenkins Plugin <i class="fa fa-download"></i></a>
+                    </div>
+                    <div class="doc-link">
+                      <a href="https://myst.rubiconred.com/webhelp/installer/release/fc-studio-sdk-transport-6.3.1-jar-with-dependencies.jar">Transport JAR <i class="fa fa-download"></i></a>
+                    </div>
+                  </td>
+                </tr>
                 
                 
                 

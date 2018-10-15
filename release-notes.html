@@ -59,15 +59,15 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-640-rc8">MyST Studio 6.4.0-rc8</h1>
+              <h1 id="myst-studio-640">MyST Studio 6.4.0</h1>
 
 <h2 id="new-features">New Features</h2>
 
 <ul>
-  <li>FC-5276 - MyST will now notify participants via <a href="https://rubiconred.gitbooks.io/myst-help-center/content/myst-management/notifications/">Email</a> if a Release Pipeline Stage is waiting for approval</li>
+  <li>FC-5276 - MyST will now <a href="https://rubiconred.gitbooks.io/myst-help-center/content/myst-management/notifications/">email</a> notify <a href="https://docs.rubiconred.com/myst-studio/release/">Release Pipeline</a> participants on approval steps</li>
   <li>FC-5352/FC-5583 - Platform Blueprint editor enhancements
     <ul>
-      <li>Managed Servers are now allowed to be defined in Platform Blueprints so that repeated configuration can be avoided within the Platform Models. Reduced configuration overhead saves time and reduces the risk of making mistakes.</li>
+      <li>Managed Servers are now allowed to be defined in Platform Blueprints so that repeated configuration can be avoided within the Platform Models. The reduced configuration overhead saves time and reduces the risk of making mistakes.</li>
       <li>Vertical scaling is now supported for vanilla WebLogic Managed Servers. This means that on a single host and within a cluster there can be multiple Managed Servers.</li>
       <li>Additional vanilla WebLogic Managed Servers and Machines can now be manually added directly within Platform Blueprints after the wizard has completed.</li>
     </ul>
@@ -97,6 +97,7 @@
   <li>FC-5630 - Security Enhancements for Axway Provisioning</li>
   <li>FC-5629	- Axway Reprovisioning without needing to do a Terminate first</li>
   <li>FC-4695 - Deployment will halt if MyST Configuration Plan is set but does not exist (unless <code class="highlighter-rouge">ignore-missing-myst-config-plan=true</code>)</li>
+  <li>FC-5684 - Addressed an issue with Axway termination in 6.4.0-rc8</li>
 </ul>
 
 <h2 id="bug-fixes">Bug Fixes</h2>
