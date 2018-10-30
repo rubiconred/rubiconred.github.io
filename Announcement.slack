@@ -1,6 +1,7 @@
-*Overview of Features*
-• Approval & Rejection notification for participants via Email if a Release Pipeline Stage is waiting for approval
-• Platform Lifecycle Management for Axway API Gateway
-• 6 x Platform Blueprint editor enhancements
-• 10 x Usability Improvements
+*Improvements*
+• Temporary directory can now be set for silent installation of `.bin` files
+*Bug Fixes*
+• Release Pipeline deployment after approval will now only allow the approved version
+• Resolved occasional timeout issue in MyST CLI during execution of the `update` action
+• Resolved a regression in 6.4.1 where the artifact fails to deploy when there is no MyST Configuration Plan
 See release notes for more information.
