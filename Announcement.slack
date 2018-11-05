@@ -1,7 +1,2 @@
-*Improvements*
-• Temporary directory can now be set for silent installation of `.bin` files
 *Bug Fixes*
-• Release Pipeline deployment after approval will now only allow the approved version
-• Resolved occasional timeout issue in MyST CLI during execution of the `update` action
-• Resolved a regression in 6.4.1 where the artifact fails to deploy when there is no MyST Configuration Plan
-See release notes for more information.
+• Resolved a regression where application configuration, WSM policies and OSB custom xpath libraries failed to deploy for MyST CLI
