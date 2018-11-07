@@ -1,10 +1,8 @@
 *Improvements*
-• Improved ability to specify components to multiple groups using a global variable. See [Provisioning Axway API Gateway](https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/axway/) for more information.
-• For 12.2.1.3.0 environments using database persistence, during create-domain the WLSDStore now targets to an adminserver name property instead of 'AdminServer'. For 12.2.1.3.0 ESS environments, during create-domain the BamCQServiceJmsSystemModule now correctly targets to the BAM cluster instead of bam servers which resulted in the AdminServer failing to start
+• FC-5612 - Added support for JMS Templates time-to-live
 
 *Bug Fixes*
-• Reinstated VERSION variable in backup-database.sh so the filename contains MyST version
-• Fixed the sort/filter on platform instance artifacts
-• Changed Oracle Entitlements Server domain template from AdminServer to Managed Server template. Resources now target to the cluster instead of just the AdminServer.
+• FC-5769 - Resolved a regression where application configuration, WSM policies and OSB custom xpath libraries failed to deploy for MyST CLI
+• FC-5567 - Fixed Oracle BI Publisher 12.2.1.3.0 catalog so a blueprint can be created
 
-See release notes for more information.
+See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
