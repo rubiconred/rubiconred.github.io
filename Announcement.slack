@@ -1,8 +1,16 @@
 *Improvements*
-• FC-5612 - Added support for JMS Templates time-to-live
+• FC-5701 - Improved the shutdown of Axway processes to ensure the process has ended
+• FC-5651 - Pre-Install validation for Axway & Cassandra so provisioning can fail-fast
+• FC-5502 - Additional admin gateway post-installation tasks to handle certificates
+• FC-5517 - Added pagination and search to Custom Actions
+• FC-5555 - Stream screen supports pagination to select ABPs and ABP screen supports pagination
+• FC-5736 - Added Developer Cloud Service as an option in Continuous Delivery Profile
+• FC-5703 - Added support for security providers DefaultAuthenticator, DefaultIdentityAsserter, Trust Service Identity Asserter, ID Negotiator, and OAM Identity Asserter
+• FC-5771 - Improved BI Publisher to handle non-default cluster name
 
 *Bug Fixes*
-• FC-5769 - Resolved a regression where application configuration, WSM policies and OSB custom xpath libraries failed to deploy for MyST CLI
-• FC-5567 - Fixed Oracle BI Publisher 12.2.1.3.0 catalog so a blueprint can be created
+• FC-5784 - Added BI Publisher 12.2.1.3 WLSSchemaDataSource datasource to the Platform Blueprint
+• FC-5777 - Fixed email validation during user creation not allowing valid email addresses
+• FC-5775 - Error while downloading artifact upon OIC deployment
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
