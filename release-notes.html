@@ -59,15 +59,13 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-650-rc3">MyST Studio 6.5.0-rc3</h1>
+              <h1 id="myst-studio-650-rc4">MyST Studio 6.5.0-rc4</h1>
 
 <h2 id="improvements">Improvements</h2>
 
 <ul>
-  <li>FC-5706 - Improved ability to specify components to multiple groups using a global variable. See <a href="https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/axway/">Provisioning Axway API Gateway</a> for more information.</li>
-  <li>FC-5701 - Improved the shutdown of Axway processes to ensure the process has ended</li>
-  <li>FC-5651 - Pre-Install validation for Axway &amp; Cassandra so provisioning can fail-fast</li>
-  <li>FC-5502 - Additional admin gateway post-installation tasks to handle certificates</li>
+  <li>FC-5584 - Deployment of OSB projects to SOA Cloud Service is supported</li>
+  <li>FC-5787 - Improved the search bar to be visible even when search result is empty</li>
   <li>FC-5727 - For 12.2.1.3.0 environments using database persistence, during create-domain the WLSDStore now targets to an adminserver name property instead of ‘AdminServer’. For 12.2.1.3.0 ESS environments, during create-domain the BamCQServiceJmsSystemModule now correctly targets to the BAM cluster instead of bam servers which resulted in the AdminServer failing to start</li>
   <li>FC-5612 - Added support for JMS Templates time-to-live</li>
   <li>FC-5517 - Added pagination and search to Custom Actions</li>
@@ -77,9 +75,25 @@
   <li>FC-5771 - Improved BI Publisher to handle non-default cluster name</li>
 </ul>
 
+<h2 id="axway-improvements">Axway Improvements</h2>
+
+<ul>
+  <li>FC-5499 - Support for provisioning of API Manager</li>
+  <li>FC-5798 - A number of required model fields are now autocomputed to a default value of ‘?’ if no meaningful value can be determined, in order to remove any guesswork around creating a fully functional model.</li>
+  <li>FC-5503 - Added remaining post installation tasks for Axway</li>
+  <li>FC-5706 - Improved ability to specify components to multiple groups using a global variable. See <a href="https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/axway/">Provisioning Axway API Gateway</a> for more information.</li>
+  <li>FC-5701 - Improved the shutdown of Axway processes to ensure the process has ended</li>
+  <li>FC-5651 - Pre-Install validation for Axway &amp; Cassandra so provisioning can fail-fast</li>
+  <li>FC-5502 - Additional admin gateway post-installation tasks to handle certificates</li>
+</ul>
+
 <h2 id="bug-fixes">Bug Fixes</h2>
 
 <ul>
+  <li>FC-5774 - Fixed duplicate entry error when publishing metadata custom property which should be case sensitive</li>
+  <li>FC-3868 - Addressed issue where fix-stop-script does not preserve permissions when updating stopWebLogic.sh</li>
+  <li>FC-5683 - Integer properties (eg. JMS Time-to-Live Override) now reverts to ‘null’ instead of an empty string ‘’ when deleting the value from the UI text field which was throwing a NumberFormatException.</li>
+  <li>FC-5795 - Fixed dryrun and check-for-drift failing to handle changes to targets resulting in a failed weblogic session due to an Oracle bug</li>
   <li>FC-5710 - Reinstated VERSION variable in backup-database.sh so the filename contains MyST version</li>
   <li>FC-5395 - Fixed the sort/filter on platform instance artifacts</li>
   <li>FC-5738 - Changed Oracle Entitlements Server domain template from AdminServer to Managed Server template. Resources now target to the cluster instead of just the AdminServer.</li>
