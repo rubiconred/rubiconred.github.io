@@ -1,18 +1,17 @@
-*Improvements*
-• FC-5584 - Deployment of OSB projects to SOA Cloud Service is supported
-• FC-5787 - Improved the search bar to be visible even when search result is empty
+*New Features*
+• FC-5293 - Pipeline templates now support defining post-deployment jobs against stages
 
+*Improvements*
+• FC-5739 - Improved response time for loading pages which have to display a large number of artifacts
+• FC-5748 - Tidied the organisation of the card display for platform blueprints/templates, application blueprints and release pipelines
+• FC-5822 - The artifact classifier is now shown in the deployment summary screen
+• FC-5803 - MyST SDK Transport jar logs the error returned from the MyST API instead of just the HTTP response code
+• FC-5776 - Added support for WebLogic 'Cross Domain Security Enabled'
+• FC-5789 - Added None option to JDBC Transaction which effectively disables 'Supports Global Transactions' courtesy of <https://mtijhof.wordpress.com/2018/11/12/myst-setting-or-unsetting-global-transaction-support-on-jdbc-data-source/|Maarten Tijhof>
 
 *Bug Fixes*
-• FC-5774 - Fixed duplicate entry error when publishing metadata custom property which should be case sensitive
-• FC-3868 - Addressed issue where fix-stop-script does not preserve permissions when updating stopWebLogic.sh
-• FC-5683 - Integer properties (eg. JMS Time-to-Live Override) now reverts to 'null' instead of an empty string '' when deleting the value from the UI text field which was throwing a NumberFormatException.
-• FC-5795 - Fixed dryrun and check-for-drift failing to handle changes to targets resulting in a failed weblogic session due to an Oracle bug
-
-
-*Axway*
-• FC-5499 - Support for provisioning of API Manager
-• FC-5798 - A number of required model fields are now autocomputed to a default value of '?' if no meaningful value can be determined, in order to remove any guesswork around creating a fully functional model.
-• FC-5503 - Added remaining post installation tasks for Axway
+• FC-5831 - Fixed a regression where the Model wizard cannot be created with a standalone admin server when the Blueprint is initially configured to collocated admin server 
+• FC-5581 - Platform Instance Report no longer gives authentication error for non-admin user
+• FC-5812 - Release Pipeline deployment errors with 'Artifact Build Conflict validation failed' when the same artifacts use different classifiers
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
