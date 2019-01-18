@@ -1,17 +1,13 @@
 *New Features*
-• FC-5293 - Pipeline templates now support defining post-deployment jobs against stages
+• N/A
 
 *Improvements*
-• FC-5739 - Improved response time for loading pages which have to display a large number of artifacts
-• FC-5748 - Tidied the organisation of the card display for platform blueprints/templates, application blueprints and release pipelines
-• FC-5822 - The artifact classifier is now shown in the deployment summary screen
-• FC-5803 - MyST SDK Transport jar logs the error returned from the MyST API instead of just the HTTP response code
-• FC-5776 - Added support for WebLogic 'Cross Domain Security Enabled'
-• FC-5789 - Added None option to JDBC Transaction which effectively disables 'Supports Global Transactions' courtesy of <https://mtijhof.wordpress.com/2018/11/12/myst-setting-or-unsetting-global-transaction-support-on-jdbc-data-source/|Maarten Tijhof>
+• N/A
 
 *Bug Fixes*
-• FC-5831 - Fixed a regression where the Model wizard cannot be created with a standalone admin server when the Blueprint is initially configured to collocated admin server 
-• FC-5581 - Platform Instance Report no longer gives authentication error for non-admin user
-• FC-5812 - Release Pipeline deployment errors with 'Artifact Build Conflict validation failed' when the same artifacts use different classifiers
+• FC-5870 - Fixed regression where the add new artifacts to Application Blueprint page refreshes indefinitely
+• FC-5231 - Prevented the deletion of Infrastructure Provider that is associated to a Platform Model
+• FC-5458 - Fixed an issue viewing Platform Editor Commit History when historical user has been deleted
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
+
