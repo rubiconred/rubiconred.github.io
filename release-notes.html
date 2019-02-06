@@ -59,12 +59,14 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-650-rc6">MyST Studio 6.5.0-rc6</h1>
+              <h1 id="myst-studio-650-rc7">MyST Studio 6.5.0-rc7</h1>
 
 <h2 id="new-features">New Features</h2>
 
 <ul>
   <li>FC-5293 - Pipeline templates now support defining post-deployment jobs against stages</li>
+  <li>FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the ‘Platform Models &gt; (MODEL_NAME)’ breadcrumb which takes you back to the Platform Models page with the model already selected. Further improvements are coming in this area so stay tuned…</li>
+  <li>FC-5010 - Enabled feature toggle which allows users to set stream model properties on any stage regardless of promotion. This can be enabled by setting the flag release_management.stream.stream_model in fc-metadata.json</li>
 </ul>
 
 <h2 id="improvements">Improvements</h2>
@@ -72,6 +74,9 @@
 <h3 id="usability-enhancements">Usability Enhancements</h3>
 
 <ul>
+  <li>FC-5248 - Role Based Access Control for Stream Model, Artifact Property Registry and Custom Actions</li>
+  <li>FC-5783 - Improved error message when artifact does not have a type defined</li>
+  <li>FC-5681 - Release participants can now Approve/Reject directly from the email</li>
   <li>FC-5739 - Improved response time for loading pages that have to display a large number of artifacts</li>
   <li>FC-5748 - Tidied the organisation of the card display for platform blueprints/templates, application blueprints and release pipelines</li>
   <li>FC-5787 - Improved the search bar to remain visible even when search result is empty</li>
@@ -84,6 +89,8 @@
 <h3 id="oracle-fusion-middleware-enhancements">Oracle Fusion Middleware Enhancements</h3>
 
 <ul>
+  <li>FC-5821 - Added forcedefault support for SCA artifacts</li>
+  <li>FC-5051 - Added support to preserve security and operational values during OSB deployment time. See <a href="https://docs.rubiconred.com/myst-studio/appendix/artifact/#osb">MyST Studio artifact documentation</a> to set these properties.</li>
   <li>FC-5727 - For 12.2.1.3.0 environments using database persistence, during create-domain the WLSDStore now targets to an adminserver name property instead of ‘AdminServer’. For 12.2.1.3.0 ESS environments, during create-domain the BamCQServiceJmsSystemModule now correctly targets to the BAM cluster instead of bam servers which resulted in the AdminServer failing to start</li>
   <li>FC-5612 - JMS Templates time-to-live can now be configured directly</li>
   <li>FC-5703 - Additional security providers have been made available in the dropdown: DefaultAuthenticator, DefaultIdentityAsserter, Trust Service Identity Asserter, ID Negotiator, and OAM Identity Asserter</li>
@@ -102,6 +109,10 @@
 <h3 id="axway-provisioning-enhancements">Axway Provisioning Enhancements</h3>
 
 <ul>
+  <li>FC-5845 - The updateEnvSettingsStore causing Axway Gateway instances to fail to boot after provisioning. This includes restart changes along with fix to duplicate primary key in ExtConnSettings.xml (was not incrementing PK after fetching).</li>
+  <li>FC-5813 - Corrected error in PK assignment in CertStore creation for admin node resulting in access to AAG console failing</li>
+  <li>FC-5813 - Corrected parameters for jvm.xml update to use group name instead of group ID</li>
+  <li>FC-5840 - Axway provisioning now kills both internal or external gateway processes instead of only one</li>
   <li>FC-5499 - Support for provisioning of API Manager</li>
   <li>FC-5798 - A number of required model fields are now autocomputed to a default value of ‘?’ if no meaningful value can be determined, in order to remove any guesswork around creating a fully functional model.</li>
   <li>FC-5503 - Added remaining post installation tasks for Axway</li>
@@ -114,6 +125,8 @@
 <h2 id="bug-fixes">Bug Fixes</h2>
 
 <ul>
+  <li>FC-5848 - Fixed regression where a Release Pipeline - Post Deployment parameters was not getting passed</li>
+  <li>FC-5881 - Fixed regression when editing an existing stage’s Post Deployment Action in the Release Pipeline</li>
   <li>FC-5870 - Fixed regression where the add new artifacts to Application Blueprint page refreshes indefinitely</li>
   <li>FC-5231 - Prevented the deletion of Infrastructure Provider that is associated to a Platform Model</li>
   <li>FC-5458 - Fixed an issue viewing Platform Editor Commit History when historical user has been deleted</li>

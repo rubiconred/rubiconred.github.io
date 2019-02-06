@@ -1,13 +1,24 @@
 *New Features*
-• N/A
+• FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the 'Platform Models > (MODEL_NAME)' breadcrumb which takes you back to the Platform Models page with the model already selected. Further improvements are coming in this area so stay tuned...
+• FC-5010 - Enabled feature toggle which allows users to set stream model properties on any stage regardless of promotion. This can be enabled by setting the flag release_management.stream.stream_model in fc-metadata.json
 
 *Improvements*
-• N/A
+• FC-5248 - Role Based Access Control for Stream Model, Artifact Property Registry and Custom Actions
+• FC-5051 - Added support to preserve security and operational values during OSB deployment time. See <https://docs.rubiconred.com/myst-studio/appendix/artifact/#osb|MyST Studio artifact documentation> to set these properties.
+• FC-5821 - Added forcedefault support for SCA artifacts
+• FC-5783 - Improved error message when artifact does not have a type defined
+• FC-5681 - Release participants can now Approve/Reject directly from the email
+
 
 *Bug Fixes*
-• FC-5870 - Fixed regression where the add new artifacts to Application Blueprint page refreshes indefinitely
-• FC-5231 - Prevented the deletion of Infrastructure Provider that is associated to a Platform Model
-• FC-5458 - Fixed an issue viewing Platform Editor Commit History when historical user has been deleted
+• FC-5881 - Fixed regression when editing an existing stage's Post Deployment Action in the Release Pipeline
+• FC-5848 - Fixed regression where a Release Pipeline - Post Deployment parameters was not getting passed
+
+*Axway*
+• FC-5845 - The updateEnvSettingsStore causing Axway Gateway instances to fail to boot after provisioning. This includes restart changes along with fix to duplicate primary key in ExtConnSettings.xml (was not incrementing PK after fetching).
+• FC-5840 - Axway provisioning now kills both internal or external gateway processes instead of only one
+• FC-5813 - Corrected error in PK assignment in CertStore creation for admin node resulting in access to AAG console failing
+• FC-5813 - Corrected parameters for jvm.xml update to use group name instead of group ID
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
 
