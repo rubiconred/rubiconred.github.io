@@ -1,0 +1,8 @@
+A new update has been shipped to the oracle cloud beta tier (<https://docs.rubiconred.com/oracle/cloud/release-notes.html | RC20>)
+
+*Improvements*
+• Addressed an issue where connections were not being set when the embedded repository was being used.
+• The stream model can now be updated at deployment time when it is missing configuration
+• After a synchronisation, the integrations in the wizard are greyed out to not give the impression that more than one synchronisation can be performed at a time.
+• Fixed screenshots in the guided journeys
+• Improved `Add Aritfacts` screen display on smaller screens

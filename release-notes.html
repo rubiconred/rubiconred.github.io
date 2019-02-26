@@ -65,7 +65,7 @@
 
 <ul>
   <li>FC-5293 - Pipeline templates now support defining post-deployment jobs against stages</li>
-  <li>FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the ‘Platform Models &gt; (MODEL_NAME)’ breadcrumb which takes you back to the Platform Models page with the model already selected. Further improvements are coming in this area so stay tuned…</li>
+  <li>FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the ‘Platform Models &gt; (MODEL_NAME)’ breadcrumb which takes you back to the Platform Models page with the model already selected</li>
   <li>FC-5010 - Enabled feature toggle which allows users to set stream model properties on any stage regardless of promotion. This can be enabled by setting the flag release_management.stream.stream_model in fc-metadata.json</li>
 </ul>
 
@@ -74,6 +74,9 @@
 <h3 id="usability-enhancements">Usability Enhancements</h3>
 
 <ul>
+  <li>FC-5264 - MyST stop action now supports stopping servers with optional graceful shutdown and timeout values</li>
+  <li>FC-5828 - Added supported for JMS Topic Time-To-Live-Override</li>
+  <li>FC-5904 - Added support for JDBC InactiveConnectionTimeoutSeconds</li>
   <li>FC-5248 - Role Based Access Control for Stream Model, Artifact Property Registry and Custom Actions</li>
   <li>FC-5783 - Improved error message when artifact does not have a type defined</li>
   <li>FC-5681 - Release participants can now Approve/Reject directly from the email</li>
@@ -109,6 +112,9 @@
 <h3 id="axway-provisioning-enhancements">Axway Provisioning Enhancements</h3>
 
 <ul>
+  <li>FC-5915-1 - Fixed regression requiring <ipaddress>.group parameters to be reintroduced</ipaddress></li>
+  <li>FC-5915-2 - Now terminates node manager first time forcefully to allow later restarts</li>
+  <li>FC-5915-3 - Added optional <code class="highlighter-rouge">&lt;fqdn&gt;.private=&lt;Private Address&gt;</code> global variable for node indicating private address. See Axway documentation <a href="https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/axway/">Private Listen or Host Addresses</a></li>
   <li>FC-5845 - The updateEnvSettingsStore causing Axway Gateway instances to fail to boot after provisioning. This includes restart changes along with fix to duplicate primary key in ExtConnSettings.xml (was not incrementing PK after fetching).</li>
   <li>FC-5813 - Corrected error in PK assignment in CertStore creation for admin node resulting in access to AAG console failing</li>
   <li>FC-5813 - Corrected parameters for jvm.xml update to use group name instead of group ID</li>
@@ -125,6 +131,8 @@
 <h2 id="bug-fixes">Bug Fixes</h2>
 
 <ul>
+  <li>FC-5877 - Fixed issue with wrong computation of Admin server machine resulting in unnecessary workarounds to rectify the configuration. See <a href="https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/using-adminserver-with-vip-and-failing-over.html">Help Center article</a></li>
+  <li>FC-5913 - Fixed regression where Check for Drift simply did not run</li>
   <li>FC-5848 - Fixed regression where a Release Pipeline - Post Deployment parameters was not getting passed</li>
   <li>FC-5881 - Fixed regression when editing an existing stage’s Post Deployment Action in the Release Pipeline</li>
   <li>FC-5870 - Fixed regression where the add new artifacts to Application Blueprint page refreshes indefinitely</li>
