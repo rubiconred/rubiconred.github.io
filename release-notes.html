@@ -65,7 +65,6 @@
 
 <ul>
   <li>FC-5293 - Pipeline templates now support defining post-deployment jobs against stages</li>
-  <li>FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the ‘Platform Models &gt; (MODEL_NAME)’ breadcrumb which takes you back to the Platform Models page with the model already selected</li>
   <li>FC-5010 - Enabled feature toggle which allows users to set stream model properties on any stage regardless of promotion. This can be enabled by setting the flag release_management.stream.stream_model in fc-metadata.json</li>
 </ul>
 
@@ -74,6 +73,8 @@
 <h3 id="usability-enhancements">Usability Enhancements</h3>
 
 <ul>
+  <li>FC-5897 - Users in the Platform Model editor can run update and reprovision actions directly via the ‘Actions’ button</li>
+  <li>FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the ‘Platform Models &gt; (MODEL_NAME)’ breadcrumb which takes you back to the Platform Models page with the model already selected</li>
   <li>FC-5264 - MyST stop action now supports stopping servers with optional graceful shutdown and timeout values</li>
   <li>FC-5828 - Added supported for JMS Topic Time-To-Live-Override</li>
   <li>FC-5904 - Added support for JDBC InactiveConnectionTimeoutSeconds</li>
@@ -131,6 +132,7 @@
 <h2 id="bug-fixes">Bug Fixes</h2>
 
 <ul>
+  <li>FC-5938 - Removed plain text passwords from myst-diagnostic.log</li>
   <li>FC-5877 - Fixed issue with wrong computation of Admin server machine resulting in unnecessary workarounds to rectify the configuration. See <a href="https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/using-adminserver-with-vip-and-failing-over.html">Help Center article</a></li>
   <li>FC-5913 - Fixed regression where Check for Drift simply did not run</li>
   <li>FC-5848 - Fixed regression where a Release Pipeline - Post Deployment parameters was not getting passed</li>

@@ -2,18 +2,10 @@
 • N/A
 
 *Improvements*
-• FC-5264 - MyST stop action now supports stopping servers with optional graceful shutdown and timeout values
-• FC-5828 - Added supported for JMS Topic Time-To-Live-Override
-• FC-5904 - Added support for JDBC InactiveConnectionTimeoutSeconds
+• FC-5897 - Users in the Platform Model editor can run update and reprovision actions directly via the 'Actions' button
 
 *Bug Fixes*
-• FC-5877 - Fixed issue with wrong computation of Admin server machine resulting in unnecessary workarounds to rectify the configuration. See <Help Center article|https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/using-adminserver-with-vip-and-failing-over.html>
-• FC-5913 - Fixed regression where Check for Drift simply did not run
-
-*Axway*
-• FC-5915-1 - Fixed regression requiring <ipaddress>.group parameters to be reintroduced
-• FC-5915-2 - Now terminates node manager first time forcefully to allow later restarts
-• FC-5915-3 - Added optional `<fqdn>.private=<Private Address>` global variable for node indicating private address. See Axway documentation <Private Listen or Host Addresses|https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/axway/> 
+• FC-5938 - Removed plain text passwords from myst-diagnostic.log
 
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
