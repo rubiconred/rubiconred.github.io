@@ -59,7 +59,7 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-650-rc9">MyST Studio 6.5.0-rc9</h1>
+              <h1 id="myst-studio-650-rc10">MyST Studio 6.5.0-rc10</h1>
 
 <h2 id="new-features">New Features</h2>
 
@@ -132,6 +132,7 @@
 <h2 id="bug-fixes">Bug Fixes</h2>
 
 <ul>
+  <li>FC-5941 - Fixed regression where graceful shutdown required graceful.shutdown global variable to be set. This is no longer required.</li>
   <li>FC-5938 - Removed plain text passwords from myst-diagnostic.log</li>
   <li>FC-5877 - Fixed issue with wrong computation of Admin server machine resulting in unnecessary workarounds to rectify the configuration. See <a href="https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/using-adminserver-with-vip-and-failing-over.html">Help Center article</a></li>
   <li>FC-5913 - Fixed regression where Check for Drift simply did not run</li>

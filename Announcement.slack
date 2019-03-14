@@ -2,10 +2,10 @@
 • N/A
 
 *Improvements*
-• FC-5897 - Users in the Platform Model editor can run update and reprovision actions directly via the 'Actions' button
+• N/A
 
 *Bug Fixes*
-• FC-5938 - Removed plain text passwords from myst-diagnostic.log
+• FC-5941 - Fixed regression where graceful shutdown required graceful.shutdown global variable to be set. This is no longer required.
 
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
