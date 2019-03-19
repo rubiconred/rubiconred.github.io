@@ -59,35 +59,36 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-650-rc10">MyST Studio 6.5.0-rc10</h1>
-
-<h2 id="new-features">New Features</h2>
-
-<ul>
-  <li>FC-5293 - Pipeline templates now support defining post-deployment jobs against stages</li>
-  <li>FC-5010 - Enabled feature toggle which allows users to set stream model properties on any stage regardless of promotion. This can be enabled by setting the flag release_management.stream.stream_model in fc-metadata.json</li>
-</ul>
+              <h1 id="myst-studio-650">MyST Studio 6.5.0</h1>
 
 <h2 id="improvements">Improvements</h2>
 
 <h3 id="usability-enhancements">Usability Enhancements</h3>
 
 <ul>
-  <li>FC-5897 - Users in the Platform Model editor can run update and reprovision actions directly via the ‘Actions’ button</li>
-  <li>FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the ‘Platform Models &gt; (MODEL_NAME)’ breadcrumb which takes you back to the Platform Models page with the model already selected</li>
-  <li>FC-5264 - MyST stop action now supports stopping servers with optional graceful shutdown and timeout values</li>
-  <li>FC-5828 - Added supported for JMS Topic Time-To-Live-Override</li>
-  <li>FC-5904 - Added support for JDBC InactiveConnectionTimeoutSeconds</li>
-  <li>FC-5248 - Role Based Access Control for Stream Model, Artifact Property Registry and Custom Actions</li>
-  <li>FC-5783 - Improved error message when artifact does not have a type defined</li>
+  <li>Simplified navigation between modeling and apply actions
+    <ul>
+      <li>FC-5897 - Platform instance actions are now available from the Platform Model editor. Actions such as Update and Reprovision can be ran directly without needing to navigator away from the editor.</li>
+      <li>FC-5460 - Users can quickly return from the platform model editor to run an action by clicking the ‘Platform Models &gt; (MODEL_NAME)’ breadcrumb which takes you back to the Platform Models page with the model already selected</li>
+    </ul>
+  </li>
+  <li>FC-5293 - Pipeline templates now support defining post-deployment jobs against stages</li>
+  <li>FC-5264 - Platform Instance stop and restart actions now allow optional graceful shutdown and timeout values</li>
+  <li>FC-5248 - Role Based Access Control introduced for Stream Model, Artifact Property Registry and Custom Actions</li>
   <li>FC-5681 - Release participants can now Approve/Reject directly from the email</li>
-  <li>FC-5739 - Improved response time for loading pages that have to display a large number of artifacts</li>
   <li>FC-5748 - Tidied the organisation of the card display for platform blueprints/templates, application blueprints and release pipelines</li>
   <li>FC-5787 - Improved the search bar to remain visible even when search result is empty</li>
-  <li>FC-5555 - Application blueprints list and the selection screen from release pipeline now support pagination</li>
+  <li>FC-5555 - Application blueprints list and the selection screen from release pipelines now support pagination</li>
   <li>FC-5517 - Custom actions now support search &amp; pagination</li>
   <li>FC-5822 - The artifact classifier is now displayed in the deployment summary screen</li>
-  <li>FC-5803 - MyST SDK Transport JAR logs the error returned from the MyST API instead of just the HTTP response code</li>
+  <li>FC-5010 - Stream model properties can be set against any stage before promotion occurs. This can be enabled by setting the flag <code class="highlighter-rouge">release_management.stream.stream_model</code> in fc-metadata.json.</li>
+  <li>FC-5739 - Performance improvements when displaying displaying a large number of artifacts</li>
+  <li>Error handling improvements
+    <ul>
+      <li>FC-5783 - Improved error message when artifact does not have a type defined</li>
+      <li>FC-5803 - MyST SDK Transport JAR logs the error returned from the MyST API instead of just the HTTP response code</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="oracle-fusion-middleware-enhancements">Oracle Fusion Middleware Enhancements</h3>
@@ -101,6 +102,8 @@
   <li>FC-5771 - Improved BI Publisher to handle a non-default cluster name</li>
   <li>FC-5776 - Added support for WebLogic ‘Cross Domain Security Enabled’</li>
   <li>FC-5789 - Added None option to JDBC Transaction which effectively disables ‘Supports Global Transactions’ courtesy of <a href="https://mtijhof.wordpress.com/2018/11/12/myst-setting-or-unsetting-global-transaction-support-on-jdbc-data-source/">Maarten Tijhof</a></li>
+  <li>FC-5828 - Added supported for JMS Topic Time-To-Live-Override</li>
+  <li>FC-5904 - Added support for JDBC InactiveConnectionTimeoutSeconds</li>
 </ul>
 
 <h3 id="oracle-cloud-enhancements">Oracle Cloud Enhancements</h3>
@@ -192,7 +195,7 @@
 
 <h1 id="myst-studio-640">MyST Studio 6.4.0</h1>
 
-<h2 id="new-features-1">New Features</h2>
+<h2 id="new-features">New Features</h2>
 
 <ul>
   <li>FC-5276 - MyST will now <a href="https://rubiconred.gitbooks.io/myst-help-center/content/myst-management/notifications/">email</a> notify <a href="https://docs.rubiconred.com/myst-studio/release/">Release Pipeline</a> participants on approval steps</li>
@@ -271,7 +274,7 @@
 
 <h1 id="myst-studio-630">MyST Studio 6.3.0</h1>
 
-<h2 id="new-features-2">New Features</h2>
+<h2 id="new-features-1">New Features</h2>
 
 <ul>
   <li>FC-5243 - Artifact Retirement Support
@@ -382,7 +385,7 @@
 
 <h1 id="myst-studio-621">MyST Studio 6.2.1</h1>
 
-<h2 id="new-features-3">New Features</h2>
+<h2 id="new-features-2">New Features</h2>
 
 <ul>
   <li>FC-5179 - MyST Studio now supports the creation of <strong>OES 11.1.2.3.0</strong> configurations and will provision an OES domain automatically from an OES model.</li>
@@ -458,7 +461,7 @@
 
 <h1 id="myst-studio-610">MyST Studio 6.1.0</h1>
 
-<h2 id="new-features-4">New Features</h2>
+<h2 id="new-features-3">New Features</h2>
 
 <ul>
   <li>FC-4916 - Oracle Integration Cloud and Process Cloud artifacts can now be deployed through a MyST Studio Release Pipeline</li>
@@ -497,7 +500,7 @@
 
 <h1 id="myst-studio-600">MyST Studio 6.0.0</h1>
 
-<h2 id="new-features-5">New Features</h2>
+<h2 id="new-features-4">New Features</h2>
 
 <ul>
   <li>FC-4706 - MyST now has a newly designed <a href="https://docs.rubiconred.com/myst-studio/platform/definitions/editor/">platform editor</a> for platform configuration which significantly enhances user experience</li>
@@ -528,7 +531,7 @@
 
 <h1 id="myst-studio-591">MyST Studio 5.9.1</h1>
 
-<h2 id="new-features-6">New Features</h2>
+<h2 id="new-features-5">New Features</h2>
 
 <ul>
   <li>FC-5123 - MyST now supports configuration of the Oracle Virtual Directory authentication provider.</li>
@@ -568,7 +571,7 @@
 
 <h1 id="myst-studio-590">MyST Studio 5.9.0</h1>
 
-<h2 id="new-features-7">New Features</h2>
+<h2 id="new-features-6">New Features</h2>
 
 <ul>
   <li>FC-4631 - Application Blueprint editor has been revamped to allow for toggling between revisions of a given version</li>
@@ -610,7 +613,7 @@
 
 <h1 id="myst-studio-588">MyST Studio 5.8.8</h1>
 
-<h2 id="new-features-8">New Features</h2>
+<h2 id="new-features-7">New Features</h2>
 
 <ul>
   <li>FC-5032 - MyST Studio has been certified for OTD 12.2.1.3.0 in a standalone (non-database) configuration.</li>
@@ -641,7 +644,7 @@
 
 <h1 id="myst-studio-586">MyST Studio 5.8.6</h1>
 
-<h2 id="new-features-9">New Features</h2>
+<h2 id="new-features-8">New Features</h2>
 
 <ul>
   <li>FC-4977 - ODI and OEDQ 12.2.1.3.0 configurations can now be created in MyST Studio. Software installation and domain creation is supported.</li>
@@ -678,7 +681,7 @@
 
 <h1 id="myst-studio-584">MyST Studio 5.8.4</h1>
 
-<h2 id="new-features-10">New Features</h2>
+<h2 id="new-features-9">New Features</h2>
 
 <ul>
   <li>FC-4986 - OBIEE 12.2.1.3.0 configurations are now supported in MyST Studio.</li>
@@ -696,7 +699,7 @@
 
 <h1 id="myst-studio-583">MyST Studio 5.8.3</h1>
 
-<h2 id="new-features-11">New Features</h2>
+<h2 id="new-features-10">New Features</h2>
 
 <ul>
   <li>FC-4976 - MyST now supports provisioning and configuration of WebTier 12.2.1.3.0</li>
@@ -753,7 +756,7 @@
 
 <h1 id="myst-studio-580">MyST Studio 5.8.0</h1>
 
-<h2 id="new-features-12">New Features</h2>
+<h2 id="new-features-11">New Features</h2>
 
 <ul>
   <li>FC-4548 - MyST now deploys artifacts following the sequence in which they are configured inside Application Blueprint Version. Note, this mechanism makes deployment within a session for all artifacts, wherever found necessary.</li>
@@ -808,7 +811,7 @@
 
 <h1 id="myst-studio-571">MyST Studio 5.7.1</h1>
 
-<h2 id="new-features-13">New Features</h2>
+<h2 id="new-features-12">New Features</h2>
 
 <ul>
   <li>FC-4541 - MyST now allow users to add properties inside properties registry &amp; stream model in bulk.</li>
@@ -853,7 +856,7 @@
 
 <h1 id="myst-studio-565">MyST Studio 5.6.5</h1>
 
-<h2 id="new-features-14">New Features</h2>
+<h2 id="new-features-13">New Features</h2>
 
 <ul>
   <li>FC-4580 - MyST now allows artifact properties to be marked as nullable in Property Registry and therefore ensures that activities like commit, approval, and deployment happen seamlessly, even when the property has a null value</li>
@@ -876,7 +879,7 @@
 
 <h1 id="myst-studio-564">MyST Studio 5.6.4</h1>
 
-<h2 id="new-features-15">New Features</h2>
+<h2 id="new-features-14">New Features</h2>
 
 <ul>
   <li>FC-4503 - MyST now allows administrators to compare artifact property values between platform instances.</li>
@@ -890,7 +893,7 @@
 
 <h1 id="myst-studio-563">MyST Studio 5.6.3</h1>
 
-<h2 id="new-features-16">New Features</h2>
+<h2 id="new-features-15">New Features</h2>
 
 <ul>
   <li>FC-4426 - MyST now supports provisioning of Oracle Data Integrator - 12.2.1.2.6</li>
@@ -912,7 +915,7 @@
 
 <h1 id="myst-studio-5620">MyST Studio 5.6.2.0</h1>
 
-<h2 id="new-features-17">New Features</h2>
+<h2 id="new-features-16">New Features</h2>
 
 <ul>
   <li>FC-4463 - MyST now allows publishing of releases (which marks application blueprint versions and platform blueprint versions as FINAL) once a stream deployment has made its way up to the last stage in a release pipeline</li>
@@ -956,7 +959,7 @@
 
 <h1 id="myst-studio-5611">MyST Studio 5.6.1.1</h1>
 
-<h2 id="new-features-18">New Features</h2>
+<h2 id="new-features-17">New Features</h2>
 
 <ul>
   <li>FC-4151 - System administrators can now apply / renew the MyST license from the console itself by uploading a valid license archive.</li>
@@ -1027,7 +1030,7 @@
 
 <h1 id="myst-studio-5600">MyST Studio 5.6.0.0</h1>
 
-<h2 id="new-features-19">New Features</h2>
+<h2 id="new-features-18">New Features</h2>
 
 <ul>
   <li>FC-4415 - MyST now allows one to rollback an SQL change by providing a compensation script and indicating the intent of rolling back through a flag.</li>
@@ -1061,7 +1064,7 @@
 
 <h1 id="myst-studio-5521">MyST Studio 5.5.2.1</h1>
 
-<h2 id="new-features-20">New Features</h2>
+<h2 id="new-features-19">New Features</h2>
 
 <ul>
   <li>FC-4370 - MyST now allows scheduling of release pipeline deployments for a future date / time. A previously scheduled deployment can be unscheduled as well if its execution time has not been reached yet.</li>
@@ -1121,7 +1124,7 @@
 
 <h1 id="myst-studio-5500">MyST Studio 5.5.0.0</h1>
 
-<h2 id="new-features-21">New Features</h2>
+<h2 id="new-features-20">New Features</h2>
 
 <ul>
   <li>FC-4277 - The MyST Plugin for Jenkins has added support for introspecting property references within the source code to simplify deploy-time customisation.</li>
@@ -1189,7 +1192,7 @@
 
 <h1 id="myst-studio-5410">MyST Studio 5.4.1.0</h1>
 
-<h2 id="new-features-22">New Features</h2>
+<h2 id="new-features-21">New Features</h2>
 
 <ul>
   <li>FC-4089 - MyST CLI platforms in XML and Properties notation are now compatible with MyST Studio. Users�can easily push them to�MyST Studio and start performing automated operations against the�Platform Instances�such as�Deployment, 11g to 12c Upgrade, Cloud Migration, Patching, Configuration Management and Drift Detection.</li>
@@ -1215,7 +1218,7 @@
 
 <h1 id="myst-studio-5400">MyST Studio 5.4.0.0</h1>
 
-<h2 id="new-features-23">New Features</h2>
+<h2 id="new-features-22">New Features</h2>
 
 <ul>
   <li>FC-3565 - Platform Blueprints can now be created for use with SOA Cloud Service.</li>
@@ -1322,7 +1325,7 @@
 
 <h1 id="myst-studio-5300">MyST Studio 5.3.0.0</h1>
 
-<h2 id="new-features-24">New Features</h2>
+<h2 id="new-features-23">New Features</h2>
 
 <ul>
   <li>It is now possible to retrigger post deployment job for a deployment which got “verification failed”</li>
@@ -1361,7 +1364,7 @@
 
 <h1 id="myst-studio-5210">MyST Studio 5.2.1.0</h1>
 
-<h2 id="new-features-25">New Features</h2>
+<h2 id="new-features-24">New Features</h2>
 
 <ul>
   <li>MyST now has sudo-rule support for OHS provisioning as well as OSB, SCA, MDS and BAM deployments</li>
@@ -1418,7 +1421,7 @@
 
 <h1 id="myst-studio-5200">MyST Studio 5.2.0.0</h1>
 
-<h2 id="new-features-26">New Features</h2>
+<h2 id="new-features-25">New Features</h2>
 
 <ul>
   <li>One can now ear-mark certain environments to allow provisioning of draft configuration. (These environments cannot be made a part of a release pipeline though)�</li>
@@ -1492,7 +1495,7 @@
 
 <h1 id="myst-studio-5110">MyST Studio 5.1.1.0</h1>
 
-<h2 id="new-features-27">New Features</h2>
+<h2 id="new-features-26">New Features</h2>
 
 <ul>
   <li>The user can now view the revision history of platform blueprints and models and start editing from an older revision if required</li>
@@ -1553,7 +1556,7 @@
 
 <h1 id="myst-studio-5011">MyST Studio 5.0.1.1</h1>
 
-<h2 id="new-features-28">New Features</h2>
+<h2 id="new-features-27">New Features</h2>
 
 <ul>
   <li>MyST Studio now supports Oracle BI Publisher 12.2.1</li>
@@ -1596,7 +1599,7 @@
 
 <h1 id="myst-studio-5002">MyST Studio 5.0.0.2</h1>
 
-<h2 id="new-features-29">New Features</h2>
+<h2 id="new-features-28">New Features</h2>
 
 <ul>
   <li>MyST now has a continuous delivery release pipeline which allows you to apply and promote code and configuration changes from lower to higher environments</li>
@@ -1697,7 +1700,7 @@
 
 <h1 id="myst-studio-4010">MyST Studio 4.0.1.0</h1>
 
-<h2 id="new-features-30">New Features</h2>
+<h2 id="new-features-29">New Features</h2>
 
 <ul>
   <li>MyST now audits changes and actions, providing reports available on the UI, as well as CSV export capability.</li>
@@ -1731,7 +1734,7 @@
 
 <h1 id="myst-studio-4000">MyST Studio 4.0.0.0</h1>
 
-<h2 id="new-features-31">New Features</h2>
+<h2 id="new-features-30">New Features</h2>
 
 <ul>
   <li>Administrators can now override the status of a Platform Instance so they can manually reconcile and mark them according to the correct state</li>
@@ -1789,7 +1792,7 @@
 
 <h1 id="myst-studio-3910">MyST Studio 3.9.1.0</h1>
 
-<h2 id="new-features-32">New Features</h2>
+<h2 id="new-features-31">New Features</h2>
 
 <ul>
   <li>Ability to configure the WSM keystore</li>
@@ -1832,7 +1835,7 @@
 
 <h1 id="myst-studio-3902">MyST Studio 3.9.0.2</h1>
 
-<h2 id="new-features-33">New Features</h2>
+<h2 id="new-features-32">New Features</h2>
 
 <ul>
   <li>Oracle Fusion Middleware (Integration) 12.2.1.1 is now supported (Preview).</li>
@@ -1848,7 +1851,7 @@
 
 <h1 id="myst-studio-3900">MyST Studio 3.9.0.0</h1>
 
-<h2 id="new-features-34">New Features</h2>
+<h2 id="new-features-33">New Features</h2>
 
 <ul>
   <li>B2B 12.1.3 and 12.2.1 are now supported in MyST Studio</li>
@@ -1897,7 +1900,7 @@
 
 <h1 id="myst-studio-3820">MyST Studio 3.8.2.0</h1>
 
-<h2 id="new-features-35">New Features</h2>
+<h2 id="new-features-34">New Features</h2>
 
 <ul>
   <li>Patches can be applied in a rolling manner to selective nodes with the option to restart the servers running on the nodes as well once they are patched</li>
@@ -1953,7 +1956,7 @@
 
 <h1 id="myst-studio-3810">MyST Studio 3.8.1.0</h1>
 
-<h2 id="new-features-36">New Features</h2>
+<h2 id="new-features-35">New Features</h2>
 
 <ul>
   <li>MyST now supports overriding the targeting of admin components in the platform model by either splitting to have a separate admin group &amp; node or merging a standalone node into one of the other compute groups</li>
@@ -2002,7 +2005,7 @@
 
 <h1 id="myst-studio-3800">MyST Studio 3.8.0.0</h1>
 
-<h2 id="new-features-37">New Features</h2>
+<h2 id="new-features-36">New Features</h2>
 
 <ul>
   <li>ADF 12.2.1 is now supported in MyST Studio</li>
@@ -2030,7 +2033,7 @@
 
 <h1 id="myst-studio-3720">MyST Studio 3.7.2.0</h1>
 
-<h2 id="new-features-38">New Features</h2>
+<h2 id="new-features-37">New Features</h2>
 
 <ul>
   <li>MyST now supports Solaris 11 as a supported operating system for provisioning</li>
@@ -2060,7 +2063,7 @@
 
 <h1 id="myst-studio-3710">MyST Studio 3.7.1.0</h1>
 
-<h2 id="new-features-39">New Features</h2>
+<h2 id="new-features-38">New Features</h2>
 
 <ul>
   <li>MyST Studio now supports deployment of either third party libraries, or artifacts not built by the CI Server</li>
@@ -2088,7 +2091,7 @@
 
 <h1 id="myst-studio-3700">MyST Studio 3.7.0.0</h1>
 
-<h2 id="new-features-40">New Features</h2>
+<h2 id="new-features-39">New Features</h2>
 
 <ul>
   <li>CD Reverse Registration Preview for OSB, SOA, MDS 12.2.1, J2EE, Application configuration, OWSM Policy</li>
@@ -2096,7 +2099,7 @@
 
 <h1 id="myst-studio-3621">MyST Studio 3.6.2.1</h1>
 
-<h2 id="new-features-41">New Features</h2>
+<h2 id="new-features-40">New Features</h2>
 
 <ul>
   <li>MyST Studio now supports OWSM Policies in 12c</li>
@@ -2104,7 +2107,7 @@
 
 <h1 id="myst-studio-3620">MyST Studio 3.6.2.0</h1>
 
-<h2 id="new-features-42">New Features</h2>
+<h2 id="new-features-41">New Features</h2>
 
 <ul>
   <li>MyST Studio now supports the definition of WebLogic vanilla clusters and servers</li>
@@ -2129,7 +2132,7 @@
 
 <h1 id="myst-studio-3610">MyST Studio 3.6.1.0</h1>
 
-<h2 id="new-features-43">New Features</h2>
+<h2 id="new-features-42">New Features</h2>
 
 <ul>
   <li>MyST Studio now supports authentication through API keys which can be selectively generated, enabled and disabled for particular users</li>
@@ -2163,7 +2166,7 @@
 
 <h1 id="myst-studio-3600">MyST Studio 3.6.0.0</h1>
 
-<h2 id="new-features-44">New Features</h2>
+<h2 id="new-features-43">New Features</h2>
 
 <ul>
   <li>Continuous Delivery: OSB artifact reverse registration initiated by the CI Server</li>
@@ -2210,7 +2213,7 @@
 
 <h1 id="myst-studio-3500">MyST Studio 3.5.0.0</h1>
 
-<h2 id="new-features-45">New Features</h2>
+<h2 id="new-features-44">New Features</h2>
 
 <ul>
   <li>MyST now supports SSL configuration for WebLogic, including custom identity and trust stores</li>
@@ -2253,7 +2256,7 @@
 
 <h1 id="myst-studio-3410">MyST Studio 3.4.1.0</h1>
 
-<h2 id="new-features-46">New Features</h2>
+<h2 id="new-features-45">New Features</h2>
 
 <ul>
   <li>Oracle SOA Suite 12.2.1 is now supported</li>
@@ -2267,7 +2270,7 @@
 
 <h1 id="myst-studio-3310">MyST Studio 3.3.1.0</h1>
 
-<h2 id="new-features-47">New Features</h2>
+<h2 id="new-features-46">New Features</h2>
 
 <ul>
   <li>Platform Instance Reporting is now available</li>
@@ -2293,7 +2296,7 @@
 
 <h1 id="myst-studio-3300">MyST Studio 3.3.0.0</h1>
 
-<h2 id="new-features-48">New Features</h2>
+<h2 id="new-features-47">New Features</h2>
 
 <ul>
   <li>Ability to version platform blueprints and models to support the entire platform cycle</li>
@@ -2319,7 +2322,7 @@
 
 <h1 id="myst-studio-3220">MyST Studio 3.2.2.0</h1>
 
-<h2 id="new-features-49">New Features</h2>
+<h2 id="new-features-48">New Features</h2>
 
 <ul>
   <li>Infrastructure Provider deletion is now supported</li>
@@ -2362,7 +2365,7 @@
 
 <h1 id="myst-studio-3150">MyST Studio 3.1.5.0</h1>
 
-<h2 id="new-features-50">New Features</h2>
+<h2 id="new-features-49">New Features</h2>
 
 <ul>
   <li>Provides automated MyST agent setup on target nodes</li>
@@ -2378,7 +2381,7 @@
 
 <h1 id="myst-studio-3140">MyST Studio 3.1.4.0</h1>
 
-<h2 id="new-features-51">New Features</h2>
+<h2 id="new-features-50">New Features</h2>
 
 <ul>
   <li>Provides ability to seed data to MyST Studio on boot</li>
@@ -2400,7 +2403,7 @@
 
 <h1 id="myst-studio-3120">MyST Studio 3.1.2.0</h1>
 
-<h2 id="new-features-52">New Features</h2>
+<h2 id="new-features-51">New Features</h2>
 
 <ul>
   <li>Full support for AWS provisioning in MyST Studio</li>
@@ -2408,7 +2411,7 @@
 
 <h1 id="myst-studio-3110">MyST Studio 3.1.1.0</h1>
 
-<h2 id="new-features-53">New Features</h2>
+<h2 id="new-features-52">New Features</h2>
 
 <ul>
   <li>Ability to manage pre-existing infrastructure providers through the user interface</li>
@@ -2418,7 +2421,7 @@
 
 <h1 id="myst-studio-3100">MyST Studio 3.1.0.0</h1>
 
-<h2 id="new-features-54">New Features</h2>
+<h2 id="new-features-53">New Features</h2>
 
 <ul>
   <li>First major release, providing users the ability to design platform blueprints and models and provision them to pre-existing infrastructure</li>
