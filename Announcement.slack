@@ -1,19 +1,3 @@
-• Simplified navigation between modeling and apply actions
-• Pipeline templates now support defining post-deployment jobs against stages
-• Platform Instance stop and restart actions now allow optional graceful shutdown and timeout values
-• Role Based Access Control introduced for Stream Model, Artifact Property Registry and Custom Actions
-• Release participants can now Approve/Reject directly from the email
-• Tidied the organisation of the card display for platform blueprints/templates, application blueprints and release pipelines
-• Improved the search bar to remain visible even when search result is empty
-• Application blueprints list and the selection screen from release pipeline now supports pagination
-• Custom actions now support search & pagination
-• The artifact classifier is now displayed in the deployment summary screen
-• Stream model properties can be set against any stage before promotion occurs. This can be enabled by setting the flag `release_management.stream.stream_model` in fc-metadata.json.
-• Performance improvements when displaying displaying a large number of artifacts
-• Error handling improvements
-• Deployment of OSB projects to SOA Cloud Service is supported
-• Developer Cloud Service support
-• Numerous additional Oracle Fusion Middleware and Axway API Gateway supported configurations.
-• Bug Fixes
+• Fixed regression resulting in the content of custom actions to not be visible in the UI
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
