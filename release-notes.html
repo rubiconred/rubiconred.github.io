@@ -90,12 +90,25 @@
   <li>Added axway-provision-admin-ldap MyST action</li>
 </ul>
 
+<h2 id="known-issues">Known Issues</h2>
+<ul>
+  <li>In 6.5.0, 6.5.1, and 6.5.2 a regression was identified where the Release Pipeline dashboard view page load times increased significantly. The increa
+se is relative to the number of Stages configured in the pipeline. <em>Each Stage</em> will increase the total page load time by around 2-3 seconds. A fix is expected to be released in 6.6.0-rc1.</li>
+</ul>
+
 <h1 id="myst-studio-651">MyST Studio 6.5.1</h1>
 
 <h2 id="bug-fixes-1">Bug Fixes</h2>
 
 <ul>
   <li>FC-5944 - Fixed regression resulting in the content of custom actions to not be visible in the UI</li>
+</ul>
+
+<h2 id="known-issues-1">Known Issues</h2>
+<ul>
+  <li>In 6.5.0, 6.5.1, and 6.5.2 a regression was identified where the Release Pipeline dashboard view page load times increased significantly. The increa
+se is relative to the number of Stages configured in the pipeline. <em>Each Stage</em> will increase the total page load time by around 2-3 seconds. A fix
+is expected to be released in 6.6.0-rc1.</li>
 </ul>
 
 <h1 id="myst-studio-650">MyST Studio 6.5.0</h1>
@@ -198,6 +211,13 @@
   <li>FC-5784 - Added BI Publisher 12.2.1.3 WLSSchemaDataSource datasource to the Platform Blueprint</li>
   <li>FC-5777 - Fixed email validation during user creation not allowing valid email addresses</li>
   <li>FC-5775 - Error while downloading artifact upon OIC deployment</li>
+</ul>
+
+<h2 id="known-issues-2">Known Issues</h2>
+<ul>
+  <li>In 6.5.0, 6.5.1, and 6.5.2 a regression was identified where the Release Pipeline dashboard view page load times increased significantly. The increa
+se is relative to the number of Stages configured in the pipeline. <em>Each Stage</em> will increase the total page load time by around 2-3 seconds. A fix
+is expected to be released in 6.6.0-rc1.</li>
 </ul>
 
 <h1 id="myst-studio-643">MyST Studio 6.4.3</h1>
@@ -393,7 +413,7 @@
   <li>FC-5338 - Fixed an issue introduced in 6.0.0 where values for platform configuration properties could not be overriden to blank from the editor.</li>
 </ul>
 
-<h2 id="known-issues">Known Issues</h2>
+<h2 id="known-issues-3">Known Issues</h2>
 
 <p>Platform Introspection has issues which are resolved by an upgrade to 6.2.4.</p>
 
@@ -418,7 +438,7 @@
   <li>FC-5320 - Fixed issue where a non-admin user was being directed to the login screen when downloading support artifacts from the platform instance action history dialog</li>
 </ul>
 
-<h2 id="known-issues-1">Known Issues</h2>
+<h2 id="known-issues-4">Known Issues</h2>
 
 <p>Affects MyST running on HTTPS and results in users no longer being able to log into MyST Studio. After upgrading and going to the MyST Studio URL a <code class="highlighter-rouge">MYST0000 - Service Unavailable</code> error is displayed. This can be resolved by an upgrade to 6.2.3 or by adjusting the Nginx configuration.</p>
 
@@ -482,7 +502,7 @@
   <li>FC-5268 - Fixed an issue where Service Console was not showing up correctly in the summary when registering OPAAS instances</li>
 </ul>
 
-<h2 id="known-issues-2">Known Issues</h2>
+<h2 id="known-issues-5">Known Issues</h2>
 
 <ul>
   <li>Fresh MyST Studio installs fail due to the 6.2.0 installer using latest mysql docker image.
@@ -545,7 +565,7 @@
   <li>FC-4706 - MyST now has a newly designed <a href="https://docs.rubiconred.com/myst-studio/platform/definitions/editor/">platform editor</a> for platform configuration which significantly enhances user experience</li>
 </ul>
 
-<h2 id="known-issues-3">Known Issues</h2>
+<h2 id="known-issues-6">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of a 6.0.1+ release</li>
@@ -602,7 +622,7 @@
   <li>FC-5120 - Fixed an issue around configuring of JKS keystores in 12c FMW environment. Now, MyST configures JKS keystores correctly in 12c FMW environments to support OWSM security configuration. JKS keystores are available within the Enterprise Manager control, and can be selected when configuring OWSM security to support signing and encrypting.</li>
 </ul>
 
-<h2 id="known-issues-4">Known Issues</h2>
+<h2 id="known-issues-7">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of the 5.9.1.1 release or a 6.0.1+ release.</li>
@@ -644,7 +664,7 @@
   <li>FC-5105 - Fixed an issue with BAM provisioning on a cluster for 12c</li>
 </ul>
 
-<h2 id="known-issues-5">Known Issues</h2>
+<h2 id="known-issues-8">Known Issues</h2>
 
 <ul>
   <li>There is an issue with data migration of artifacts in this release. If using release management, it is recommended to avoid this release in favour of the 5.9.1.1 release or a 6.0.1+ release.</li>
