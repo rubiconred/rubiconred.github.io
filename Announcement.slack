@@ -1,14 +1,10 @@
 *Bug Fixes*
-• FC-5962 - Fixed an error when opening stream model properties. This was a regression introduced in FC-5248 when adding role based access control for viewing stream model properties.
-• FC-5807 - Fixed a bug where where changing case sensitivity of a property resulted in a DataIntegrityConstraint error. This was most notable in JCA Adapters when changing the outbound connection property (eg. datasourcename to DataSourceName)
-• FC-5972 - Fixed an edge case where opening a stage's stream model properties which resulted in a 'Generic database exception'
+• FC-5995 - Fixed a bug where myst deleted the SSH key pair too early (i.e after reloading the classpath) resulting in an authentication error
+• FC-6015 - Improved the liquibase upgrade to support mysql 5.6.x preventing the 'max key length is 767' error
+• FC-6006 - Fixed a regression where running CLI directly failed accessing the (recent) security improvement's encryption key. Studio was unaffected.
+
 
 *Improvements*
-• FC-5862 - Artifact properties can now be individually deleted
-• FC-5355 - Added support for SAF Topics under SAF Imported Destinations
-• FC-5964 - Added support for Human Workflow properties in soa mbeans. See <https://rubiconred.gitbooks.io/myst-help-center/platform-configuration/can-i-configure-soa-mbeans-with-myst-studio.html|MyST Help Center>
-
-*Axway*
-• Added axway-provision-admin-ldap MyST action
+• N/A
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
