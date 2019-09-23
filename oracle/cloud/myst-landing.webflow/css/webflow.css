@@ -221,6 +221,7 @@ h1 {
   font-size: 24px;
   line-height: 30px;
   margin-top: 20px;
+  border-bottom: 1px dashed #524e7d;
 }
 h2 {
   font-size: 18px;

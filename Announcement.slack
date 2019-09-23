@@ -1,10 +1,35 @@
-*Bug Fixes*
-• FC-5995 - Fixed a bug where myst deleted the SSH key pair too early (i.e after reloading the classpath) resulting in an authentication error
-• FC-6015 - Improved the liquibase upgrade to support mysql 5.6.x preventing the 'max key length is 767' error
-• FC-6006 - Fixed a regression where running CLI directly failed accessing the (recent) security improvement's encryption key. Studio was unaffected.
-
-
 *Improvements*
-• N/A
 
-See <https://docs.rubiconred.com/release-notes.html|release notes> for more information
+General
+• Search fields when adding artifacts to ABP will be in the order of GroudId and ArtifactId
+• Release Pipeline can now deselect the Pipeline Template
+• SOA 12c provisioning also executes configure-soa
+• `ignore-osb.customization-file` can be set in pom.xml to ignore/fail on a *missing* OSB customization file
+• Support for properties in JMS Connection Factories, JMS Bridge Destinations, WebLogic log RotationType and filename, and JDBC XA properties
+• Support for 18c database during RCU action
+
+Performance
+• Improvemed response time for activating a Release Pipeline. Improved code efficiency and reduced unnecessary calls to database.
+
+Patch
+• Reduced verbosity of the patch action
+• Fixed patch action assuming patch directory inside pNNNN_122130_Generic.zip is always NNNN
+• Patch action now extracts to a random_id directory to avoid clashes
+• Added boolean flags for OFMW patching `<patch>.clear.tmp` and `<patch>.clear.cache`
+
+*Bug Fixes*
+• Reinstated search filter based on groups in Release Pipeline
+• Fixed myst executable to use a forward slash
+• Fixed NM failing to start when more than one java option (-D) was used
+• Fixed exception deleting a stage from a Release Pipeline which was previously activated
+• Platform Instance artifacts list shows deleted artifact as INACTIVE instead of returning an error
+• Users can no longer approve/reject release pipeline stages which are not part of their role
+• Fixed an NPE when during a Platform update from Release Pipelines with no Application Blueprint
+
+*Axway*
+• Significant rework of fixes and improvements to the Axway provisioning. Credit and thanks to *Luiz (LG)*.
+
+See <https://docs.rubiconred.com/release-notes.html|release notes> for more information.
+
+*IMPORTANT NOTE*
+As of `6.6.0-rc2` Myst had a security enhancement to hash passwords using a random generated **salt**. See [Myst Security](https://docs.rubiconred.com/myst-studio/platform/security/).

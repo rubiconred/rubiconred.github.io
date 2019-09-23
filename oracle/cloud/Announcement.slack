@@ -1,8 +1,10 @@
-A new update has been shipped to the oracle cloud beta tier (<https://docs.rubiconred.com/oracle/cloud/release-notes.html | RC20>)
+New updates have been shipped to Myst for Oracle Cloud. See (<https://docs.rubiconred.com/oracle/cloud/release-notes.html | release notes>) for more information.
 
 *Improvements*
 • Addressed an issue where connections were not being set when the embedded repository was being used.
-• The stream model can now be updated at deployment time when it is missing configuration
-• After a synchronisation, the integrations in the wizard are greyed out to not give the impression that more than one synchronisation can be performed at a time.
-• Fixed screenshots in the guided journeys
-• Improved `Add Aritfacts` screen display on smaller screens
+• SOA Cloud Service (SOACS) OCI provisioning. _NOTE: This is in early stages and currently limited to a single node_
+• Discovering SOA Cloud Service (SOACS) no longer creates an SSH connection to initialise the Platform Instance in Myst. Faster discovery!
+• Disabled 're-provision' option for SOA Cloud Service (SOACS) environments. This functionality is intended for on-demand or on-premise only.
+
+*Bug Fixes*
+• SOA Cloud Service (SOACS) discovery was not showing all properties in the Platform Blueprint
