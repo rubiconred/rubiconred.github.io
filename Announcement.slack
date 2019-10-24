@@ -1,35 +1,20 @@
 *Improvements*
 
-General
-• Search fields when adding artifacts to ABP will be in the order of GroudId and ArtifactId
-• Release Pipeline can now deselect the Pipeline Template
-• SOA 12c provisioning also executes configure-soa
-• `ignore-osb.customization-file` can be set in pom.xml to ignore/fail on a *missing* OSB customization file
-• Support for properties in JMS Connection Factories, JMS Bridge Destinations, WebLogic log RotationType and filename, and JDBC XA properties
-• Support for 18c database during RCU action
-
 Performance
-• Improvemed response time for activating a Release Pipeline. Improved code efficiency and reduced unnecessary calls to database.
-
-Patch
-• Reduced verbosity of the patch action
-• Fixed patch action assuming patch directory inside pNNNN_122130_Generic.zip is always NNNN
-• Patch action now extracts to a random_id directory to avoid clashes
-• Added boolean flags for OFMW patching `<patch>.clear.tmp` and `<patch>.clear.cache`
+• FC-6216 - Improved 20-30% of overall performance by removing excessive db calls caused by logging
+• FC-6208 - [#385838] - Improved performance (response time) by 20% for the release pipeline dashboard after a deployment
+• FC-6181 - Improved performance (response time) by 10-20% when activating release pipelines
 
 *Bug Fixes*
-• Reinstated search filter based on groups in Release Pipeline
-• Fixed myst executable to use a forward slash
-• Fixed NM failing to start when more than one java option (-D) was used
-• Fixed exception deleting a stage from a Release Pipeline which was previously activated
-• Platform Instance artifacts list shows deleted artifact as INACTIVE instead of returning an error
-• Users can no longer approve/reject release pipeline stages which are not part of their role
+• FC-5558 - [#1227] - Deployments where no-op is expected should now function correctly reducing unnecessary SSH connections from MyST
+• FC-6221 - [#385921] - Fixed a regression from 6.6.0-rc2 where Studio upgrades the CLI agent even if it's the same version
+• FC-6229 - Fixed a regression from 6.6.0-rc3 where loading platform instance action history from the release pipeline fails
 • Fixed an NPE when during a Platform update from Release Pipelines with no Application Blueprint
 
 *Axway*
-• Significant rework of fixes and improvements to the Axway provisioning. Credit and thanks to *Luiz (LG)*.
+• FC-6219 - [#1631] - Hostname and ID fixes and improvements to the provisioning. Credit and thanks to Luiz (LG).
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information.
 
 *IMPORTANT NOTE*
-As of `6.6.0-rc2` Myst had a security enhancement to hash passwords using a random generated **salt**. See [Myst Security](https://docs.rubiconred.com/myst-studio/platform/security/).
+As of `6.6.0-rc2` Myst had a security enhancement to salt and hash passwords. See <https://docs.rubiconred.com/myst-studio/platform/security/|Myst Security>.
