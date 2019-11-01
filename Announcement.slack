@@ -1,18 +1,5 @@
-*Improvements*
-
-Performance
-• FC-6216 - Improved 20-30% of overall performance by removing excessive db calls caused by logging
-• FC-6208 - [#385838] - Improved performance (response time) by 20% for the release pipeline dashboard after a deployment
-• FC-6181 - Improved performance (response time) by 10-20% when activating release pipelines
-
 *Bug Fixes*
-• FC-5558 - [#1227] - Deployments where no-op is expected should now function correctly reducing unnecessary SSH connections from MyST
-• FC-6221 - [#385921] - Fixed a regression from 6.6.0-rc2 where Studio upgrades the CLI agent even if it's the same version
-• FC-6229 - Fixed a regression from 6.6.0-rc3 where loading platform instance action history from the release pipeline fails
-• Fixed an NPE when during a Platform update from Release Pipelines with no Application Blueprint
-
-*Axway*
-• FC-6219 - [#1631] - Hostname and ID fixes and improvements to the provisioning. Credit and thanks to Luiz (LG).
+• FC-6238 - [#385938] - Fixed a regression from 6.6.0-rc4 where artifact properties are affected by case sensitivity resulting in a DozerMapperException
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information.
 
