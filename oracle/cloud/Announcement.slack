@@ -1,10 +1,16 @@
 New updates have been shipped to Myst for Oracle Cloud. See (<https://docs.rubiconred.com/oracle/cloud/release-notes.html | release notes>) for more information.
 
 *Improvements*
-• Addressed an issue where connections were not being set when the embedded repository was being used.
-• SOA Cloud Service (SOACS) OCI provisioning. _NOTE: This is in early stages and currently limited to a single node_
-• Discovering SOA Cloud Service (SOACS) no longer creates an SSH connection to initialise the Platform Instance in Myst. Faster discovery!
-• Disabled 're-provision' option for SOA Cloud Service (SOACS) environments. This functionality is intended for on-demand or on-premise only.
+• FC-6134 - Improved the trial license experience by displaying a banner with days remaining and contact us links
+• FC-6247 - SOA Cloud Service - Reinstated the platform templates view
+• FC-6250 - SOA Cloud Serivce - Moved Platform xxxxx views to a new Modeling tab in the UI
+• FC-6240 - SOA Cloud Service improvement - Reinstated the ability to apply platform blueprints with release pipeline streams
+• FC-6264 - Replaced login homepage background image with a better quality image
+• FC-6245 - Added option to view compute definitions for infrastructure providers
+• FC-6244 - Added option to view the Continuous Delivery Profile page when using on-premise Myst Cloud
+• FC-6246 - Improved fields so they were mandatory when in the new environment type creation screen
+• FC-6241 - Added option create an on-premise infrastructure provider
+• FC-6242 - Added an option to assign approve role, deploy role, and post deployment job configuration in release pipeline stages
 
 *Bug Fixes*
-• SOA Cloud Service (SOACS) discovery was not showing all properties in the Platform Blueprint
+• FC-6225 - Fixed a bug where the administrator system role was permanently assigned to new users

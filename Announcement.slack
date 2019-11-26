@@ -1,5 +1,16 @@
+*Improvements*
+• FC-6220 - 12.2.1.4.0 support for SOA (B2B, BAM, ESS, MFT, WSM), OSB, ADF, EDQ, WebLogic
+• FC-6209 - Added UI to view the myst master key (admins only) from the Administration link
+• FC-5993 - [#19003] - Extended audit record with RESOURCE name
+• FC-6255 - Add support for SAML2Asserter WebLogic authentication provider
+• FC-6211 - Improved the handling of the master key when it does not exist or failing due to EOL and white spaces characters
+• FC-6226 - [#385929] - Significantly improved response time when deleting a property from the artifact property registry from several minutes down to one second
+
 *Bug Fixes*
-• FC-6238 - [#385938] - Fixed a regression from 6.6.0-rc4 where artifact properties are affected by case sensitivity resulting in a DozerMapperException
+• FC-6206 - [#385915] - Fixed regression caused by FC-5578 where environments with a SOA product (eg. OSB/WSM) resulted in an error running configure-soa as no soa-infra exists
+
+*Known Issues*
+• The behaviour of OHS 12.2.1.4.0 has changed compared to previous versions which now fails to start with an SSL 'wallet' error if the default wallet does not exist. This results in a failure when provisioning OHS 12.2.1.4.0. A fix is underway and expected to be in the next release.
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information.
 
