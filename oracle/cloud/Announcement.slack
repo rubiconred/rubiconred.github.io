@@ -1,16 +1,11 @@
 New updates have been shipped to Myst for Oracle Cloud. See (<https://docs.rubiconred.com/oracle/cloud/release-notes.html | release notes>) for more information.
 
 *Improvements*
-• FC-6134 - Improved the trial license experience by displaying a banner with days remaining and contact us links
-• FC-6247 - SOA Cloud Service - Reinstated the platform templates view
-• FC-6250 - SOA Cloud Serivce - Moved Platform xxxxx views to a new Modeling tab in the UI
-• FC-6240 - SOA Cloud Service improvement - Reinstated the ability to apply platform blueprints with release pipeline streams
-• FC-6264 - Replaced login homepage background image with a better quality image
-• FC-6245 - Added option to view compute definitions for infrastructure providers
-• FC-6244 - Added option to view the Continuous Delivery Profile page when using on-premise Myst Cloud
-• FC-6246 - Improved fields so they were mandatory when in the new environment type creation screen
-• FC-6241 - Added option create an on-premise infrastructure provider
-• FC-6242 - Added an option to assign approve role, deploy role, and post deployment job configuration in release pipeline stages
+• FC-6281 - Further improvements to the trial license experience
+• FC-6281 - General UI Improvements 
+• FC-6281 - Improved logo and banner layout 
+• FC-6281 - Changed notification from user icon to bell icon 
+• FC-6281 - Moved profile and logout links to 'My Profile' drop-down 
+• FC-6281 - Trial license now displays a banner with the remaining days
+• FC-6261 - Improved overall experience of the DevOps Connectors by showing in-use connectors and by allowing connectors to override other connectors (eg. svn to git)
 
-*Bug Fixes*
-• FC-6225 - Fixed a bug where the administrator system role was permanently assigned to new users

@@ -1,16 +1,27 @@
 *Improvements*
-• FC-6220 - 12.2.1.4.0 support for SOA (B2B, BAM, ESS, MFT, WSM), OSB, ADF, EDQ, WebLogic
-• FC-6209 - Added UI to view the myst master key (admins only) from the Administration link
-• FC-5993 - [#19003] - Extended audit record with RESOURCE name
-• FC-6255 - Add support for SAML2Asserter WebLogic authentication provider
-• FC-6211 - Improved the handling of the master key when it does not exist or failing due to EOL and white spaces characters
-• FC-6226 - [#385929] - Significantly improved response time when deleting a property from the artifact property registry from several minutes down to one second
+• FC-6265 - Added support for 12.2.1.4.0 ADF, OEDQ, ODI, and WCC
+• FC-6272 - Improved 12.2.1.4.0 OHS support to prevent the SSL 'wallet' error if the default wallet does not exist
+• FC-6325 - [#386011] - For 12.2.1.4.0 ESS environments, during create-domain the BamCQServiceJmsSystemModule now correctly targets to the BAM cluster instead of bam servers which resulted in the AdminServer failing to start
+• FC-6313 - Added support for running RCU against an Oracle Database with Transparent Data Encryption (TDE). Use the RCU param `encrypt-tablespace=true`.
+• FC-6313 - Added support for running RCU custom parameters. Use the RCU param `custom-parameters`.
+• FC-6227 - [#1594] - Added Studio and CLI deployment support for running myst custom actions (scripts) prior to OSB activation achieved by a global variable `action.osb-activation.pre=name_of_custom_action`
+• FC-6277 - Added a new option in the JDBC datasource called 'Disable-Targets' which allows overriding the targets to None. Use case: During DB maintenance there is a need to temporarily disable the datasource.
+• FC-6310 - [#385990] - Added vanilla WebLogic as a completely separate product in myst which can be selected as part of the Platform Blueprint wizard. This vanilla WebLogic product also supports collocated admin servers (in addition to standalone).
+• FC-6348 - [#386024] - Added support for Myst release pipeline post-deployment to invoke Jenkins jobs inside Jenkins folders. Use `folder1/folder2/my_job` as the job name
+• FC-6353 - [#386024] - Added support for release pipeline post deployments to pass specific platform instance or stream model properties. For example to pass your domain name to the post deployment job you can add a parameter with 'my_domain_name' as the key and '${core.domain.name}' as the value.
+
+*Improvements to Logging*
+• FC-6278 - [#385957] - Added timestamp and duration loggers to show when myst begins SSH connectivity
+• FC-6292 - [#1024] - Added logging to help understand which property did not resolve validation when myst threw a MYST4102 error
+
+*Improvements to AWS On-Demand Infrastructure Provider*
+• FC-6191 - [#385879] - Added support cloud-init userdata to be passed to AWS on-demand instances. Configurable in the Infrastructure Provider as a template and configurable in the Platform Model which is the source of truth.
 
 *Bug Fixes*
-• FC-6206 - [#385915] - Fixed regression caused by FC-5578 where environments with a SOA product (eg. OSB/WSM) resulted in an error running configure-soa as no soa-infra exists
-
-*Known Issues*
-• The behaviour of OHS 12.2.1.4.0 has changed compared to previous versions which now fails to start with an SSL 'wallet' error if the default wallet does not exist. This results in a failure when provisioning OHS 12.2.1.4.0. A fix is underway and expected to be in the next release.
+• FC-6269 - [#385951] - Fixed TTL override for JMS not handling large integers
+• FC-6304 - [#385959] - Artifact metadata (pom.xml) should now update correctly in MyST particularly when metadata (eg. myst-config-plan-location) is removed
+• FC-6308 - [#385984] - Fixed ANT product location for 12.2.1.3.0 and 12.2.1.4.0 and added the ANT product back into the Platform Blueprint product list
+• FC-6348 - [#386024] - Fixed a bug where post deployment parameters were not being passed to Jenkins resulting in no Jenkins job executing
 
 See <https://docs.rubiconred.com/release-notes.html|release notes> for more information.
 
