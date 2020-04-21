@@ -1,29 +1,8 @@
-*Improvements*
-• FC-6265 - Added support for 12.2.1.4.0 ADF, OEDQ, ODI, and WCC
-• FC-6272 - Improved 12.2.1.4.0 OHS support to prevent the SSL 'wallet' error if the default wallet does not exist
-• FC-6325 - [#386011] - For 12.2.1.4.0 ESS environments, during create-domain the BamCQServiceJmsSystemModule now correctly targets to the BAM cluster instead of bam servers which resulted in the AdminServer failing to start
-• FC-6313 - Added support for running RCU against an Oracle Database with Transparent Data Encryption (TDE). Use the RCU param `encrypt-tablespace=true`.
-• FC-6313 - Added support for running RCU custom parameters. Use the RCU param `custom-parameters`.
-• FC-6227 - [#1594] - Added Studio and CLI deployment support for running myst custom actions (scripts) prior to OSB activation achieved by a global variable `action.osb-activation.pre=name_of_custom_action`
-• FC-6277 - Added a new option in the JDBC datasource called 'Disable-Targets' which allows overriding the targets to None. Use case: During DB maintenance there is a need to temporarily disable the datasource.
-• FC-6310 - [#385990] - Added vanilla WebLogic as a completely separate product in myst which can be selected as part of the Platform Blueprint wizard. This vanilla WebLogic product also supports collocated admin servers (in addition to standalone).
-• FC-6348 - [#386024] - Added support for Myst release pipeline post-deployment to invoke Jenkins jobs inside Jenkins folders. Use `folder1/folder2/my_job` as the job name
-• FC-6353 - [#386024] - Added support for release pipeline post deployments to pass specific platform instance or stream model properties. For example to pass your domain name to the post deployment job you can add a parameter with 'my_domain_name' as the key and '${core.domain.name}' as the value.
+*<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc8|Myst Studio 6.6.0-rc8>*
+Significantly improved overall Myst response time by up to 90x by reducing the number of unnecessary sql queries.
 
-*Improvements to Logging*
-• FC-6278 - [#385957] - Added timestamp and duration loggers to show when myst begins SSH connectivity
-• FC-6292 - [#1024] - Added logging to help understand which property did not resolve validation when myst threw a MYST4102 error
+This improvement deserves a special thanks to <@UC1T5MNF6> (Rabobank) who was very pragmatic and cooperative in working through the issues.
 
-*Improvements to AWS On-Demand Infrastructure Provider*
-• FC-6191 - [#385879] - Added support cloud-init userdata to be passed to AWS on-demand instances. Configurable in the Infrastructure Provider as a template and configurable in the Platform Model which is the source of truth.
+<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc8|Click to see more information and release notes.>
 
-*Bug Fixes*
-• FC-6269 - [#385951] - Fixed TTL override for JMS not handling large integers
-• FC-6304 - [#385959] - Artifact metadata (pom.xml) should now update correctly in MyST particularly when metadata (eg. myst-config-plan-location) is removed
-• FC-6308 - [#385984] - Fixed ANT product location for 12.2.1.3.0 and 12.2.1.4.0 and added the ANT product back into the Platform Blueprint product list
-• FC-6348 - [#386024] - Fixed a bug where post deployment parameters were not being passed to Jenkins resulting in no Jenkins job executing
-
-See <https://docs.rubiconred.com/release-notes.html|release notes> for more information.
-
-*IMPORTANT NOTE*
-As of `6.6.0-rc2` Myst had a security enhancement to salt and hash passwords. See <https://docs.rubiconred.com/myst-studio/platform/security/|Myst Security>.
+_Note: As of `6.6.0-rc2` Myst salts and hashes passwords. See <https://userguide.mystsoftware.com/6.6.0-rc7/platform/security/|Myst Security>._
