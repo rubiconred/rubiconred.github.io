@@ -59,9 +59,19 @@
     <main class="main-content" role="main" id="main">
       <section class="content-section">
         <div class="container">
-              <h1 id="myst-studio-660-rc8">MyST Studio 6.6.0-rc8</h1>
+              <h1 id="myst-studio-660-rc9">MyST Studio 6.6.0-rc9</h1>
+
+<h2 id="improvements-to-post-deployment-job-configurations">Improvements to Post Deployment Job configurations</h2>
+
+<ul>
+  <li>FC-6409 - [#386057] - Fixed a regression caused by 6.6.0-rc7 (FC-6353) where jsonpayload was only passed when a job parameter was defined. In 6.6.0-rc6 and earlier versions, no job parameter was required.</li>
+  <li>FC-6409 - [#386057] - Reduced confusion by changing the ‘Exclude Properties’ to an ‘Include Properties’. Existing data will be migrated during the upgrade and does not require any user intervention.</li>
+</ul>
+
+<h1 id="myst-studio-660-rc8">MyST Studio 6.6.0-rc8</h1>
 
 <h2 id="improvements-to-performance-and-response-time">Improvements to Performance and Response Time</h2>
+
 <ul>
   <li>FC-6394 - Significantly improved overall Myst response time by up to 90x by reducing the number of unnecessary sql queries
     <ul>

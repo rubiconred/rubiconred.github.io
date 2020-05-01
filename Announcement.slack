@@ -1,8 +1,7 @@
-*<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc8|Myst Studio 6.6.0-rc8>*
-Significantly improved overall Myst response time by up to 90x by reducing the number of unnecessary sql queries.
+*<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc9|Myst Studio 6.6.0-rc9>*
+Fixed a regression caused by 6.6.0-rc7 where jsonpayload was only passed when a job parameter was defined. In 6.6.0-rc6 and earlier, no job parameter was required.
 
-This improvement deserves a special thanks to <@UC1T5MNF6> (Rabobank) who was very pragmatic and cooperative in working through the issues.
+<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc9|Click to see more information and release notes.>
 
-<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc8|Click to see more information and release notes.>
-
-_Note: As of `6.6.0-rc2` Myst salts and hashes passwords. See <https://userguide.mystsoftware.com/6.6.0-rc7/platform/security/|Myst Security>._
+_Note1: As of `6.6.0-rc2` Myst salts and hashes passwords. See <https://userguide.mystsoftware.com/6.6.0-rc9/platform/security/|Myst Security>._
+_Note2: As of `6.6.0-rc8` there was a significant improvement to Myst response times._
