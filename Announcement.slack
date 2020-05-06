@@ -1,7 +1,7 @@
-*<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc9|Myst Studio 6.6.0-rc9>*
-Fixed a regression caused by 6.6.0-rc7 where jsonpayload was only passed when a job parameter was defined. In 6.6.0-rc6 and earlier, no job parameter was required.
+*<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc10|Myst Studio 6.6.0-rc10>*
+Added support for ODI 12.1.3 provisioning and deployments and support for SOA/OSB/ESS 12.1.3 provisioning (RCU) on Amazon RDS databases.
 
-<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc9|Click to see more information and release notes.>
+<https://www.mystsoftware.com/post/myst-studio-6-6-0-rc10|Click to see more information and release notes.>
 
 _Note1: As of `6.6.0-rc2` Myst salts and hashes passwords. See <https://userguide.mystsoftware.com/6.6.0-rc9/platform/security/|Myst Security>._
 _Note2: As of `6.6.0-rc8` there was a significant improvement to Myst response times._
